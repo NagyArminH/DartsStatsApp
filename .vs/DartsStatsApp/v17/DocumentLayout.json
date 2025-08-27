@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|solutionrelative:dartsstatsapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\services\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|solutionrelative:dartsstatsapp\\services\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\models\\playerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|solutionrelative:dartsstatsapp\\models\\playerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "DartsStatsApp\\App.xaml.cs",
+              "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\App.xaml.cs",
+              "RelativeToolTip": "DartsStatsApp\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T13:13:03.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DbService.cs",
+              "DocumentMoniker": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Services\\DbService.cs",
+              "RelativeDocumentMoniker": "DartsStatsApp\\Services\\DbService.cs",
+              "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Services\\DbService.cs",
+              "RelativeToolTip": "DartsStatsApp\\Services\\DbService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T12:49:35.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerEntity.cs",
+              "DocumentMoniker": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Models\\PlayerEntity.cs",
+              "RelativeDocumentMoniker": "DartsStatsApp\\Models\\PlayerEntity.cs",
+              "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Models\\PlayerEntity.cs",
+              "RelativeToolTip": "DartsStatsApp\\Models\\PlayerEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T12:45:46.555Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
