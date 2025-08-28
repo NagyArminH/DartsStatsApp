@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "DartsStatsApp\\App.xaml.cs",
               "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\App.xaml.cs",
               "RelativeToolTip": "DartsStatsApp\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T13:13:03.057Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "DartsStatsApp\\Services\\DbService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T12:49:35.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T12:49:35.971Z"
             },
             {
               "$type": "Document",
@@ -60,8 +59,7 @@
               "RelativeToolTip": "DartsStatsApp\\Models\\PlayerEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T12:45:46.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T12:45:46.555Z"
             }
           ]
         }

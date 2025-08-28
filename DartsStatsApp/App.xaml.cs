@@ -10,7 +10,7 @@ namespace DartsStatsApp
             InitializeComponent();
             
             _dbService = dbService;
-            dbService.InitializeTables();
+            //dbService.InitializeTables();
 
             MainPage = new AppShell();
         }

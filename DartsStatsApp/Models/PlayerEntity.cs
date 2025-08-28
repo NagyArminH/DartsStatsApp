@@ -3,7 +3,7 @@
 namespace DartsStatsApp.Models
 {
     [Table("Players")]
-    class PlayerEntity
+    public class PlayerEntity
     {
         [PrimaryKey]
         [AutoIncrement]
@@ -14,10 +14,14 @@ namespace DartsStatsApp.Models
         [Column("Country")]
         public string Country { get; set; }
         [Column("BirthDate")]
-        public string BirthDate { get; set; }
+        public DateTime BirthDate { get; set; }
         [Column("IsActive")]
         public bool IsActive { get; set; }
         [Column("TotalEarnings")]
-        public int TotalEarnings { get; set; }
+        public int Total9Darters { get; set; }
+        public decimal TotalEarnings { get; set; }
+
+        public int OOMPlacement { get; set; }
+        public decimal OOMEarnings { get; set; }
     }
 }

@@ -8,16 +8,16 @@ namespace DartsStatsApp.Services
         private const string DB_NAME = "darts_stats_app_db.db3";
         private readonly SQLiteAsyncConnection _connection;
 
-        public SQLiteAsyncConnection Connection => _connection;
-
         public DbService()
         {
             _connection = new SQLiteAsyncConnection(Path.Combine(FileSystem.AppDataDirectory, DB_NAME)); // adatbázis csatlakozás
         }
 
-        public async Task InitializeTables()
+        public async Task InitializeDb()
         {
-            await _connection.CreateTableAsync<PlayerEntity>();
+            await _connection.ExecuteAsync("PRAGMA foreign_keys = ON;"); // idegen kulcsok engedélyezése
+
+            await _connection.CreateTablesAsync<PlayerEntity, TournamentEntity, MatchEntity, MatchStatEntity>();
         }
     }
 }
