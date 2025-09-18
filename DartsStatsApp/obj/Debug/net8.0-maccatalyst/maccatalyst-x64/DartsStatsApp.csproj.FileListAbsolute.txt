@@ -298,6 +298,7 @@ E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\n
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\DartsStatsApp.AssemblyInfoInputs.cache
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\DartsStatsApp.AssemblyInfo.cs
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\DartsStatsApp.csproj.CoreCompileInputs.cache
+E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\DartsStatsApp.sourcelink.json
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\XamlC.stamp
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\DartsSta.B3CB1928.Up2Date
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\DartsStatsApp.dll

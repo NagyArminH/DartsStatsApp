@@ -11,13 +11,13 @@ namespace DartsStatsApp.Services
         public DbService()
         {
             _connection = new SQLiteAsyncConnection(Path.Combine(FileSystem.AppDataDirectory, DB_NAME)); // adatbázis csatlakozás
+            InitializeDb().GetAwaiter().GetResult(); // DbService nem megy tovább amíg az InitializeDb-ben minden le nem futott
         }
 
         public async Task InitializeDb()
         {
             await _connection.ExecuteAsync("PRAGMA foreign_keys = ON;"); // idegen kulcsok engedélyezése
-
-            await _connection.CreateTablesAsync<PlayerEntity, TournamentEntity, MatchEntity, MatchStatEntity>();
+            await _connection.CreateTablesAsync<PlayerEntity, TournamentEntity, MatchEntity, MatchStatEntity>(); // táblák létrehozása
         }
     }
 }

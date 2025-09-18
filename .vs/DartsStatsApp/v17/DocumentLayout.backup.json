@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\models\\tournamententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|solutionrelative:dartsstatsapp\\models\\tournamententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\services\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|solutionrelative:dartsstatsapp\\services\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\models\\playerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|solutionrelative:dartsstatsapp\\models\\playerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\models\\tournamententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|solutionrelative:dartsstatsapp\\models\\tournamententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\models\\matchentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,38 +34,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "PlayerEntity.cs",
+              "DocumentMoniker": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Models\\PlayerEntity.cs",
+              "RelativeDocumentMoniker": "DartsStatsApp\\Models\\PlayerEntity.cs",
+              "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Models\\PlayerEntity.cs",
+              "RelativeToolTip": "DartsStatsApp\\Models\\PlayerEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T11:01:20.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "TournamentEntity.cs",
               "DocumentMoniker": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Models\\TournamentEntity.cs",
               "RelativeDocumentMoniker": "DartsStatsApp\\Models\\TournamentEntity.cs",
               "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Models\\TournamentEntity.cs",
               "RelativeToolTip": "DartsStatsApp\\Models\\TournamentEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-28T17:56:34.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MatchEntity.cs",
               "DocumentMoniker": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Models\\MatchEntity.cs",
               "RelativeDocumentMoniker": "DartsStatsApp\\Models\\MatchEntity.cs",
               "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Models\\MatchEntity.cs",
               "RelativeToolTip": "DartsStatsApp\\Models\\MatchEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T12:09:13.668Z"
+              "WhenOpened": "2025-08-28T12:09:13.668Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DbService.cs",
               "DocumentMoniker": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Services\\DbService.cs",
               "RelativeDocumentMoniker": "DartsStatsApp\\Services\\DbService.cs",
               "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Services\\DbService.cs",
               "RelativeToolTip": "DartsStatsApp\\Services\\DbService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABwAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T12:49:35.971Z",
               "EditorCaption": ""

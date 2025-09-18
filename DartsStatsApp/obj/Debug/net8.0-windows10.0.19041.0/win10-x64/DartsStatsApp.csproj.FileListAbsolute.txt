@@ -95,8 +95,15 @@ E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\n
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\DartsStatsApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png
+E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png
+E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png
+E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png
+E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.stamp
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.stamp
+E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf
+E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
@@ -153,6 +160,7 @@ E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\n
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\DartsStatsApp.AssemblyInfoInputs.cache
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\DartsStatsApp.AssemblyInfo.cs
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\DartsStatsApp.csproj.CoreCompileInputs.cache
+E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\DartsStatsApp.sourcelink.json
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlC.stamp
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\DartsSta.B3CB1928.Up2Date
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\DartsStatsApp.dll

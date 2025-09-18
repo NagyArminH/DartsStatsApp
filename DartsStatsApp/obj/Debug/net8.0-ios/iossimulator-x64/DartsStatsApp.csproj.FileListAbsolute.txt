@@ -264,7 +264,6 @@ E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\bin\Debug\n
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet-nativeaot.a
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet.a
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
-E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-ios\iossimulator-x64\mauiimage.inputs
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-ios\iossimulator-x64\mauifont.inputs
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-ios\iossimulator-x64\mauisplash.inputs
@@ -310,6 +309,7 @@ E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\n
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-ios\iossimulator-x64\DartsStatsApp.AssemblyInfoInputs.cache
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-ios\iossimulator-x64\DartsStatsApp.AssemblyInfo.cs
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-ios\iossimulator-x64\DartsStatsApp.csproj.CoreCompileInputs.cache
+E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-ios\iossimulator-x64\DartsStatsApp.sourcelink.json
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-ios\iossimulator-x64\XamlC.stamp
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-ios\iossimulator-x64\DartsSta.B3CB1928.Up2Date
 E:\Suli\DUE\Sajat Projektek\Szakdolgozat\DartsStatsApp\DartsStatsApp\obj\Debug\net8.0-ios\iossimulator-x64\DartsStatsApp.dll
