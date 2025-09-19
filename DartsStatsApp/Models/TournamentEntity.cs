@@ -6,7 +6,6 @@ namespace DartsStatsApp.Models
     public class TournamentEntity
     {
         [PrimaryKey]
-        [AutoIncrement]
         public int Id { get; set; }
         public string TournamentName { get; set; }
         public string Location { get; set; }

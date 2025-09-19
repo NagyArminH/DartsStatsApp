@@ -6,7 +6,6 @@ namespace DartsStatsApp.Models
     public class MatchEntity
     {
         [PrimaryKey]
-        [AutoIncrement]
         public int Id { get; set; }
 
         //Idegen kulcsok
