@@ -11,7 +11,7 @@ namespace DartsStatsApp.Services
         public DbService()
         {
             _connection = new SQLiteAsyncConnection(Path.Combine(FileSystem.AppDataDirectory, DB_NAME)); // adatbázis csatlakozás
-            InitializeDb().GetAwaiter().GetResult(); // DbService nem megy tovább amíg az InitializeDb-ben minden le nem futott
+            InitializeDb().GetAwaiter().GetResult(); // DbService konstruktora nem megy tovább amíg az InitializeDb-ben minden le nem futott
         }
 
         public async Task InitializeDb()

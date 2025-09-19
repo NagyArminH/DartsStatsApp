@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DartsStatsApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+6e5067691cfc0b7f4f9e662cf438520e636b5f03")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+97990ad0762162c4a725ce847055c867ef86e0df")]
 [assembly: System.Reflection.AssemblyProductAttribute("DartsStatsApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DartsStatsApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
