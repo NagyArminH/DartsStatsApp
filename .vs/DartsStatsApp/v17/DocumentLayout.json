@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\services\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|solutionrelative:dartsstatsapp\\services\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|solutionrelative:dartsstatsapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\models\\matchentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|solutionrelative:dartsstatsapp\\models\\matchentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\viewmodels\\oomlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|solutionrelative:dartsstatsapp\\viewmodels\\oomlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\models\\tournamententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|solutionrelative:dartsstatsapp\\models\\tournamententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\views\\oomlistview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|solutionrelative:dartsstatsapp\\views\\oomlistview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\models\\playerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|solutionrelative:dartsstatsapp\\models\\playerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|solutionrelative:dartsstatsapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|e:\\suli\\due\\sajat projektek\\szakdolgozat\\dartsstatsapp\\dartsstatsapp\\views\\oomlistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92467B9B-EF0F-43C9-B4F1-BF28D595B521}|DartsStatsApp\\DartsStatsApp.csproj|solutionrelative:dartsstatsapp\\views\\oomlistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PlayerEntity.cs",
-              "DocumentMoniker": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Models\\PlayerEntity.cs",
-              "RelativeDocumentMoniker": "DartsStatsApp\\Models\\PlayerEntity.cs",
-              "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Models\\PlayerEntity.cs",
-              "RelativeToolTip": "DartsStatsApp\\Models\\PlayerEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "DartsStatsApp\\AppShell.xaml.cs",
+              "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\AppShell.xaml.cs",
+              "RelativeToolTip": "DartsStatsApp\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T11:01:20.741Z"
+              "WhenOpened": "2025-09-19T19:09:56.446Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TournamentEntity.cs",
-              "DocumentMoniker": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Models\\TournamentEntity.cs",
-              "RelativeDocumentMoniker": "DartsStatsApp\\Models\\TournamentEntity.cs",
-              "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Models\\TournamentEntity.cs",
-              "RelativeToolTip": "DartsStatsApp\\Models\\TournamentEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Title": "OOMListView.xaml.cs",
+              "DocumentMoniker": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Views\\OOMListView.xaml.cs",
+              "RelativeDocumentMoniker": "DartsStatsApp\\Views\\OOMListView.xaml.cs",
+              "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Views\\OOMListView.xaml.cs",
+              "RelativeToolTip": "DartsStatsApp\\Views\\OOMListView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T17:56:34.133Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MatchEntity.cs",
-              "DocumentMoniker": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Models\\MatchEntity.cs",
-              "RelativeDocumentMoniker": "DartsStatsApp\\Models\\MatchEntity.cs",
-              "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Models\\MatchEntity.cs",
-              "RelativeToolTip": "DartsStatsApp\\Models\\MatchEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T12:09:13.668Z"
+              "WhenOpened": "2025-09-19T18:59:12.933Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DbService.cs",
-              "DocumentMoniker": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Services\\DbService.cs",
-              "RelativeDocumentMoniker": "DartsStatsApp\\Services\\DbService.cs",
-              "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Services\\DbService.cs",
-              "RelativeToolTip": "DartsStatsApp\\Services\\DbService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "DartsStatsApp\\MauiProgram.cs",
+              "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\MauiProgram.cs",
+              "RelativeToolTip": "DartsStatsApp\\MauiProgram.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAewCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T12:49:35.971Z",
+              "WhenOpened": "2025-09-19T18:34:25.491Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OOMListViewModel.cs",
+              "DocumentMoniker": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\ViewModels\\OOMListViewModel.cs",
+              "RelativeDocumentMoniker": "DartsStatsApp\\ViewModels\\OOMListViewModel.cs",
+              "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\ViewModels\\OOMListViewModel.cs",
+              "RelativeToolTip": "DartsStatsApp\\ViewModels\\OOMListViewModel.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T18:01:50.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OOMListView.xaml",
+              "DocumentMoniker": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Views\\OOMListView.xaml",
+              "RelativeDocumentMoniker": "DartsStatsApp\\Views\\OOMListView.xaml",
+              "ToolTip": "E:\\Suli\\DUE\\Sajat Projektek\\Szakdolgozat\\DartsStatsApp\\DartsStatsApp\\Views\\OOMListView.xaml",
+              "RelativeToolTip": "DartsStatsApp\\Views\\OOMListView.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-19T18:01:35.44Z"
             }
           ]
         }

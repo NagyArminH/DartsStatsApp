@@ -52,3 +52,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DartsStatsApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[E:/Suli/DUE/Sajat Projektek/Szakdolgozat/DartsStatsApp/DartsStatsApp/Views/OOMListView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DartsStatsApp.Views.OOMListView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\OOMListView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\OOMListView.xaml

@@ -105,5 +105,10 @@ namespace DartsStatsApp.Services
         {
             await _connection.InsertAsync(entity);
         }
+
+        public async Task<List<T>> GetData<T>() where T : new()
+        {
+            return await _connection.Table<T>().ToListAsync();
+        }
     }
 }

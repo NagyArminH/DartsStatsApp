@@ -1,4 +1,6 @@
 ﻿using DartsStatsApp.Services;
+using DartsStatsApp.ViewModels;
+using DartsStatsApp.Views;
 using Microsoft.Extensions.Logging;
 
 namespace DartsStatsApp;
@@ -20,6 +22,11 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 		builder.Services.AddSingleton<DbService>();
+
+		builder.Services.AddTransient<OOMListView>();
+        builder.Services.AddTransient<OOMListViewModel>();
+
+        builder.Services.AddTransient(typeof(OOMListView));
 		return builder.Build();
 	}
 }
