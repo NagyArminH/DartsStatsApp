@@ -1,5 +1,7 @@
 ﻿using DartsStatsApp.Models;
 using SQLite;
+using System.Diagnostics;
+using System.Globalization;
 
 namespace DartsStatsApp.Services
 {
@@ -11,17 +13,23 @@ namespace DartsStatsApp.Services
         public DbService()
         {
             _connection = new SQLiteAsyncConnection(Path.Combine(FileSystem.AppDataDirectory, DB_NAME)); // adatbázis csatlakozás
-            InitializeDb().GetAwaiter().GetResult(); // DbService konstruktora nem megy tovább amíg az InitializeDb-ben minden le nem futott
+            //InitializeDb().GetAwaiter().GetResult(); // DbService konstruktora nem megy tovább amíg az InitializeDb-ben minden le nem futott
         }
 
         public async Task InitializeDb()
         {
             await _connection.ExecuteAsync("PRAGMA foreign_keys = ON;"); // idegen kulcsok engedélyezése
             await _connection.CreateTablesAsync<PlayerEntity, TournamentEntity, MatchEntity, MatchStatEntity>(); // táblák létrehozása
-            
-            await InsertDataIntoDb();
+            await ClearAllTables();
         }
+        private async Task ClearAllTables()
+        {
+            await _connection.DeleteAllAsync<MatchStatEntity>();
+            await _connection.DeleteAllAsync<MatchEntity>();
 
+            await _connection.DeleteAllAsync<PlayerEntity>();
+            await _connection.DeleteAllAsync<TournamentEntity>();
+        }
         public async Task InsertDataIntoDb()
         {
             await GetDataFromPlayers();
@@ -43,11 +51,11 @@ namespace DartsStatsApp.Services
                     Id = int.Parse(helper[0]),
                     Name = helper[1],
                     Country = helper[2],
-                    BirthDate = DateTime.Parse(helper[3]),
+                    BirthDate = DateTime.TryParseExact(helper[3], "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var birth) ? birth : (DateTime?)null,
                     Total9Darters = int.Parse(helper[4]),
                     TotalEarnings = decimal.Parse(helper[5]),
-                    OOMPlacement = int.Parse(helper[6]),
-                    OOMEarnings = decimal.Parse(helper[7])
+                    OOMPlacement = int.TryParse(helper[6], out int oomp) ? (int?)oomp : null,
+                    OOMEarnings = decimal.TryParse(helper[7], out decimal oome) ? (decimal?)oome : null
                 };
                 await Create(player);
             }
@@ -68,8 +76,8 @@ namespace DartsStatsApp.Services
                     Id = int.Parse(helper[0]),
                     TournamentName = helper[1],
                     Location = helper[2],
-                    StartDate = DateTime.Parse(helper[3]),
-                    EndDate = DateTime.Parse(helper[4])
+                    StartDate = DateTime.ParseExact(helper[3], "yyyy-MM-dd", CultureInfo.InvariantCulture),
+                    EndDate = DateTime.ParseExact(helper[4], "yyyy-MM-dd", CultureInfo.InvariantCulture)
                 };
                 await Create(tournaments);
             }
@@ -84,20 +92,21 @@ namespace DartsStatsApp.Services
             {
                 string row = await reader.ReadLineAsync();
                 string[] helper = row.Split(',');
+                
+                    MatchEntity matches = new MatchEntity
+                    {
+                        Id = int.Parse(helper[0]),
+                        TournamentId = int.Parse(helper[1]),
+                        Player1Id = int.Parse(helper[2]),
+                        Player2Id = int.Parse(helper[3]),
+                        WinnerId = int.Parse(helper[4]),
+                        Date = DateTime.ParseExact(helper[5], "yyyy-MM-dd", CultureInfo.InvariantCulture),
+                        RoundName = helper[6],
+                        MatchScore = helper[7],
+                        MatchFormat = helper[8]
+                    };
+                    await Create(matches);
 
-                MatchEntity matches = new MatchEntity
-                {
-                    Id = int.Parse(helper[0]),
-                    TournamentId = int.Parse(helper[1]),
-                    Player1Id = int.Parse(helper[2]),
-                    Player2Id = int.Parse(helper[3]),
-                    WinnerId = int.Parse(helper[4]),
-                    Date = DateTime.Parse(helper[5]),
-                    RoundName = helper[6],
-                    MatchScore = helper[7],
-                    MatchFormat = helper[8]
-                };
-                await Create(matches);
             }
         }
 

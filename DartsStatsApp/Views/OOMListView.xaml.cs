@@ -4,7 +4,7 @@ namespace DartsStatsApp.Views;
 
 public partial class OOMListView : ContentPage
 {
-	private OOMListViewModel _viewModel;
+	private OOMListViewModel _viewModel;	
 	public OOMListView(OOMListViewModel vm)
 	{
 		InitializeComponent();

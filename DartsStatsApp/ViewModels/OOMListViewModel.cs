@@ -13,26 +13,25 @@ namespace DartsStatsApp.ViewModels
     public class OOMListViewModel : ObservableObject
     {
         private DbService _dbService;
-        public ObservableCollection<PlayerEntity> playerList { get; } = new ObservableCollection<PlayerEntity>();
+        public ObservableCollection<PlayerEntity> PlayerList { get; } = new ObservableCollection<PlayerEntity>();
         public OOMListViewModel(DbService dbService)
         {
             _dbService = dbService;
-            playerList = new ObservableCollection<PlayerEntity>();
             getAllOOMPlayers();
         }
 
         private async void getAllOOMPlayers()
         {
-            var playerList = await _dbService.GetData<PlayerEntity>();
+            var players = await _dbService.GetData<PlayerEntity>();
 
-            var orderedList = from p in playerList
+            var orderedList = from p in players
                               where p.OOMPlacement > 0
                               orderby p.OOMPlacement
                               select p;
-            playerList.Clear();
+            PlayerList.Clear();
             foreach (PlayerEntity player in orderedList)
             {
-                playerList.Add(player);
+                PlayerList.Add(player);
             }
         }
     }

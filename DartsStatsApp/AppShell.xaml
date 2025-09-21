@@ -12,6 +12,9 @@
         <Tab Title="OOM List">
             <ShellContent ContentTemplate="{DataTemplate views:OOMListView}"/>
         </Tab>
+        <Tab Title="OOM List">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
     </TabBar>
 
 </Shell>

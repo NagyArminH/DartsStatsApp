@@ -25,8 +25,6 @@ public static class MauiProgram
 
 		builder.Services.AddTransient<OOMListView>();
         builder.Services.AddTransient<OOMListViewModel>();
-
-        builder.Services.AddTransient(typeof(OOMListView));
 		return builder.Build();
 	}
 }
