@@ -11,7 +11,6 @@ namespace DartsStatsApp
             _dbService = dbService;
             Task.Run(async () => await initializeDatabase()).Wait();
             MainPage = new AppShell();
-           //_ = _dbService.InitializeDb();
         }
         private async Task initializeDatabase()
         {
