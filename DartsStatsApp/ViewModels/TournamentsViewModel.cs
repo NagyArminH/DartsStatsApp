@@ -12,7 +12,7 @@ namespace DartsStatsApp.ViewModels
     public class TournamentsViewModel
     {
         private DbService _dbService;
-        public ObservableCollection<TournamentEntity> Tournaments { get; } = new ObservableCollection<TournamentEntity>();
+        public ObservableCollection<object> Tournaments { get; } = new ObservableCollection<object>();
 
         public TournamentsViewModel(DbService dbService)
         {
@@ -27,10 +27,22 @@ namespace DartsStatsApp.ViewModels
             var tournamentList = (from p in tourneys
                                   orderby p.StartDate ascending
                                  select p).ToList();
+            
+            var groupedTourneys = from t in tournamentList
+                                  group t by new { t.StartDate.Year, t.StartDate.Month } into g
+                                  orderby g.Key.Year, g.Key.Month
+                                  select new
+                                  { 
+                                      Year = g.Key.Year,
+                                      Month = new DateTime(g.Key.Year, g.Key.Month,1).ToString("yyyy. MMMM"),
+                                      Tournaments = g.ToList()
+                                  };
+
             Tournaments.Clear();
-            foreach (var t in tournamentList)
+
+            foreach (var group in groupedTourneys)
             {
-                Tournaments.Add(t);
+                Tournaments.Add(group);
             }
         }
     }

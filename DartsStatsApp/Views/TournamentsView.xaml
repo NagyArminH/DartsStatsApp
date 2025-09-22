@@ -5,42 +5,24 @@
              Title="TournamentsView">
     
     <CollectionView ItemsSource="{Binding Tournaments}" 
-                    SelectionMode="None"
-                    HorizontalOptions="Fill" 
-                    VerticalOptions="Fill">
-        <CollectionView.ItemsLayout>
-            <LinearItemsLayout Orientation="Vertical" ItemSpacing="3"/>
-        </CollectionView.ItemsLayout>
+                    IsGrouped="True"
+                    SelectionMode="None">
+        <CollectionView.GroupHeaderTemplate>
+            <DataTemplate>
+                <Frame BackgroundColor="#eee" Padding="10">
+                    <Label Text="{Binding Month}" FontAttributes="Bold"/>
+                </Frame>
+            </DataTemplate>
+        </CollectionView.GroupHeaderTemplate>
 
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                <Grid Padding="10">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="50"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Label Text="{Binding Id}"
-                        FontAttributes="Bold"
-                        Grid.Column="0"
-                        VerticalOptions="Center"/>
-
-                    <Label Text="{Binding TournamentName}"
-                       FontAttributes="Bold"
-                       Grid.Column="1"
-                       VerticalOptions="Center"/>
-
-                    <Label Text="{Binding StartDate, StringFormat='{0:yyyy.MM.dd}'}"
-                        Grid.Column="2"
-                        VerticalOptions="Center"
-                       HorizontalOptions="End"/>
-                    <Label Text="{Binding EndDate, StringFormat='{0:yyyy.MM.dd}'}"
-                        Grid.Column="3"
-                        VerticalOptions="Center"
-                        HorizontalOptions="End"/>
-                </Grid>
+                <Frame Padding="10" Margin="5" BackgroundColor="White">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Name}" FontAttributes="Bold"/>
+                        <Label Text="{Binding StartDate, StringFormat='{0}yyyy.MM.dd'}"/>
+                    </VerticalStackLayout>
+                </Frame>
             </DataTemplate>
         </CollectionView.ItemTemplate>
     </CollectionView>
