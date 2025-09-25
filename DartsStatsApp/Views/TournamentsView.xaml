@@ -8,15 +8,33 @@
     <CollectionView ItemsSource="{Binding GroupedTournaments}">
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                <toolkit:Expander>
+                <toolkit:Expander IsExpanded="False">
 
                     <toolkit:Expander.Header>
+                        <Grid Padding="10" BackgroundColor="#eee">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="30"/>
+                            </Grid.ColumnDefinitions>
+                            
                         <!-- Month header -->
                         <Label Text="{Binding Month}"
                            FontAttributes="Bold"
                            FontSize="18"
                            Padding="5"
                            BackgroundColor="#eee"/>
+
+                        <Label FontSize="18" Grid.Column="1">
+                            <Label.Triggers>
+                                    <DataTrigger TargetType="Label" Binding="{Binding Source={RelativeSource AncestorType={x:Type toolkit:Expander}}, Path=IsExpanded}" Value="True">
+                                        <Setter Property="Text" Value="▲"/>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Label" Binding="{Binding Source={RelativeSource AncestorType={x:Type toolkit:Expander}}, Path=IsExpanded}" Value="False">
+                                        <Setter Property="Text" Value="▼"/>
+                                    </DataTrigger>
+                            </Label.Triggers>
+                        </Label>
+                        </Grid>
                     </toolkit:Expander.Header>
 
                     <toolkit:Expander.Content>
@@ -30,10 +48,10 @@
                                 <Grid Padding="5">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="120"/>
+                                        <ColumnDefinition Width="Auto"/>
                                     </Grid.ColumnDefinitions>
                                     <Label Text="{Binding TournamentName}" Grid.Column="0" HorizontalTextAlignment="Start"/>
-                                    <Label Text="{Binding StartDate, StringFormat='{0:yyyy.MM.dd}'}" Grid.Column="1" HorizontalTextAlignment="End"/>
+                                    <Label Text="{Binding StartDate, StringFormat='{0:yyyy.MM.dd}'}" Grid.Column="1"/>
                                 </Grid>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
