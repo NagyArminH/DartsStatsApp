@@ -1,11 +1,13 @@
 ﻿using DartsStatsApp.Models;
 using DartsStatsApp.Services;
+using DartsStatsApp.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace DartsStatsApp.ViewModels
 {
@@ -13,10 +15,12 @@ namespace DartsStatsApp.ViewModels
     {
         private DbService _dbService;
         public ObservableCollection<TournamentsPerMonth> GroupedTournaments { get; } = new ObservableCollection<TournamentsPerMonth>();
+        public ICommand NavigateToTournamentDetailsView { get; set; }
 
         public TournamentsViewModel(DbService dbService)
         {
             _dbService = dbService;
+            NavigateToTournamentDetailsView = new Command<TournamentEntity>(navigateToTournamentDetalisView);
             getTournaments();
         }
 
@@ -41,6 +45,14 @@ namespace DartsStatsApp.ViewModels
 
             foreach (var group in groupedTourneys)
                 GroupedTournaments.Add(group);
+        }
+
+        private async void navigateToTournamentDetalisView(TournamentEntity tournament)
+        {
+            if (tournament == null)
+                return;
+
+            await Shell.Current.GoToAsync($"{nameof(TournamentDetailsView)}?TournamentId={tournament.Id}");
         }
     }
 

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="DartsStatsApp.Views.TournamentDetailsView"
+             Title="{Binding Tournament.TournamentName}">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="5">
+
+            <Label Text="{Binding Tournament.TournamentName}"
+                   FontAttributes="Bold"
+                   FontSize="22"
+                   HorizontalOptions="Center"/>
+
+            <CollectionView ItemsSource="{Binding GroupedMatches}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <toolkit:Expander IsExpanded="True">
+                            <toolkit:Expander.Header>
+                                <Grid Padding="5" BackgroundColor="#eee">
+                                    <Label Text="{Binding Round}" FontAttributes="Bold" FontSize="18"/>
+                                </Grid>
+                            </toolkit:Expander.Header>
+
+                            <CollectionView ItemsSource="{Binding Matches}" SelectionMode="None">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid Padding="5">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Label Text="{Binding Player1Id}" Grid.Column="0"/>
+                                            <Label Text="{Binding MatchScore}" Grid.Column="0" HorizontalOptions="Center"/>
+                                            <Label Text="{Binding Player2Id}" Grid.Column="1" HorizontalOptions="End"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </toolkit:Expander>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

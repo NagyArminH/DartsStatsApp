@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:local="clr-namespace:DartsStatsApp.ViewModels"
              x:Class="DartsStatsApp.Views.TournamentsView"
              Title="TournamentsView">
     
@@ -45,13 +46,21 @@
                                     Margin="10,0,0,10">
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
-                                <Grid Padding="5">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="Auto"/>
-                                    </Grid.ColumnDefinitions>
-                                    <Label Text="{Binding TournamentName}" Grid.Column="0" HorizontalTextAlignment="Start"/>
-                                    <Label Text="{Binding StartDate, StringFormat='{0:yyyy.MM.dd}'}" Grid.Column="1"/>
+                                <Grid Padding="5" ColumnSpacing="10">
+                                        <Grid.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type local:TournamentsViewModel}}, Path=NavigateToTournamentDetailsView}"
+                                                CommandParameter="{Binding .}"
+                                                />
+                                        </Grid.GestureRecognizers>
+                                    
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Text="{Binding TournamentName}" Grid.Column="0" VerticalOptions="Center"/>
+                                    <Label Text="{Binding StartDate, StringFormat='{0:yyyy.MM.dd.}'}" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End"/>
+                                            
                                 </Grid>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
