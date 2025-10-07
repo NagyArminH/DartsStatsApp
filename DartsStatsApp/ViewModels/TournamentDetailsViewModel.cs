@@ -52,11 +52,11 @@ namespace DartsStatsApp.ViewModels
             var allMatches = (await _dbService.GetData<MatchEntity>()).Where(m => m.TournamentId == tournamentId).ToList();
 
             var grouped = from g in allMatches
-                          group g by g.RoundName into g
+                          group g by g.RoundOrder into g
                           orderby g.Key descending
                           select new MatchesPerRound
                           {
-                              Round = g.Key,
+                              Round = g.First().RoundName,
                               Matches = new ObservableCollection<MatchEntity>(g)
                           };
 

@@ -101,8 +101,9 @@ namespace DartsStatsApp.Services
                         WinnerId = int.Parse(helper[4]),
                         Date = DateTime.ParseExact(helper[5], "yyyy-MM-dd", CultureInfo.InvariantCulture),
                         RoundName = helper[6],
-                        MatchScore = helper[7],
-                        MatchFormat = helper[8]
+                        RoundOrder = int.Parse(helper[7]),
+                        MatchScore = helper[8],
+                        MatchFormat = helper[9]
                     };
                     await Create(matches);
 

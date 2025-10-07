@@ -1,918 +1,918 @@
-1,1,64,103,64,2024-12-15,First round,3-1,Sets
-2,1,25,105,25,2024-12-15,First round,3-0,Sets
-3,1,50,54,54,2024-12-15,First round,1-3,Sets
-4,1,1,64,1,2024-12-15,Second round,3-0,Sets
-5,1,102,106,102,2024-12-16,First round,3-2,Sets
-6,1,31,110,31,2024-12-16,First round,3-0,Sets
-7,1,53,107,107,2024-12-16,First round,1-3,Sets
-8,1,5,25,25,2024-12-16,Second round,0-3,Sets
-9,1,44,58,58,2024-12-16,First round,1-3,Sets
-10,1,56,109,56,2024-12-16,First round,3-0,Sets
-11,1,33,112,112,2024-12-16,First round,1-3,Sets
-12,1,8,54,8,2024-12-16,Second round,3-0,Sets
-13,1,67,121,67,2024-12-17,First round,3-0,Sets
-14,1,42,115,42,2024-12-17,First round,3-1,Sets
-15,1,24,99,24,2024-12-17,First round,3-1,Sets
-16,1,19,31,31,2024-12-17,Second round,1-3,Sets
-17,1,52,123,52,2024-12-17,First round,3-1,Sets
-18,1,29,113,29,2024-12-17,First round,3-0,Sets
-19,1,63,111,63,2024-12-17,First round,3-2,Sets
-20,1,16,102,16,2024-12-17,Second round,3-1,Sets
-21,1,59,124,124,2024-12-18,First round,2-3,Sets
-22,1,46,108,46,2024-12-18,First round,3-1,Sets
-23,1,45,125,45,2024-12-18,First round,3-2,Sets
-24,1,23,112,23,2024-12-18,Second round,3-1,Sets
-25,1,69,122,122,2024-12-19,First round,1-3,Sets
-26,1,41,126,41,2024-12-19,First round,3-0,Sets
-27,1,38,114,38,2024-12-19,First round,3-1,Sets
-28,1,40,58,58,2024-12-19,Second round,1-3,Sets
-29,1,60,104,60,2024-12-19,First round,3-0,Sets
-30,1,62,55,55,2024-12-19,First round,2-3,Sets
-31,1,36,72,36,2024-12-19,First round,3-1,Sets
-32,1,21,42,42,2024-12-19,Second round,2-3,Sets
-33,1,61,117,117,2024-12-20,First round,0-3,Sets
-34,1,39,120,39,2024-12-20,First round,3-2,Sets
-35,1,4,107,4,2024-12-20,Second round,3-1,Sets
-36,1,43,118,43,2024-12-20,First round,3-1,Sets
-37,1,51,119,51,2024-12-20,First round,3-1,Sets
-38,1,47,65,65,2024-12-20,First round,1-3,Sets
-39,1,3,67,3,2024-12-20,Second round,3-0,Sets
-40,1,75,81,81,2024-12-21,First round,0-3,Sets
-41,1,49,116,116,2024-12-21,First round,0-3,Sets
-42,1,37,122,37,2024-12-21,Second round,3-0,Sets
-43,1,7,117,7,2024-12-21,Second round,3-1,Sets
-44,1,15,24,24,2024-12-21,Second round,1-3,Sets
-45,1,35,60,60,2024-12-21,Second round,1-3,Sets
-46,1,2,63,2,2024-12-21,Second round,3-1,Sets
-47,1,10,56,10,2024-12-21,Second round,3-1,Sets
-48,1,20,55,20,2024-12-22,Second round,3-0,Sets
-49,1,32,46,46,2024-12-22,Second round,1-3,Sets
-50,1,30,39,30,2024-12-22,Second round,3-0,Sets
-51,1,28,48,48,2024-12-22,Second round,1-3,Sets
-52,1,17,41,41,2024-12-22,Second round,0-3,Sets
-53,1,14,124,124,2024-12-22,Second round,0-3,Sets
-54,1,11,52,52,2024-12-22,Second round,0-3,Sets
-55,1,22,65,22,2024-12-22,Second round,3-0,Sets
-56,1,34,116,34,2024-12-23,Second round,3-1,Sets
-57,1,26,38,26,2024-12-23,Second round,3-1,Sets
-58,1,12,81,12,2024-12-23,Second round,3-0,Sets
-59,1,6,43,6,2024-12-23,Second round,3-2,Sets
-60,1,18,29,29,2024-12-23,Second round,1-3,Sets
-61,1,27,51,27,2024-12-23,Second round,3-2,Sets
-62,1,13,45,45,2024-12-23,Second round,2-3,Sets
-63,1,9,36,36,2024-12-23,Second round,1-3,Sets
-64,1,10,31,31,2024-12-27,Third round,3-4,Sets
-65,1,6,27,6,2024-12-27,Third round,4-3,Sets
-66,1,4,46,4,2024-12-27,Third round,4-1,Sets
-67,1,9,30,9,2024-12-27,Third round,4-3,Sets
-68,1,25,16,16,2024-12-27,Third round,2-4,Sets
-69,1,1,60,1,2024-12-27,Third round,4-0,Sets
-70,1,24,20,24,2024-12-28,Third round,4-3,Sets
-71,1,36,29,29,2024-12-28,Third round,1-4,Sets
-72,1,23,26,23,2024-12-28,Third round,4-0,Sets
-73,1,7,12,7,2024-12-28,Third round,4-2,Sets
-74,1,3,37,3,2024-12-28,Third round,4-2,Sets
-75,1,2,48,2,2024-12-28,Third round,4-1,Sets
-76,1,52,124,52,2024-12-29,Third round,4-1,Sets
-77,1,42,34,42,2024-12-29,Third round,4-3,Sets
-78,1,22,41,41,2024-12-29,Third round,0-4,Sets
-79,1,45,58,58,2024-12-29,Third round,2-4,Sets
-80,1,6,8,8,2024-12-29,Fourth round,2-4,Sets
-81,1,1,16,16,2024-12-29,Fourth round,1-4,Sets
-82,1,42,7,7,2024-12-30,Fourth round,3-4,Sets
-83,1,58,41,41,2024-12-30,Fourth round,3-4,Sets
-84,1,28,23,23,2024-12-30,Fourth round,0-4,Sets
-85,1,4,31,4,2024-12-30,Fourth round,4-0,Sets
-86,1,3,52,3,2024-12-30,Fourth round,4-2,Sets
-87,1,2,24,2,2024-12-30,Fourth round,4-3,Sets
-88,1,7,8,7,2025-01-01,Quarter-final,5-3,Sets
-89,1,3,41,3,2025-01-01,Quarter-final,5-3,Sets
-90,1,16,4,4,2025-01-01,Quarter-final,2-5,Sets
-91,1,2,23,2,2025-01-01,Quarter-final,5-2,Sets
-92,1,7,3,3,2025-01-02,Semi-final,1-6,Sets
-93,1,4,2,2,2025-01-02,Semi-final,1-6,Sets
-94,1,2,3,2,2025-01-03,Final,7-3,Sets
-95,2,12,25,12,2025-01-30,First round,3-1,Sets
-96,2,10,14,10,2025-01-30,First round,3-1,Sets
-97,2,9,47,47,2025-01-30,First round,1-3,Sets
-98,2,8,52,8,2025-01-30,First round,3-0,Sets
-99,2,16,42,16,2025-01-30,First round,3-2,Sets
-100,2,1,30,1,2025-01-30,First round,3-1,Sets
-101,2,4,96,4,2025-01-30,First round,3-2,Sets
-102,2,15,21,15,2025-01-30,First round,3-1,Sets
-103,2,5,19,5,2025-01-31,First round,3-2,Sets
-104,2,13,33,33,2025-01-31,First round,1-3,Sets
-105,2,6,17,6,2025-01-31,First round,3-1,Sets
-106,2,23,26,23,2025-01-31,First round,3-0,Sets
-107,2,7,20,20,2025-01-31,First round,1-3,Sets
-108,2,2,71,2,2025-01-31,First round,3-0,Sets
-109,2,3,73,3,2025-01-31,First round,3-1,Sets
-110,2,11,22,22,2025-01-31,First round,1-3,Sets
-111,2,47,15,15,2025-02-01,Second round,0-4,Sets
-112,2,10,9,10,2025-02-01,Second round,4-3,Sets
-113,2,4,16,4,2025-02-01,Second round,4-2,Sets
-114,2,1,12,1,2025-02-01,Second round,4-0,Sets
-115,2,6,20,6,2025-02-01,Second round,4-3,Sets
-116,2,33,23,23,2025-02-01,Second round,1-4,Sets
-117,2,1,5,1,2025-02-01,Second round,4-0,Sets
-118,2,3,22,22,2025-02-01,Second round,3-4,Sets
-119,2,1,10,1,2025-02-02,Quarter-final,4-1,Sets
-120,2,15,4,15,2025-02-02,Quarter-final,4-3,Sets
-121,2,1,6,6,2025-02-02,Quarter-final,2-4,Sets
-122,2,22,23,22,2025-02-02,Quarter-final,4-1,Sets
-123,2,1,15,1,2025-02-02,Semi-final,5-2,Sets
-124,2,6,22,6,2025-02-02,Semi-final,5-2,Sets
-125,2,1,6,1,2025-02-02,Final,6-5,Sets
-126,3,7,8,7,2025-02-06,Quarter-final,6-4,Legs
-127,3,4,9,9,2025-02-06,Quarter-final,4-6,Legs
-128,3,2,3,3,2025-02-06,Quarter-final,5-6,Legs
-129,3,23,1,1,2025-02-06,Quarter-final,2-6,Legs
-130,3,7,9,7,2025-02-06,Semi-final,6-4,Legs
-131,3,3,1,1,2025-02-06,Semi-Final,5-6,Legs
-132,3,7,1,1,2025-02-06,Final,1-6,Legs
-133,4,9,2,2,2025-02-13,Quarter-final,5-6,Legs
-134,4,3,4,3,2025-02-13,Quarter-final,6-1,Legs
-135,4,23,8,8,2025-02-13,Quarter-final,4-6,Legs
-136,4,1,7,1,2025-02-13,Quarter-final,6-4,Legs
-137,4,2,3,2,2025-02-13,Semi-final,6-2,Legs
-138,4,8,1,1,2025-02-13,Semi-final,4-6,Legs
-139,4,2,1,2,2025-02-13,Final,6-5,Legs
-140,5,1,4,1,2025-02-20,Quarter-final,6-4,Legs
-141,5,8,2,8,2025-02-20,Quarter-final,6-4,Legs
-142,5,9,23,23,2025-02-20,Quarter-final,3-6,Legs
-143,5,3,7,3,2025-02-20,Quarter-final,6-4,Legs
-144,5,1,8,8,2025-02-20,Semi-final,3-6,Legs
-145,5,23,3,23,2025-02-20,Semi-final,6-3,Legs
-146,5,8,23,8,2025-02-20,Final,6-3,Legs
-147,6,3,9,9,2025-02-27,Quarter-final,5-6,Legs
-148,6,8,1,1,2025-02-27,Quarter-final,4-6,Legs
-149,6,7,23,23,2025-02-27,Quarter-final,5-6,Legs
-150,6,4,2,2,2025-02-27,Quarter-final,3-6,Legs
-151,6,9,1,1,2025-02-27,Semi-final,5-6,Legs
-152,6,23,2,2,2025-02-27,Semi-final,2-6,Legs
-153,6,1,2,1,2025-02-27,Final,6-4,Legs
-154,7,142,117,117,2025-02-28,First round,1-6,Legs
-155,7,143,144,143,2025-02-28,First round,6-0,Legs
-156,7,127,128,127,2025-02-28,First round,6-3,Legs
-157,7,165,107,165,2025-02-28,First round,6-4,Legs
-158,7,129,130,130,2025-02-28,First round,0-6,Legs
-159,7,162,72,72,2025-02-28,First round,2-6,Legs
-160,7,157,158,158,2025-02-28,First round,3-6,Legs
-161,7,163,164,164,2025-02-28,First round,1-6,Legs
-162,7,134,75,134,2025-02-28,First round,6-1,Legs
-163,7,145,146,146,2025-02-28,First round,5-6,Legs
-164,7,102,86,86,2025-02-28,First round,1-6,Legs
-165,7,108,131,108,2025-02-28,First round,6-4,Legs
-166,7,147,148,148,2025-02-28,First round,2-6,Legs
-167,7,167,168,168,2025-02-28,First round,3-6,Legs
-168,7,151,152,152,2025-02-28,First round,3-6,Legs
-169,7,149,150,149,2025-02-28,First round,6-2,Legs
-170,7,171,172,172,2025-02-28,First round,4-6,Legs
-171,7,93,132,93,2025-02-28,First round,6-0,Legs
-172,7,170,95,95,2025-02-28,First round,3-6,Legs
-173,7,133,177,177,2025-02-28,First round,4-6,Legs
-174,7,79,166,79,2025-02-28,First round,6-2,Legs
-175,7,136,137,136,2025-02-28,First round,6-3,Legs
-176,7,138,139,139,2025-02-28,First round,2-6,Legs
-177,7,173,174,173,2025-02-28,First round,6-4,Legs
-178,7,155,156,156,2025-02-28,First round,1-6,Legs
-179,7,225,121,121,2025-02-28,First round,4-6,Legs
-180,7,169,101,169,2025-02-28,First round,6-0,Legs
-181,7,135,99,99,2025-02-28,First round,4-6,Legs
-182,7,153,154,154,2025-02-28,First round,1-6,Legs
-183,7,159,160,159,2025-02-28,First round,6-5,Legs
-184,7,161,105,161,2025-02-28,First round,6-1,Legs
-185,7,140,141,140,2025-02-28,First round,6-3,Legs
-186,7,72,83,72,2025-02-28,Second round,6-5,Legs
-187,7,70,134,70,2025-02-28,Second round,6-5,Legs
-188,7,87,94,87,2025-02-28,Second round,6-5,Legs
-189,7,165,176,165,2025-02-28,Second round,6-5,Legs
-190,7,98,80,98,2025-02-28,Second round,6-5,Legs
-191,7,84,127,127,2025-02-28,Second round,2-6,Legs
-192,7,74,148,74,2025-02-28,Second round,6-3,Legs
-193,7,76,66,66,2025-02-28,Second round,5-6,Legs
-194,7,172,97,97,2025-02-28,Second round,2-6,Legs
-195,7,96,100,96,2025-02-28,Second round,6-2,Legs
-196,7,117,152,152,2025-02-28,Second round,3-6,Legs
-197,7,85,177,85,2025-02-28,Second round,6-4,Legs
-198,7,158,95,95,2025-02-28,Second round,2-6,Legs
-199,7,156,154,156,2025-02-28,Second round,6-4,Legs
-200,7,77,67,77,2025-02-28,Second round,6-4,Legs
-201,7,99,68,68,2025-02-28,Second round,5-6,Legs
-202,7,90,130,90,2025-02-28,Second round,6-4,Legs
-203,7,168,139,168,2025-02-28,Second round,6-2,Legs
-204,7,81,161,161,2025-02-28,Second round,1-6,Legs
-205,7,149,73,149,2025-02-28,Second round,6-2,Legs
-206,7,64,146,146,2025-02-28,Second round,1-6,Legs
-207,7,69,108,108,2025-02-28,Second round,1-6,Legs
-208,7,60,95,60,2025-02-28,Third round,6-3,Legs
-209,7,25,51,25,2025-02-28,Third round,6-3,Legs
-210,7,173,143,173,2025-02-28,Second round,6-5,Legs
-211,7,121,82,82,2025-02-28,Second round,4-6,Legs
-212,7,89,93,93,2025-02-28,Second round,4-6,Legs
-213,7,169,92,92,2025-02-28,Second round,3-6,Legs
-214,7,71,86,86,2025-02-28,Second round,1-6,Legs
-215,7,59,38,38,2025-02-28,Third round,5-6,Legs
-216,7,175,140,140,2025-02-28,Second round,5-6,Legs
-217,7,46,63,46,2025-02-28,Third round,6-1,Legs
-218,7,78,159,78,2025-02-28,Second round,6-3,Legs
-219,7,164,136,136,2025-02-28,Second round,1-6,Legs
-220,7,90,96,96,2025-02-28,Third round,5-6,Legs
-221,7,36,39,36,2025-02-28,Third round,6-4,Legs
-222,7,127,91,91,2025-02-28,Third round,3-6,Legs
-223,7,66,33,33,2025-02-28,Third round,5-6,Legs
-224,7,41,53,53,2025-02-28,Third round,0-6,Legs
-225,7,70,65,65,2025-02-28,Third round,5-6,Legs
-226,7,58,44,58,2025-02-28,Third round,6-5,Legs
-227,7,70,50,50,2025-02-28,Third round,4-6,Legs
-228,7,146,47,47,2025-02-28,Third round,4-6,Legs
-229,7,79,31,31,2025-02-28,Third round,3-6,Legs
-230,7,45,40,45,2025-02-28,Third round,6-5,Legs
-231,7,165,61,61,2025-02-28,Third round,3-6,Legs
-232,7,78,56,56,2025-02-28,Third round,3-6,Legs
-233,7,74,156,156,2025-02-28,Third round,3-6,Legs
-234,7,54,149,149,2025-02-28,Third round,3-6,Legs
-235,7,92,77,92,2025-02-28,Third round,6-3,Legs
-236,7,152,55,55,2025-02-28,Third round,5-6,Legs
-237,7,57,173,57,2025-02-28,Third round,6-4,Legs
-238,7,49,68,68,2025-02-28,Third round,4-6,Legs
-239,7,168,35,35,2025-02-28,Third round,4-6,Legs
-240,7,62,82,62,2025-02-28,Third round,6-1,Legs
-241,7,42,136,42,2025-02-28,Third round,6-2,Legs
-242,7,48,93,93,2025-02-28,Third round,4-6,Legs
-243,7,140,98,98,2025-02-28,Third round,4-6,Legs
-244,7,87,86,87,2025-02-28,Third round,6-4,Legs
-245,7,97,108,97,2025-02-28,Third round,6-4,Legs
-246,7,161,43,161,2025-02-28,Third round,6-2,Legs
-247,7,31,62,62,2025-02-28,Fourth round,6-10,Legs
-248,7,27,15,15,2025-02-28,Fourth round,2-10,Legs
-249,7,28,25,25,2025-02-28,Fourth round,6-10,Legs
-250,7,37,91,91,2025-02-28,Fourth round,9-10,Legs
-251,7,30,34,34,2025-02-28,Fourth round,4-10,Legs
-252,7,61,87,61,2025-02-28,Fourth round,10-6,Legs
-253,7,13,45,13,2025-02-28,Fourth round,10-9,Legs
-254,7,6,11,6,2025-02-28,Fourth round,10-3,Legs
-255,7,36,47,47,2025-02-28,Fourth round,7-10,Legs
-256,7,20,85,20,2025-02-28,Fourth round,10-7,Legs
-257,7,38,23,23,2025-02-28,Fourth round,5-10,Legs
-258,7,60,18,18,2025-02-28,Fourth round,4-10,Legs
-259,7,46,29,46,2025-02-28,Fourth round,10-9,Legs
-260,7,16,2,2,2025-02-28,Fourth round,9-10,Legs
-261,7,57,14,14,2025-02-28,Fourth round,7-10,Legs
-262,7,22,35,22,2025-02-28,Fourth round,10-6,Legs
-263,7,53,55,53,2025-02-28,Fourth round,10-7,Legs
-264,7,65,97,65,2025-02-28,Fourth round,10-7,Legs
-265,7,17,68,17,2025-02-28,Fourth round,10-7,Legs
-266,7,24,26,24,2025-02-28,Fourth round,10-8,Legs
-267,7,149,93,149,2025-02-28,Fourth round,10-6,Legs
-268,7,10,50,10,2025-02-28,Fourth round,10-2,Legs
-269,7,4,7,7,2025-02-28,Fourth round,6-10,Legs
-270,7,161,1,1,2025-02-28,Fourth round,7-10,Legs
-271,7,33,19,33,2025-02-28,Fourth round,10-4,Legs
-272,7,5,96,5,2025-02-28,Fourth round,10-3,Legs
-273,7,42,21,21,2025-02-28,Fourth round,6-10,Legs
-274,7,58,98,58,2025-02-28,Fourth round,10-7,Legs
-275,7,9,156,9,2025-02-28,Fourth round,4-10,Legs
-276,7,8,56,56,2025-02-28,Fourth round,9-10,Legs
-277,7,92,12,12,2025-02-28,Fourth round,5-10,Legs
-278,7,3,32,3,2025-02-28,Fourth round,10-8,Legs
-279,7,17,65,17,2025-03-01,Fifth round,10-9,Legs
-280,7,12,14,12,2025-03-01,Fifth round,10-9,Legs
-281,7,13,34,34,2025-03-01,Fifth round,8-10,Legs
-282,7,22,7,22,2025-03-01,Fifth round,10-9,Legs
-283,7,91,24,24,2025-03-01,Fifth round,3-10,Legs
-284,7,62,47,47,2025-03-01,Fifth round,3-10,Legs
-285,7,53,6,6,2025-03-01,Fifth round,7-10,Legs
-286,7,2,25,2,2025-03-01,Fifth round,10-4,Legs
-287,7,33,5,5,2025-03-01,Fifth round,9-10,Legs
-288,7,149,23,23,2025-03-01,Fifth round,2-10,Legs
-289,7,20,1,1,2025-03-01,Fifth round,0-10,Legs
-290,7,46,21,21,2025-03-01,Fifth round,7-10,Legs
-291,7,56,10,10,2025-03-01,Fifth round,7-10,Legs
-292,7,58,3,58,2025-03-01,Fifth round,10-8,Legs
-293,7,9,15,9,2025-03-01,Fifth round,10-9,Legs
-294,7,18,61,18,2025-03-01,Fifth round,10-7,Legs
-295,7,17,6,6,2025-03-01,Sixth round,4-10,Legs
-296,7,21,22,21,2025-03-01,Sixth round,10-3,Legs
-297,7,58,5,5,2025-03-01,Sixth round,8-10,Legs
-298,7,34,2,2,2025-03-01,Sixth round,8-10,Legs
-299,7,10,18,18,2025-03-01,Sixth round,9-10,Legs
-300,7,24,1,1,2025-03-01,Sixth round,2-10,Legs
-301,7,23,47,23,2025-03-01,Sixth round,10-8,Legs
-302,7,12,9,12,2025-03-01,Sixth round,10-6,Legs
-303,7,18,2,2,2025-03-02,Quarter-final,4-10,Legs
-304,7,12,23,12,2025-03-02,Quarter-final,10-7,Legs
-305,7,6,21,6,2025-03-02,Quarter-final,10-8,Legs
-306,7,5,1,5,2025-03-02,Quarter-final,10-9,Legs
-307,7,6,2,2,2025-03-02,Semi-final,6-11,Legs
-308,7,12,5,5,2025-03-02,Semi-final,2-11,Legs
-309,7,2,5,2,2025-03-02,Final,11-2,Legs
-310,8,8,3,3,2025-03-06,Quarter-final,3-6,Legs
-311,8,2,7,2,2025-03-06,Quarter-final,6-5,Legs
-312,8,9,1,9,2025-03-06,Quarter-final,6-4,Legs
-313,8,4,23,23,2025-03-06,Quarter-final,2-6,Legs
-314,8,3,2,2,2025-03-06,Semi-final,2-6,Legs
-315,8,9,23,23,2025-03-06,Semi-final,5-6,Legs
-316,8,2,23,2,2025-03-06,Final,6-3,Legs
-317,9,19,156,19,2025-03-07,First round,6-5,Legs
-318,9,17,121,17,2025-03-07,First round,6-3,Legs
-319,9,21,24,21,2025-03-07,First round,6-5,Legs
-320,9,18,67,18,2025-03-07,First round,6-4,Legs
-321,9,14,178,14,2025-03-07,First round,6-5,Legs
-322,9,33,55,55,2025-03-07,First round,5-6,Legs
-323,9,24,179,24,2025-03-07,First round,6-2,Legs
-324,9,27,64,27,2025-03-07,First round,6-1,Legs
-325,9,20,127,20,2025-03-07,First round,6-2,Legs
-326,9,31,180,31,2025-03-07,First round,6-4,Legs
-327,9,29,74,29,2025-03-07,First round,6-5,Legs
-328,9,28,80,28,2025-03-07,First round,6-4,Legs
-329,9,12,181,181,2025-03-07,First round,3-6,Legs
-330,9,35,86,35,2025-03-07,First round,6-4,Legs
-331,9,39,173,39,2025-03-07,First round,6-5,Legs
-332,9,32,99,32,2025-03-07,First round,6-4,Legs
-333,9,1,19,19,2025-03-08,Second round,4-6,Legs
-334,9,22,17,17,2025-03-08,Second round,3-6,Legs
-335,9,10,21,10,2025-03-08,Second round,6-0,Legs
-336,9,8,18,8,2025-03-08,Second round,6-2,Legs
-337,9,9,14,14,2025-03-08,Second round,2-6,Legs
-338,9,16,55,55,2025-03-08,Second round,2-6,Legs
-339,9,4,25,4,2025-03-08,Second round,6-3,Legs
-340,9,15,27,27,2025-03-08,Second round,2-6,Legs
-341,9,2,20,2,2025-03-08,Second round,6-3,Legs
-342,9,11,31,31,2025-03-08,Second round,2-6,Legs
-343,9,13,29,13,2025-03-08,Second round,6-3,Legs
-344,9,23,28,28,2025-03-08,Second round,5-6,Legs
-345,9,3,181,181,2025-03-08,Second round,4-6,Legs
-346,9,5,35,5,2025-03-08,Second round,6-4,Legs
-347,9,6,39,6,2025-03-08,Second round,6-5,Legs
-348,9,7,32,32,2025-03-08,Second round,5-6,Legs
-349,9,19,17,19,2025-03-09,Third round,6-3,Legs
-350,9,10,8,8,2025-03-09,Third round,3-6,Legs
-351,9,14,55,14,2025-03-09,Third round,6-4,Legs
-352,9,4,27,4,2025-03-09,Third round,6-2,Legs
-353,9,2,31,2,2025-03-09,Third round,6-4,Legs
-354,9,13,28,13,2025-03-09,Third round,6-5,Legs
-355,9,181,5,5,2025-03-09,Third round,4-6,Legs
-356,9,6,32,6,2025-03-09,Third round,6-5,Legs
-357,9,19,8,17,2025-03-09,Quarter-final,6-4,Legs
-358,9,14,4,14,2025-03-09,Quarter-final,6-5,Legs
-359,9,2,13,2,2025-03-09,Quarter-final,6-4,Legs
-360,9,5,6,5,2025-03-09,Quarter-final,6-4,Legs
-361,9,19,14,19,2025-03-09,Semi-final,7-6,Legs
-362,9,2,5,2,2025-03-09,Semi-final,7-3,Legs
-363,9,19,2,2,2025-03-09,Final,5-8,Legs
-364,10,1,2,2,2025-03-13,Quarter-final,4-6,Legs
-365,10,9,7,9,2025-03-13,Quarter-final,6-2,Legs
-366,10,4,8,8,2025-03-13,Quarter-final,4-6,Legs
-367,10,23,3,3,2025-03-13,Quarter-final,4-6,Legs
-368,10,2,9,2,2025-03-13,Semi-final,6-3,Legs
-369,10,8,3,8,2025-03-13,Semi-final,6-1,Legs
-370,10,2,8,8,2025-03-13,Final,3-6,Legs
-371,11,7,4,7,2025-03-20,Quarter-final,6-2,Legs
-372,11,1,3,3,2025-03-20,Quarter-final,4-6,Legs
-373,11,2,23,2,2025-03-20,Quarter-final,6-3,Legs
-374,11,8,9,9,2025-03-20,Quarter-final,5-6,Legs
-375,11,7,3,3,2025-03-20,Semi-final,1-6,Legs
-376,11,2,9,2,2025-03-20,Semi-final,6-2,Legs
-377,11,3,2,2,2025-03-20,Final,4-6,Legs
-378,12,32,181,181,2025-03-21,First round,4-6,Legs
-379,12,29,183,29,2025-03-21,First round,6-3,Legs
-380,12,28,42,28,2025-03-21,First round,6-2,Legs
-381,12,25,184,25,2025-03-21,First round,6-2,Legs
-382,12,17,85,17,2025-03-21,First round,6-2,Legs
-383,12,31,95,31,2025-03-21,First round,6-4,Legs
-384,12,35,45,45,2025-03-21,First round,4-6,Legs
-385,12,14,185,14,2025-03-21,First round,6-1,Legs
-386,12,27,72,72,2025-03-21,First round,4-6,Legs
-387,12,18,56,18,2025-03-21,First round,6-5,Legs
-388,12,20,186,20,2025-03-21,First round,6-0,Legs
-389,12,39,187,39,2025-03-21,First round,6-5,Legs
-390,12,26,41,26,2025-03-21,First round,6-2,Legs
-391,12,24,30,24,2025-03-21,First round,6-0,Legs
-392,12,33,53,33,2025-03-21,First round,6-2,Legs
-393,12,19,38,19,2025-03-21,First round,6-3,Legs
-394,12,1,181,1,2025-03-22,Second round,6-4,Legs
-395,12,21,29,21,2025-03-22,Second round,6-2,Legs
-396,12,23,28,23,2025-03-22,Second round,6-5,Legs
-397,12,7,25,25,2025-03-22,Second round,4-6,Legs
-398,12,6,17,17,2025-03-22,Second round,1-6,Legs
-399,12,11,31,11,2025-03-22,Second round,6-4,Legs
-400,12,13,45,13,2025-03-22,Second round,6-1,Legs
-401,12,5,14,14,2025-03-22,Second round,2-6,Legs
-402,12,3,72,3,2025-03-22,Second round,6-5,Legs
-403,12,12,18,18,2025-03-22,Second round,4-6,Legs
-404,12,8,20,8,2025-03-22,Second round,6-4,Legs
-405,12,15,39,39,2025-03-22,Second round,5-6,Legs
-406,12,9,26,9,2025-03-22,Second round,6-4,Legs
-407,12,22,24,24,2025-03-22,Second round,4-6,Legs
-408,12,10,33,33,2025-03-22,Second round,5-6,Legs
-409,12,16,19,19,2025-03-22,Second round,4-6,Legs
-410,12,1,21,1,2025-03-23,Third round,6-5,Legs
-411,12,23,25,23,2025-03-23,Third round,6-5,Legs
-412,12,17,11,11,2025-03-23,Third round,5-6,Legs
-413,12,13,14,14,2025-03-23,Third round,4-6,Legs
-414,12,3,18,3,2025-03-23,Third round,6-4,Legs
-415,12,8,39,8,2025-03-23,Third round,6-3,Legs
-416,12,9,24,24,2025-03-23,Third round,4-6,Legs
-417,12,33,19,33,2025-03-23,Third round,6-5,Legs
-418,12,1,23,23,2025-03-23,Quarter-final,1-6,Legs
-419,12,11,14,11,2025-03-23,Quarter-final,6-5,Legs
-420,12,3,8,3,2025-03-23,Quarter-final,6-4,Legs
-421,12,24,33,24,2025-03-23,Quarter-final,6-3,Legs
-422,12,23,11,23,2025-03-23,Semi-final,7-6,Legs
-423,12,3,24,24,2025-03-23,Semi-final,5-7,Legs
-424,12,23,24,23,2025-03-23,Final,8-4,Legs
-425,13,2,4,2,2025-03-27,Quarter-final,6-0,Legs
-426,13,8,9,9,2025-03-27,Quarter-final,2-6,Legs
-427,13,1,7,1,2025-03-27,Quarter-final,6-3,Legs
-428,13,3,23,23,2025-03-27,Quarter-final,5-6,Legs
-429,13,1,9,1,2025-03-27,Semi-final,6-3,Legs
-430,13,1,23,1,2025-03-27,Semi-final,6-5,Legs
-431,13,2,1,2,2025-03-27,Final,6-1,Legs
-432,14,23,4,4,2025-04-03,Quarter-final,2-6,Legs
-433,14,1,9,1,2025-04-03,Quarter-final,6-3,Legs
-434,14,7,2,7,2025-04-03,Quarter-final,6-2,Legs
-435,14,4,1,4,2025-04-03,Semi-final,6-2,Legs
-436,14,7,8,8,2025-04-03,Semi-final,2-6,Legs
-437,14,4,8,4,2025-04-03,Final,6-5,Legs
-438,15,32,72,32,2025-04-04,First round,6-3,Legs
-439,15,29,34,29,2025-04-04,First round,6-2,Legs
-440,15,41,68,68,2025-04-04,First round,4-6,Legs
-441,15,20,99,99,2025-04-04,First round,3-6,Legs
-442,15,33,188,33,2025-04-04,First round,6-0,Legs
-443,15,35,189,35,2025-04-04,First round,6-1,Legs
-444,15,25,75,25,2025-04-04,First round,4-6,Legs
-445,15,26,47,26,2025-04-04,First rond,6-3,Legs
-446,15,18,190,18,2025-04-04,First round,6-1,Legs
-447,15,19,183,19,2025-04-04,First round,6-3,Legs
-448,15,30,58,30,2025-04-04,First round,6-1,Legs
-449,15,17,156,17,2025-04-04,First round,6-2,Legs
-450,15,21,64,64,2025-04-04,First round,3-6,Legs
-451,15,31,55,31,2025-04-04,First round,6-3,Legs
-452,15,28,191,28,2025-04-04,First round,6-4,Legs
-453,15,1,32,1,2025-04-05,Second round,6-1,Legs
-454,15,14,29,14,2025-04-05,Second round,6-2,Legs
-455,15,10,68,10,2025-04-05,Second round,6-2,Legs
-456,15,7,39,39,2025-04-05,Second round,3-6,Legs
-457,15,4,99,4,2025-04-05,Second round,6-4,Legs
-458,15,5,33,33,2025-04-05,Second round,5-6,Legs
-459,15,6,35,35,2025-04-05,Second round,2-6,Legs
-460,15,15,75,75,2025-04-05,Second round,4-6,Legs
-461,15,49,26,26,2025-04-05,Second round,0-6,Legs
-462,15,12,18,12,2025-04-05,Second round,6-4,Legs
-463,15,8,19,8,2025-04-05,Second round,6-4,Legs
-464,15,23,30,23,2025-04-05,Second round,6-1,Legs
-465,15,22,64,22,2025-04-05,Second round,6-4,Legs
-466,15,13,31,13,2025-04-05,Second round,6-2,Legs
-467,15,16,28,16,2025-04-05,Second round,6-5,Legs
-468,15,1,14,1,2025-04-06,Third round,6-2,Legs
-469,15,10,39,39,2025-04-06,Third round,2-6,Legs
-470,15,4,33,4,2025-04-06,Third round,6-4,Legs
-471,15,35,75,75,2025-04-06,Third round,5-6,Legs
-472,15,26,12,12,2025-04-06,Third round,4-6,Legs
-473,15,8,23,23,2025-04-06,Third round,5-6,Legs
-474,15,17,22,17,2025-04-06,Third round,6-0,Legs
-475,15,13,16,16,2025-04-06,Third round,1-6,Legs
-476,15,1,39,1,2025-04-06,Quarter-final,6-3,Legs
-477,15,4,75,4,2025-04-06,Quarter-final,6-2,Legs
-478,15,12,23,23,2025-04-06,Quarter-final,2-6,Legs
-479,15,17,16,17,2025-04-06,Quarter-final,6-2,Legs
-480,15,1,4,4,2025-04-06,Semi-final,6-7,Legs
-481,15,23,17,23,2025-04-06,Semi-final,7-4,Legs
-482,15,4,23,4,2025-04-06,Final,8-5,Legs
-483,16,7,3,3,2025-04-10,Quarter-final,4-6,Legs
-484,16,23,9,23,2025-04-10,Quarter-final,6-2,Legs
-485,16,2,8,2,2025-04-10,Quarter-final,6-3,Legs
-486,16,4,1,1,2025-04-10,Quarter-final,1-6,Legs
-487,16,3,23,23,2025-04-10,Semi-final,2-6,Legs
-488,16,2,1,1,2025-04-10,Semi-final,4-6,Legs
-489,16,23,1,23,2025-04-10,Final,6-4,Legs
-490,17,7,1,7,2025-04-17,Quarter-final,6-3,Legs
-491,17,8,23,23,2025-04-17,Quarter-final,3-6,Legs
-492,17,4,3,4,2025-04-17,Quarter-final,6-5,Legs
-493,17,2,9,2,2025-04-17,Quarter-final,6-5,Legs
-494,17,7,23,7,2025-04-17,Semi-final,6-2,Legs
-495,17,4,2,4,2025-04-17,Semi-final,6-5,Legs
-496,17,7,4,7,2025-04-17,Final,6-2,Legs
-497,18,31,86,86,2025-04-19,First round,5-6,Legs
-498,18,28,43,43,2025-04-19,First round,4-6,Legs
-499,18,19,192,19,2025-04-19,First round,6-3,Legs
-500,18,46,88,46,2025-04-19,First round,6-3,Legs
-501,18,17,68,17,2025-04-19,First round,6-3,Legs
-502,18,32,148,32,2025-04-19,First round,6-1,Legs
-503,18,25,185,25,2025-04-19,First round,6-3,Legs
-504,18,50,194,50,2025-04-19,First round,6-0,Legs
-505,18,33,42,33,2025-04-19,First round,6-4,Legs
-506,18,24,195,24,2025-04-19,First round,6-1,Legs
-507,18,27,44,44,2025-04-19,First round,3-6,Legs
-508,18,29,174,29,2025-04-19,First round,6-1,Legs
-509,18,62,34,34,2025-04-19,First round,5-6,Legs
-510,18,35,196,35,2025-04-19,First round,6-3,Legs
-511,18,39,36,36,2025-04-19,First round,4-6,Legs
-512,18,2,86,2,2025-04-20,Second round,6-1,Legs
-513,18,30,43,30,2025-04-20,Second round,6-2,Legs
-514,18,16,19,16,2025-04-20,Second round,6-3,Legs
-515,18,15,46,46,2025-04-20,Second round,2-6,Legs
-516,18,6,17,17,2025-04-20,Second round,1-6,Legs
-517,18,26,18,18,2025-04-20,Second round,4-6,Legs
-518,18,13,32,13,2025-04-20,Second round,6-3,Legs
-519,18,14,25,14,2025-04-20,Second round,6-4,Legs
-520,18,3,50,3,2025-04-20,Second round,6-5,Legs
-521,18,20,33,20,2025-04-20,Second round,6-2,Legs
-522,18,10,24,24,2025-04-20,Second round,0-6,Legs
-523,18,5,44,44,2025-04-20,Second round,2-6,Legs
-524,18,21,34,34,2025-04-20,Second round,4-6,Legs
-525,18,8,35,8,2025-04-20,Second round,6-3,Legs
-526,18,12,36,12,2025-04-20,Second round,6-2,Legs
-527,18,2,30,2,2025-04-21,Third round,6-3,Legs
-528,18,16,46,16,2025-04-21,Third round,6-4,Legs
-529,18,17,18,18,2025-04-21,Third round,4-6,Legs
-530,18,13,14,14,2025-04-21,Third round,2-6,Legs
-531,18,3,20,3,2025-04-21,Third round,6-1,Legs
-532,18,24,44,24,2025-04-21,Third round,6-4,Legs
-533,18,9,34,34,2025-04-21,Third round,4-6,Legs
-534,18,8,12,12,2025-04-21,Third round,4-6,Legs
-535,18,2,16,2,2025-04-21,Quarter-final,6-5,Legs
-536,18,18,14,18,2025-04-21,Quarter-final,6-3,Legs
-537,18,3,24,3,2025-04-21,Quarter-final,6-4,Legs
-538,18,34,12,12,2025-04-21,Quarter-final,5-6,Legs
-539,18,2,18,18,2025-04-21,Semi-final,4-7,Legs
-540,18,3,12,3,2025-04-21,Semi-final,7-2,Legs
-541,18,3,18,3,2025-04-21,Final,5-8,Legs
-542,19,1,23,1,2025-04-24,Quarter-final,6-3,Legs
-543,19,3,2,3,2025-04-24,Quarter-final,6-5,Legs
-544,19,9,4,9,2025-04-24,Quarter-final,6-1,Legs
-545,19,8,7,8,2025-04-24,Quarter-final,6-2,Legs
-546,19,1,3,1,2025-04-24,Semi-final,6-4,Legs
-547,19,9,8,8,2025-04-24,Semi-final,2-6,Legs
-548,19,1,8,8,2025-04-24,Final,4-6,Legs
-549,20,25,197,25,2025-04-25,First round,6-0,Legs
-550,20,28,62,62,2025-04-25,First round,3-6,Legs
-551,20,70,72,72,2025-04-25,First round,1-6,Legs
-552,20,34,43,34,2025-04-25,First round,6-3,Legs
-553,20,42,78,42,2025-04-25,First round,6-3,Legs
-554,20,74,226,74,2025-04-25,First round,6-2,Legs
-555,20,29,141,29,2025-04-25,First round,6-3,Legs
-556,20,39,47,39,2025-04-25,First round,6-4,Legs
-557,20,83,55,55,2025-04-25,First round,5-6,Legs
-558,20,32,198,32,2025-04-25,First round,6-1,Legs
-559,20,31,82,31,2025-04-25,First round,6-5,Legs
-560,20,26,69,69,2025-04-25,First round,5-6,Legs
-561,20,35,75,75,2025-04-25,First round,2-6,Legs
-562,20,64,199,64,2025-04-25,First round,6-3,Legs
-563,20,46,48,48,2025-04-25,First round,5-6,Legs
-564,20,24,200,24,2025-04-25,First round,6-4,Legs
-565,20,6,25,25,2025-04-26,Second round,3-6,Legs
-566,20,27,62,27,2025-04-26,Second round,6-1,Legs
-567,20,15,72,15,2025-04-26,Second round,6-5,Legs
-568,20,12,34,12,2025-04-26,Second round,6-4,Legs
-569,20,23,42,42,2025-04-26,Second round,2-6,Legs
-570,20,17,74,17,2025-04-26,Second round,6-3,Legs
-571,20,7,29,7,2025-04-26,Second round,6-1,Legs
-572,20,19,39,39,2025-04-26,Second round,4-6,Legs
-573,20,4,55,55,2025-04-26,Second round,4-6,Legs
-574,20,18,32,32,2025-04-26,Second round,1-6,Legs
-575,20,14,69,14,2025-04-26,Second round,6-1,Legs
-576,20,10,75,10,2025-04-26,Second round,6-5,Legs
-577,20,30,64,30,2025-04-26,Second round,6-2,Legs
-578,20,13,48,13,2025-04-26,Second round,6-3,Legs
-579,20,20,24,24,2025-04-26,Second round,1-6,Legs
-580,20,25,27,27,2025-04-27,Third round,1-6,Legs
-581,20,15,12,12,2025-04-27,Third round,5-6,Legs
-582,20,42,17,17,2025-04-27,Third round,5-6,Legs
-583,20,7,39,7,2025-04-27,Third round,6-1,Legs
-584,20,55,32,32,2025-04-27,Third round,4-6,Legs
-585,20,16,14,14,2025-04-27,Third round,5-6,Legs
-586,20,10,30,10,2025-04-27,Third round,6-5,Legs
-587,20,13,24,24,2025-04-27,Third round,3-6,Legs
-588,20,27,12,12,2025-04-27,Quarter-final,3-6,Legs
-589,20,17,7,17,2025-04-27,Quarter-final,6-4,Legs
-590,20,32,14,14,2025-04-27,Quarter-final,4-6,Legs
-591,20,10,24,24,2025-04-27,Quarter-final,1-6,Legs
-592,20,12,17,17,2025-04-27,Semi-final,6-7,Legs
-593,20,14,24,14,2025-04-27,Semi-final,7-4,Legs
-594,20,17,14,17,2025-04-27,Final,8-4,Legs
-595,21,2,4,2,2025-05-01,Quarter-final,6-5,Legs
-596,21,23,7,23,2025-05-01,Quarter-final,6-3,Legs
-597,21,1,8,8,2025-05-01,Quarter-final,5-6,Legs
-598,21,9,3,3,2025-05-01,Quarter-final,4-6,Legs
-599,21,1,23,1,2025-05-01,Semi-final,6-5,Legs
-600,21,8,3,3,2025-05-01,Semi-final,3-6,Legs
-601,21,2,3,2,2025-05-01,Final,6-4,Legs
-602,22,28,56,56,2025-05-02,First round,2-6,Legs
-603,22,25,183,183,2025-05-02,First round,3-6,Legs
-604,22,31,192,31,2025-05-02,First round,6-3,Legs
-605,22,14,187,14,2025-05-02,First round,6-0,Legs
-606,22,26,40,26,2025-05-02,First round,6-5,Legs
-607,22,39,73,39,2025-05-02,First round,6-2,Legs
-608,22,33,185,33,2025-05-02,First round,6-2,Legs
-609,22,24,142,142,2025-05-02,First round,3-6,Legs
-610,22,47,32,32,2025-05-02,First round,2-6,Legs
-611,22,17,41,17,2025-05-02,First round,6-3,Legs
-612,22,20,44,44,2025-05-02,First round,1-6,Legs
-613,22,30,201,30,2025-05-02,First round,6-0,Legs
-614,22,19,101,19,2025-05-02,First round,6-4,Legs
-615,22,18,82,18,2025-05-02,First round,6-3,Legs
-616,22,38,202,38,2025-05-02,First round,6-3,Legs
-617,22,35,34,35,2025-05-02,First round,6-3,Legs
-618,22,1,56,1,2025-05-03,Second round,6-1,Legs
-619,22,21,183,21,2025-05-03,Second round,6-5,Legs
-620,22,7,31,31,2025-05-03,Second round,4-6,Legs
-621,22,13,14,14,2025-05-03,Second round,3-6,Legs
-622,22,6,26,26,2025-05-03,Second round,5-6,Legs
-623,22,15,39,15,2025-05-03,Second round,6-5,Legs
-624,22,4,33,33,2025-05-03,Second round,2-6,Legs
-625,22,16,142,16,2025-05-03,Second round,6-4,Legs
-626,22,3,32,32,2025-05-03,Second round,3-6,Legs
-627,22,12,17,17,2025-05-03,Second round,4-6,Legs
-628,22,23,44,44,2025-05-03,Second round,2-6,Legs
-629,22,5,30,5,2025-05-03,Second round,6-4,Legs
-630,22,9,19,9,2025-05-03,Second round,6-3,Legs
-631,22,11,18,11,2025-05-03,Second round,6-5,Legs
-632,22,10,38,38,2025-05-03,Second round,2-6,Legs
-633,22,8,35,35,2025-05-03,Second round,5-6,legs
-634,22,1,21,21,2025-05-04,Third round,5-6,Legs
-635,22,31,14,31,2025-05-04,Third round,6-3,Legs
-636,22,26,15,26,2025-05-04,Third round,6-3,Legs
-637,22,33,16,16,2025-05-04,Third round,5-6,Legs
-638,22,32,17,32,2025-05-04,Third round,6-2,Legs
-639,22,44,5,5,2025-05-04,Third round,2-6,Legs
-640,22,9,11,11,2025-05-04,Third round,3-6,Legss
-641,22,38,35,38,2025-05-04,Third round,6-5,Legs
-642,22,16,31,31,2025-05-04,Quarter-final,5-6,Legs
-643,22,26,16,26,2025-05-04,Quarter-final,6-1,Legs
-644,22,32,5,32,2025-05-04,Quarter-final,6-5,Legs
-645,22,11,38,11,2025-05-04,Quarter-final,6-5,Legs
-646,22,31,26,26,2025-05-04,Semi-final,3-7,Legs
-647,22,32,11,11,2025-05-04,Semi-final,2-7,Legs
-648,22,26,11,11,2025-05-04,Final,0-8,Legs
-649,23,9,8,8,2025-05-08,Quarter-final,5-6,Legs
-650,23,23,2,2,2025-05-08,Quarter-final,4-6,Legs
-651,23,3,1,1,2025-05-08,Quarter-final,4-6,Legs
-652,23,4,7,4,2025-05-08,Quarter-final,6-5,Legs
-653,23,8,2,2,2025-05-08,Semi-final,3-6,Legs
-654,23,1,4,1,2025-05-08,Semi-final,6-4,Legs
-655,23,2,1,1,2025-05-08,Final,5-6,Legs
-656,24,3,23,23,2025-05-15,Quarter-final,3-6,Legs
-657,24,8,4,4,2025-05-15,Quarter-final,4-6,Legs
-658,24,7,9,7,2025-05-15,Quarter-final,6-2,Legs
-659,24,2,1,2,2025-05-15,Quarter-final,6-3,Legs
-660,24,23,4,23,2025-05-15,Semi-final,6-1,Legs
-661,24,7,2,7,2025-05-15,Semi-final,6-5,Legs
-662,24,23,7,23,2025-05-15,Final,6-1,Legs
-663,25,2,4,2,2025-05-22,Quarter-final,6-1,Legs
-664,25,23,3,23,2025-05-22,Quarter-final,6-2,Legs
-665,25,1,9,1,2025-05-22,Quarter-final,6-4,Legs
-666,25,8,7,7,2025-05-22,Quarter-final,5-6,Legs
-667,25,2,23,2,2025-05-22,Semi-final,6-4,Legs
-668,25,1,7,1,2025-05-22,Semi-final,6-2,Legs
-669,25,2,1,1,2025-05-22,Final,6-3,Legs
-670,26,33,102,33,2025-05-23,First round,6-5,Legs
-671,26,24,119,24,2025-05-23,First round,6-5,Legs
-672,26,18,181,181,2025-05-23,First round,5-6,Legs
-673,26,28,50,28,2025-05-23,First round,6-5,Legs
-674,26,31,101,101,2025-05-23,First round,3-6,Legs
-675,26,35,203,35,2025-05-23,First round,6-5,Legs
-676,26,26,204,204,2025-05-23,First round,2-6,Legs
-677,26,44,68,68,2025-05-23,First round,4-6,Legs
-678,26,19,43,43,2025-05-23,First round,5-6,Legs
-679,26,30,63,63,2025-05-23,First round,1-6,Legs
-680,26,32,200,32,2025-05-23,First round,6-0,Legs
-681,26,39,78,39,2025-05-23,First round,6-5,Legs
-682,26,25,72,72,2025-05-23,First round,3-6,Legs
-683,26,38,70,38,2025-05-23,First round,6-2,Legs
-684,26,27,177,27,2025-05-23,First round,6-4,Legs
-685,26,29,75,29,2025-05-23,First round,6-1,Legs
-686,26,1,33,1,2025-05-24,Second round,6-5,Legs
-687,26,21,24,21,2025-05-24,Second round,6-5,Legs
-688,26,47,181,47,2025-05-24,Second round,6-3,Legs
-689,26,13,28,28,2025-05-24,Second round,5-6,Legs
-690,26,6,101,6,2025-05-24,Second round,6-2,Legs
-691,26,14,35,14,2025-05-24,Second round,6-2,Legs
-692,26,10,200,10,2025-05-24,Second round,6-3,Legs
-693,26,15,68,15,2025-05-24,Second round,6-2,Legs
-694,26,20,63,20,2025-05-24,Second round,6-4,Legs
-695,26,5,32,32,2025-05-24,Second round,3-6,Legs
-696,26,16,39,39,2025-05-24,Second round,1-6,Legs
-697,26,4,72,72,2025-05-24,Second round,5-6,Legs
-698,26,17,38,17,2025-05-24,Second round,6-4,Legs
-699,26,7,27,27,2025-05-24,Second round,5-6,Legs
-700,26,12,29,29,2025-05-24,Second round,4-6,Legs
-701,26,1,16,1,2025-05-25,Third round,6-0,Legs
-702,26,47,28,47,2025-05-25,Third round,6-3,Legs
-703,26,6,14,6,2025-05-25,Third round,6-5,Legs
-704,26,10,15,15,2025-05-25,Third round,5-6,Legs
-705,26,43,20,20,2025-05-25,Third round,0-6,Legs
-706,26,32,39,39,2025-05-25,Third round,5-6,Legs
-707,26,72,17,72,2025-05-25,Third round,6-2,Legs
-708,26,27,29,29,2025-05-25,Third round,5-6,Legs
-709,26,1,47,1,2025-05-25,Quarter-final,6-3,Legs
-710,26,6,15,6,2025-05-25,Quarter-final,6-4,Legs
-711,26,20,39,39,2025-05-25,Quarter-final,1-6,Legs
-712,26,72,29,72,2025-05-25,Quarter-final,6-2,Legs
-713,26,1,6,6,2025-05-25,Semi-final,5-7,Legs
-714,26,39,72,72,2025-05-25,Semi-final,3-7,Legs
-715,26,6,72,6,2025-05-25,Final,8-6,Legs
-716,27,2,8,2,2025-05-29,Semi-final,10-7,Legs
-717,27,1,23,1,2025-05-29,Semi-final,10-7,Legs
-718,27,1,2,1,2025-05-29,Final,8-11,Legs
-719,28,1,205,1,2025-05-30,First round,6-2,Legs
-720,28,27,49,27,2025-05-30,First round,6-2,Legs
-721,28,46,127,127,2025-05-30,First round,3-6,Legs
-722,28,39,37,39,2025-05-30,First round,6-3,Legs
-723,28,32,72,72,2025-05-30,First round,1-6,Legs
-724,28,26,188,26,2025-05-30,First round,6-1,Legs
-725,28,30,73,73,2025-05-30,First round,5-6,Legs
-726,28,29,206,29,2025-05-30,First round,6-2,Legs
-727,28,25,207,25,2025-05-30,First round,6-0,Legs
-728,28,20,45,20,2025-05-30,First round,6-3,Legs
-729,28,33,50,33,2025-05-30,First round,6-4,Legs
-730,28,28,191,28,2025-05-30,First round,6-2,Legs
-731,28,47,43,43,2025-05-30,First round,5-6,Legs
-732,28,35,158,158,2025-05-30,First round,3-6,Legs
-733,28,44,70,70,2025-05-30,First round,5-6,Legs
-734,28,55,53,55,2025-05-30,First round,6-4,Legs
-735,28,4,31,4,2025-05-31,Second round,6-3,Legs
-736,28,18,27,27,2025-05-31,Second round,2-6,Legs
-737,28,16,127,16,2025-05-31,Second round,6-5,Legs
-738,28,11,39,39,2025-05-31,Second round,4-6,Legs
-739,28,7,72,7,2025-05-31,Second round,6-5,Legs
-740,28,20,26,26,2025-05-31,Second round,5-6,Legs
-741,28,23,73,23,2025-05-31,Second round,6-4,Legs
-742,28,17,29,29,2025-05-31,Second round,4-6,Legs
-743,28,6,25,6,2025-05-31,Second round,6-4,Legs
-744,28,19,24,19,2025-05-31,Second round,6-3,Legs
-745,28,13,33,33,2025-05-31,Second round,5-6,Legs
-746,28,15,28,28,2025-05-31,Second round,2-6,Legs
-747,28,10,43,10,2025-05-31,Second round,6-2,Legs
-748,28,16,158,158,2025-05-31,Second round,1-6,Legs
-749,28,5,70,5,2025-05-31,Second round,6-0,Legs
-750,28,14,55,55,2025-05-31,Second round,2-6,Legs
-751,28,4,27,4,2025-06-01,Third round,6-5,Legs
-752,28,16,39,39,2025-06-01,Third round,4-6,Legs
-753,28,7,26,7,2025-06-01,Third round,6-3,Legs
-754,28,23,29,23,2025-06-01,Third round,6-3,Legs
-755,28,6,19,6,2025-06-01,Third round,6-0,Legs
-756,28,33,28,33,2025-06-01,Third round,6-3,Legs
-757,28,10,158,10,2025-06-01,Third round,6-4,Legs
-758,28,5,55,55,2025-06-01,Third round,3-6,Legs
-759,28,4,39,39,2025-06-01,Quarter-final,5-6,Legs
-760,28,7,23,23,2025-06-01,Quarter-final,5-6,Legs
-761,28,6,33,6,2025-06-01,Quarter-final,6-3,Legs
-762,28,10,55,10,2025-06-01,Quarter-final,6-5,Legs
-763,28,39,23,23,2025-06-01,Semi-final,6-7,Legs
-764,28,6,10,10,2025-06-01,Semi-final,3-7,Legs
-765,28,23,10,23,2025-06-01,Final,8-6,Legs
-766,29,7,52,7,2025-06-06,First round,6-2,Legs
-767,29,8,162,8,2025-06-06,First round,6-3,Legs
-768,29,9,158,9,2025-06-06,First round,6-4,Legs
-769,29,1,46,1,2025-06-06,First round,6-5,Legs
-770,29,23,94,23,2025-06-06,First round,6-0,Legs
-771,29,2,166,2,2025-06-06,First round,6-3,Legs
-772,29,4,155,4,2025-06-06,First round,6-3,Legs
-773,29,6,99,6,2025-06-06,First round,6-5,Legs
-774,29,4,6,4,2025-06-07,Quarter-final,6-3,Legs
-775,29,2,23,23,2025-06-07,Quarter-final,3-6,Legs
-776,29,9,7,9,2025-06-07,Quarter-final,6-0,Legs
-777,29,8,1,8,2025-06-07,Quarter-final,6-3,Legs
-778,29,4,23,4,2025-06-07,Semi-final,7-5,Legs
-779,29,9,8,9,2025-06-07,Semi-final,7-4,Legs
-780,29,4,9,4,2025-06-07,Final,8-4,Legs
-781,30,10,121,10,2025-06-28,First round,6-1,Legs
-782,30,9,91,91,2025-06-28,First round,0-6,Legs
-783,30,4,208,208,2025-06-28,First round,4-6,Legs
-784,30,8,209,8,2025-06-28,First round,6-2,Legs
-785,30,2,144,2,2025-06-28,First round,6-1,Legs
-786,30,23,55,23,2025-06-28,First round,6-2,Legs
-787,30,1,104,1,2025-06-28,First round,6-4,Legs
-788,30,3,112,3,2025-06-28,First round,6-1,Legs
-789,30,208,10,10,2025-06-29,Quarter-final,0-6,Legs
-790,30,2,23,23,2025-06-29,Quarter-final,4-6,Legs
-791,30,91,1,1,2025-06-29,Quarter-final,2-6,Legs
-792,30,8,3,8,2025-06-29,Quarter-final,6-3,Legs
-793,30,10,23,23,2025-06-29,Semi-final,3-7,Legs
-794,30,1,8,1,2025-06-29,Semi-final,7-2,Legs
-795,30,23,1,1,2025-06-29,Final,6-8,Legs
-796,31,7,198,7,2025-07-04,First round,6-1,Legs
-797,31,8,79,8,2025-07-04,First round,6-3,Legs
-798,31,9,210,9,2025-07-04,First round,6-2,Legs
-799,31,3,225,3,2025-07-04,First round,6-4,Legs
-800,31,4,150,4,2025-07-04,First round,6-3,Legs
-801,31,2,75,2,2025-07-04,First round,6-4,Legs
-802,31,6,34,34,2025-07-04,First round,3-6,Legs
-803,31,23,87,23,2025-07-04,First round,6-4,Legs
-804,31,4,34,4,2025-07-05,Quarter-final,6-5,Legs
-805,31,23,2,2,2025-07-05,Quarter-final,3-6,Legs
-806,31,8,7,8,2025-07-05,Quarter-final,6-2,Legs
-807,31,9,3,9,2025-07-05,Quarter-final,6-4,Legs
-808,31,4,2,4,2025-07-05,Semi-final,7-5,Legs
-809,31,8,9,8,2025-07-05,Semi-final,7-3,Legs
-810,31,4,8,8,2025-07-05,Final,7-8,Legs
-811,32,43,211,43,2025-07-11,First round,6-3,Legs
-812,32,33,212,33,2025-07-11,First round,6-5,Legs
-813,32,39,213,39,2025-07-11,First round,6-3,Legs
-814,32,47,150,47,2025-07-11,First round,6-5,Legs
-815,32,29,79,29,2025-07-11,First round,6-2,Legs
-816,32,19,62,19,2025-07-11,First round,6-2,Legs
-817,32,32,63,32,2025-07-11,First round,6-2,Legs
-818,32,50,48,50,2025-07-11,First round,6-3,Legs
-819,32,72,214,72,2025-07-11,First round,6-2,Legs
-820,32,25,41,25,2025-07-11,First round,6-1,Legs
-821,32,31,215,31,2025-07-11,First round,6-2,Legs
-822,32,27,38,27,2025-07-11,First round,6-4,Legs
-823,32,18,192,18,2025-07-11,First round,6-0,Legs
-824,32,30,92,92,2025-07-11,First round,3-6,Legs
-825,32,35,71,71,2025-07-11,First round,4-6,Legs
-826,32,49,34,34,2025-07-11,First round,2-6,Legs
-827,32,1,43,1,2025-07-12,Second round,6-5,Legs
-828,32,20,33,20,2025-07-12,Second round,6-3,Legs
-829,32,10,39,39,2025-07-12,Second round,3-6,Legs
-830,32,8,47,8,2025-07-12,Second round,6-1,Legs
-831,32,23,29,23,2025-07-12,Second round,6-4,Legs
-832,32,15,19,15,2025-07-12,Second round,6-3,Legs
-833,32,7,32,7,2025-07-12,Second round,6-3,Legs
-834,32,14,50,14,2025-07-12,Second round,6-0,Legs
-835,32,4,72,72,2025-07-12,Second round,2-6,Legs
-836,32,15,25,15,2025-07-12,Second round,6-3,Legs
-837,32,5,31,5,2025-07-12,Second round,6-1,Legs
-838,32,13,27,27,2025-07-12,Second round,3-6,Legs
-839,32,6,18,6,2025-07-12,Second round,6-4,Legs
-840,32,12,92,12,2025-07-12,Second round,6-1,Legs
-841,32,9,71,71,2025-07-12,Second round,2-6,Legs
-842,32,11,34,11,2025-07-12,Second round,6-2,Legs
-843,32,1,20,1,2025-07-13,Third round,6-0,Legs
-844,32,39,8,8,2025-07-13,Third round,5-6,Legs
-845,32,23,15,15,2025-07-13,Third round,2-6,Legs
-846,32,7,21,7,2025-07-13,Third round,6-3,Legs
-847,32,72,17,17,2025-07-13,Third round,4-6,Legs
-848,32,5,27,5,2025-07-13,Third round,6-5,Legs
-849,32,6,12,6,2025-07-13,Third round,6-2,Legs
-850,32,71,11,11,2025-07-13,Third round,3-6,Legs
-851,32,1,8,8,2025-07-13,Quarter-final,3-6,Legs
-852,32,15,7,7,2025-07-13,Quarter-final,1-6,Legs
-853,32,17,5,5,2025-07-13,Quarter-final,3-6,Legs
-854,32,5,11,11,2025-07-13,Quarter-final,1-6,Legs
-855,32,8,7,8,2025-07-13,Semi-final,7-3,Legs
-856,32,5,11,11,2025-07-13,Semi-final,1-7,Legs
-857,32,8,11,8,2025-07-13,Final,8-3,Legs
-858,33,5,30,5,2025-07-19,First round,10-3,Legs
-859,33,15,33,15,2025-07-19,First round,10-2,Legs
-860,33,1,18,18,2025-07-19,First round,8-10,Legs
-861,33,23,39,39,2025-07-19,First round,6-10,Legs
-862,33,10,26,26,2025-07-20,First round,10-12,Legs
-863,33,9,32,32,2025-07-20,First round,8-10,Legs
-864,33,16,25,25,2025-07-20,First round,8-10,Legs
-865,33,13,19,19,2025-07-20,First round,7-10,Legs
-866,33,11,31,11,2025-07-20,First round,10-5,Legs
-867,33,6,17,6,2025-07-20,First round,10-7,Legs
-868,33,2,20,2,2025-07-20,First round,10-2,Legs
-869,33,4,24,4,2025-07-20,First round,10-8,Legs
-870,33,7,29,7,2025-07-21,First round,10-5,Legs
-871,33,8,27,8,2025-07-21,First round,10-7,Legs
-872,33,3,35,3,2025-07-21,First round,10-6,Legs
-873,33,14,12,12,2025-07-21,First round,5-10,Legs
-874,33,18,15,18,2025-07-22,Second round,11-5,Legs
-875,33,39,5,5,2025-07-22,Second round,5-11,Legs
-876,33,4,11,4,2025-07-22,Second round,12-10,Legs
-877,33,6,19,6,2025-07-22,Second round,11-8,Legs
-878,33,26,32,26,2025-07-23,Second reound,11-5,Legs
-879,33,7,8,8,2025-07-23,Second round,3-11,Legs
-880,33,2,25,2,2025-07-23,Second round,13-11,Legs
-881,33,3,12,12,2025-07-23,Second round,11-13,Legs
-882,33,18,5,5,2025-07-24,Quarter-final,13-16,Legs
-883,33,4,6,6,2025-07-24,Quarter-final,7-16,Legs
-884,33,2,26,2,2025-07-25,Quarter-final,16-14,Legs
-885,33,12,8,12,2025-07-25,Quarter-final,16-11,Legs
-886,33,5,6,5,2025-07-26,Semi-final,20-18,Legs
-887,33,2,12,2,2025-07-26,Semi-final,17-14,Legs
-888,33,5,2,2,2025-07-27,Final,13-18,Legs
-889,34,19,216,19,2025-08-08,First round,6-2,Legs
-890,34,8,103,8,2025-08-08,First round,6-3,Legs
-891,34,4,217,4,2025-08-08,First round,6-1,Legs
-892,34,1,220,1,2025-08-08,First round,6-3,Legs
-893,34,10,218,10,2025-08-08,First round,6-0,Legs
-894,34,2,97,2,2025-08-08,First round,6-5,Legs
-895,34,12,223,12,2025-08-08,First round,6-1,Legs
-896,34,7,219,7,2025-08-08,First round,6-4,Legs
-897,34,4,12,4,2025-08-09,Quarter-final,6-0,Legs
-898,34,2,10,2,2025-08-09,Quarter-final,6-3,Legs
-899,34,8,7,7,2025-08-09,Quarter-final,4-6,Legs
-900,34,1,19,19,2025-08-09,Quarter-final,0-6,Legs
-901,34,4,2,2,2025-08-09,Semi-final,4-7,Legs
-902,34,7,19,19,2025-08-09,Semi-final,4-7,Legs
-903,34,2,19,2,2025-08-09,Final,8-4,Legs
-904,35,19,125,19,2025-08-15,First round,6-1,Legs
-905,35,12,221,12,2025-08-15,First round,6-2,Legs
-906,35,8,220,8,2025-08-15,First round,6-4,Legs
-907,35,10,222,10,2025-08-15,First round,6-1,Legs
-908,35,4,109,4,2025-08-15,First round,6-3,Legs
-909,35,1,97,1,2025-08-15,First round,6-3,Legs
-910,35,2,227,2,2025-08-15,First round,6-4,Legs
-911,35,4,223,4,2025-08-15,First round,6-4,Legs
-912,35,4,7,7,2025-08-16,Quarter-final,3-6,Legs
-913,35,1,10,1,2025-08-16,Quarter-final,6-2,Legs
-914,35,8,12,8,2025-08-16,Quarter-final,6-5,Legs
-915,35,2,19,2,2025-08-16,Quarter-final,6-2,Legs
-916,35,7,1,1,2025-08-16,Semi-final,4-7,Legs
-917,35,8,2,2,2025-08-16,Semi-final,2-7,Legs
-918,35,1,2,2,2025-08-16,Final,4-8,Legs
+1,1,64,103,64,2024-12-15,First round,1,3-1,Sets
+2,1,25,105,25,2024-12-15,First round,1,3-0,Sets
+3,1,50,54,54,2024-12-15,First round,1,1-3,Sets
+4,1,1,64,1,2024-12-15,Second round,2,3-0,Sets
+5,1,102,106,102,2024-12-16,First round,1,3-2,Sets
+6,1,31,110,31,2024-12-16,First round,1,3-0,Sets
+7,1,53,107,107,2024-12-16,First round,1,1-3,Sets
+8,1,5,25,25,2024-12-16,Second round,2,0-3,Sets
+9,1,44,58,58,2024-12-16,First round,1,1-3,Sets
+10,1,56,109,56,2024-12-16,First round,1,3-0,Sets
+11,1,33,112,112,2024-12-16,First round,1,1-3,Sets
+12,1,8,54,8,2024-12-16,Second round,2,3-0,Sets
+13,1,67,121,67,2024-12-17,First round,1,3-0,Sets
+14,1,42,115,42,2024-12-17,First round,1,3-1,Sets
+15,1,24,99,24,2024-12-17,First round,1,3-1,Sets
+16,1,19,31,31,2024-12-17,Second round,2,1-3,Sets
+17,1,52,123,52,2024-12-17,First round,1,3-1,Sets
+18,1,29,113,29,2024-12-17,First round,1,3-0,Sets
+19,1,63,111,63,2024-12-17,First round,1,3-2,Sets
+20,1,16,102,16,2024-12-17,Second round,2,3-1,Sets
+21,1,59,124,124,2024-12-18,First round,1,2-3,Sets
+22,1,46,108,46,2024-12-18,First round,1,3-1,Sets
+23,1,45,125,45,2024-12-18,First round,1,3-2,Sets
+24,1,23,112,23,2024-12-18,Second round,2,3-1,Sets
+25,1,69,122,122,2024-12-19,First round,1,1-3,Sets
+26,1,41,126,41,2024-12-19,First round,1,3-0,Sets
+27,1,38,114,38,2024-12-19,First round,1,3-1,Sets
+28,1,40,58,58,2024-12-19,Second round,2,1-3,Sets
+29,1,60,104,60,2024-12-19,First round,1,3-0,Sets
+30,1,62,55,55,2024-12-19,First round,1,2-3,Sets
+31,1,36,72,36,2024-12-19,First round,1,3-1,Sets
+32,1,21,42,42,2024-12-19,Second round,2,2-3,Sets
+33,1,61,117,117,2024-12-20,First round,1,0-3,Sets
+34,1,39,120,39,2024-12-20,First round,1,3-2,Sets
+35,1,4,107,4,2024-12-20,Second round,2,3-1,Sets
+36,1,43,118,43,2024-12-20,First round,1,3-1,Sets
+37,1,51,119,51,2024-12-20,First round,1,3-1,Sets
+38,1,47,65,65,2024-12-20,First round,1,1-3,Sets
+39,1,3,67,3,2024-12-20,Second round,2,3-0,Sets
+40,1,75,81,81,2024-12-21,First round,1,0-3,Sets
+41,1,49,116,116,2024-12-21,First round,1,0-3,Sets
+42,1,37,122,37,2024-12-21,Second round,2,3-0,Sets
+43,1,7,117,7,2024-12-21,Second round,2,3-1,Sets
+44,1,15,24,24,2024-12-21,Second round,2,1-3,Sets
+45,1,35,60,60,2024-12-21,Second round,2,1-3,Sets
+46,1,2,63,2,2024-12-21,Second round,2,3-1,Sets
+47,1,10,56,10,2024-12-21,Second round,2,3-1,Sets
+48,1,20,55,20,2024-12-22,Second round,2,3-0,Sets
+49,1,32,46,46,2024-12-22,Second round,2,1-3,Sets
+50,1,30,39,30,2024-12-22,Second round,2,3-0,Sets
+51,1,28,48,48,2024-12-22,Second round,2,1-3,Sets
+52,1,17,41,41,2024-12-22,Second round,2,0-3,Sets
+53,1,14,124,124,2024-12-22,Second round,2,0-3,Sets
+54,1,11,52,52,2024-12-22,Second round,2,0-3,Sets
+55,1,22,65,22,2024-12-22,Second round,2,3-0,Sets
+56,1,34,116,34,2024-12-23,Second round,2,3-1,Sets
+57,1,26,38,26,2024-12-23,Second round,2,3-1,Sets
+58,1,12,81,12,2024-12-23,Second round,2,3-0,Sets
+59,1,6,43,6,2024-12-23,Second round,2,3-2,Sets
+60,1,18,29,29,2024-12-23,Second round,2,1-3,Sets
+61,1,27,51,27,2024-12-23,Second round,2,3-2,Sets
+62,1,13,45,45,2024-12-23,Second round,2,2-3,Sets
+63,1,9,36,36,2024-12-23,Second round,2,1-3,Sets
+64,1,10,31,31,2024-12-27,Third round,3,3-4,Sets
+65,1,6,27,6,2024-12-27,Third round,3,4-3,Sets
+66,1,4,46,4,2024-12-27,Third round,3,4-1,Sets
+67,1,9,30,9,2024-12-27,Third round,3,4-3,Sets
+68,1,25,16,16,2024-12-27,Third round,3,2-4,Sets
+69,1,1,60,1,2024-12-27,Third round,3,4-0,Sets
+70,1,24,20,24,2024-12-28,Third round,3,4-3,Sets
+71,1,36,29,29,2024-12-28,Third round,3,1-4,Sets
+72,1,23,26,23,2024-12-28,Third round,3,4-0,Sets
+73,1,7,12,7,2024-12-28,Third round,3,4-2,Sets
+74,1,3,37,3,2024-12-28,Third round,3,4-2,Sets
+75,1,2,48,2,2024-12-28,Third round,3,4-1,Sets
+76,1,52,124,52,2024-12-29,Third round,3,4-1,Sets
+77,1,42,34,42,2024-12-29,Third round,3,4-3,Sets
+78,1,22,41,41,2024-12-29,Third round,3,0-4,Sets
+79,1,45,58,58,2024-12-29,Third round,3,2-4,Sets
+80,1,6,8,8,2024-12-29,Fourth round,4,2-4,Sets
+81,1,1,16,16,2024-12-29,Fourth round,4,1-4,Sets
+82,1,42,7,7,2024-12-30,Fourth round,4,3-4,Sets
+83,1,58,41,41,2024-12-30,Fourth round,4,3-4,Sets
+84,1,28,23,23,2024-12-30,Fourth round,4,0-4,Sets
+85,1,4,31,4,2024-12-30,Fourth round,4,4-0,Sets
+86,1,3,52,3,2024-12-30,Fourth round,4,4-2,Sets
+87,1,2,24,2,2024-12-30,Fourth round,4,4-3,Sets
+88,1,7,8,7,2025-01-01,Quarter-Final,10,5-3,Sets
+89,1,3,41,3,2025-01-01,Quarter-Final,10,5-3,Sets
+90,1,16,4,4,2025-01-01,Quarter-Final,10,2-5,Sets
+91,1,2,23,2,2025-01-01,Quarter-Final,10,5-2,Sets
+92,1,7,3,3,2025-01-02,Semi-Final,11,1-6,Sets
+93,1,4,2,2,2025-01-02,Semi-Final,11,1-6,Sets
+94,1,2,3,2,2025-01-03,Final,12,7-3,Sets
+95,2,12,25,12,2025-01-30,First round,1,3-1,Sets
+96,2,10,14,10,2025-01-30,First round,1,3-1,Sets
+97,2,9,47,47,2025-01-30,First round,1,1-3,Sets
+98,2,8,52,8,2025-01-30,First round,1,3-0,Sets
+99,2,16,42,16,2025-01-30,First round,1,3-2,Sets
+100,2,1,30,1,2025-01-30,First round,1,3-1,Sets
+101,2,4,96,4,2025-01-30,First round,1,3-2,Sets
+102,2,15,21,15,2025-01-30,First round,1,3-1,Sets
+103,2,5,19,5,2025-01-31,First round,1,3-2,Sets
+104,2,13,33,33,2025-01-31,First round,1,1-3,Sets
+105,2,6,17,6,2025-01-31,First round,1,3-1,Sets
+106,2,23,26,23,2025-01-31,First round,1,3-0,Sets
+107,2,7,20,20,2025-01-31,First round,1,1-3,Sets
+108,2,2,71,2,2025-01-31,First round,1,3-0,Sets
+109,2,3,73,3,2025-01-31,First round,1,3-1,Sets
+110,2,11,22,22,2025-01-31,First round,1,1-3,Sets
+111,2,47,15,15,2025-02-01,Second round,2,0-4,Sets
+112,2,10,9,10,2025-02-01,Second round,2,4-3,Sets
+113,2,4,16,4,2025-02-01,Second round,2,4-2,Sets
+114,2,1,12,1,2025-02-01,Second round,2,4-0,Sets
+115,2,6,20,6,2025-02-01,Second round,2,4-3,Sets
+116,2,33,23,23,2025-02-01,Second round,2,1-4,Sets
+117,2,1,5,1,2025-02-01,Second round,2,4-0,Sets
+118,2,3,22,22,2025-02-01,Second round,2,3-4,Sets
+119,2,1,10,1,2025-02-02,Quarter-Final,10,4-1,Sets
+120,2,15,4,15,2025-02-02,Quarter-Final,10,4-3,Sets
+121,2,1,6,6,2025-02-02,Quarter-Final,10,2-4,Sets
+122,2,22,23,22,2025-02-02,Quarter-Final,10,4-1,Sets
+123,2,1,15,1,2025-02-02,Semi-Final,11,5-2,Sets
+124,2,6,22,6,2025-02-02,Semi-Final,11,5-2,Sets
+125,2,1,6,1,2025-02-02,Final,12,6-5,Sets
+126,3,7,8,7,2025-02-06,Quarter-Final,10,6-4,Legs
+127,3,4,9,9,2025-02-06,Quarter-Final,10,4-6,Legs
+128,3,2,3,3,2025-02-06,Quarter-Final,10,5-6,Legs
+129,3,23,1,1,2025-02-06,Quarter-Final,10,2-6,Legs
+130,3,7,9,7,2025-02-06,Semi-Final,11,6-4,Legs
+131,3,3,1,1,2025-02-06,Semi-Final,11,5-6,Legs
+132,3,7,1,1,2025-02-06,Final,12,1-6,Legs
+133,4,9,2,2,2025-02-13,Quarter-Final,10,5-6,Legs
+134,4,3,4,3,2025-02-13,Quarter-Final,10,6-1,Legs
+135,4,23,8,8,2025-02-13,Quarter-Final,10,4-6,Legs
+136,4,1,7,1,2025-02-13,Quarter-Final,10,6-4,Legs
+137,4,2,3,2,2025-02-13,Semi-Final,11,6-2,Legs
+138,4,8,1,1,2025-02-13,Semi-Final,11,4-6,Legs
+139,4,2,1,2,2025-02-13,Final,12,6-5,Legs
+140,5,1,4,1,2025-02-20,Quarter-Final,10,6-4,Legs
+141,5,8,2,8,2025-02-20,Quarter-Final,10,6-4,Legs
+142,5,9,23,23,2025-02-20,Quarter-Final,10,3-6,Legs
+143,5,3,7,3,2025-02-20,Quarter-Final,10,6-4,Legs
+144,5,1,8,8,2025-02-20,Semi-Final,11,3-6,Legs
+145,5,23,3,23,2025-02-20,Semi-Final,11,6-3,Legs
+146,5,8,23,8,2025-02-20,Final,12,6-3,Legs
+147,6,3,9,9,2025-02-27,Quarter-Final,10,5-6,Legs
+148,6,8,1,1,2025-02-27,Quarter-Final,10,4-6,Legs
+149,6,7,23,23,2025-02-27,Quarter-Final,10,5-6,Legs
+150,6,4,2,2,2025-02-27,Quarter-Final,10,3-6,Legs
+151,6,9,1,1,2025-02-27,Semi-Final,11,5-6,Legs
+152,6,23,2,2,2025-02-27,Semi-Final,11,2-6,Legs
+153,6,1,2,1,2025-02-27,Final,12,6-4,Legs
+154,7,142,117,117,2025-02-28,First round,1,1-6,Legs
+155,7,143,144,143,2025-02-28,First round,1,6-0,Legs
+156,7,127,128,127,2025-02-28,First round,1,6-3,Legs
+157,7,165,107,165,2025-02-28,First round,1,6-4,Legs
+158,7,129,130,130,2025-02-28,First round,1,0-6,Legs
+159,7,162,72,72,2025-02-28,First round,1,2-6,Legs
+160,7,157,158,158,2025-02-28,First round,1,3-6,Legs
+161,7,163,164,164,2025-02-28,First round,1,1-6,Legs
+162,7,134,75,134,2025-02-28,First round,1,6-1,Legs
+163,7,145,146,146,2025-02-28,First round,1,5-6,Legs
+164,7,102,86,86,2025-02-28,First round,1,1-6,Legs
+165,7,108,131,108,2025-02-28,First round,1,6-4,Legs
+166,7,147,148,148,2025-02-28,First round,1,2-6,Legs
+167,7,167,168,168,2025-02-28,First round,1,3-6,Legs
+168,7,151,152,152,2025-02-28,First round,1,3-6,Legs
+169,7,149,150,149,2025-02-28,First round,1,6-2,Legs
+170,7,171,172,172,2025-02-28,First round,1,4-6,Legs
+171,7,93,132,93,2025-02-28,First round,1,6-0,Legs
+172,7,170,95,95,2025-02-28,First round,1,3-6,Legs
+173,7,133,177,177,2025-02-28,First round,1,4-6,Legs
+174,7,79,166,79,2025-02-28,First round,1,6-2,Legs
+175,7,136,137,136,2025-02-28,First round,1,6-3,Legs
+176,7,138,139,139,2025-02-28,First round,1,2-6,Legs
+177,7,173,174,173,2025-02-28,First round,1,6-4,Legs
+178,7,155,156,156,2025-02-28,First round,1,1-6,Legs
+179,7,225,121,121,2025-02-28,First round,1,4-6,Legs
+180,7,169,101,169,2025-02-28,First round,1,6-0,Legs
+181,7,135,99,99,2025-02-28,First round,1,4-6,Legs
+182,7,153,154,154,2025-02-28,First round,1,1-6,Legs
+183,7,159,160,159,2025-02-28,First round,1,6-5,Legs
+184,7,161,105,161,2025-02-28,First round,1,6-1,Legs
+185,7,140,141,140,2025-02-28,First round,1,6-3,Legs
+186,7,72,83,72,2025-02-28,Second round,2,6-5,Legs
+187,7,70,134,70,2025-02-28,Second round,2,6-5,Legs
+188,7,87,94,87,2025-02-28,Second round,2,6-5,Legs
+189,7,165,176,165,2025-02-28,Second round,2,6-5,Legs
+190,7,98,80,98,2025-02-28,Second round,2,6-5,Legs
+191,7,84,127,127,2025-02-28,Second round,2,2-6,Legs
+192,7,74,148,74,2025-02-28,Second round,2,6-3,Legs
+193,7,76,66,66,2025-02-28,Second round,2,5-6,Legs
+194,7,172,97,97,2025-02-28,Second round,2,2-6,Legs
+195,7,96,100,96,2025-02-28,Second round,2,6-2,Legs
+196,7,117,152,152,2025-02-28,Second round,2,3-6,Legs
+197,7,85,177,85,2025-02-28,Second round,2,6-4,Legs
+198,7,158,95,95,2025-02-28,Second round,2,2-6,Legs
+199,7,156,154,156,2025-02-28,Second round,2,6-4,Legs
+200,7,77,67,77,2025-02-28,Second round,2,6-4,Legs
+201,7,99,68,68,2025-02-28,Second round,2,5-6,Legs
+202,7,90,130,90,2025-02-28,Second round,2,6-4,Legs
+203,7,168,139,168,2025-02-28,Second round,2,6-2,Legs
+204,7,81,161,161,2025-02-28,Second round,2,1-6,Legs
+205,7,149,73,149,2025-02-28,Second round,2,6-2,Legs
+206,7,64,146,146,2025-02-28,Second round,2,1-6,Legs
+207,7,69,108,108,2025-02-28,Second round,2,1-6,Legs
+208,7,60,95,60,2025-02-28,Third round,3,6-3,Legs
+209,7,25,51,25,2025-02-28,Third round,3,6-3,Legs
+210,7,173,143,173,2025-02-28,Second round,2,6-5,Legs
+211,7,121,82,82,2025-02-28,Second round,2,4-6,Legs
+212,7,89,93,93,2025-02-28,Second round,2,4-6,Legs
+213,7,169,92,92,2025-02-28,Second round,2,3-6,Legs
+214,7,71,86,86,2025-02-28,Second round,2,1-6,Legs
+215,7,59,38,38,2025-02-28,Third round,3,5-6,Legs
+216,7,175,140,140,2025-02-28,Second round,2,5-6,Legs
+217,7,46,63,46,2025-02-28,Third round,3,6-1,Legs
+218,7,78,159,78,2025-02-28,Second round,2,6-3,Legs
+219,7,164,136,136,2025-02-28,Second round,2,1-6,Legs
+220,7,90,96,96,2025-02-28,Third round,3,5-6,Legs
+221,7,36,39,36,2025-02-28,Third round,3,6-4,Legs
+222,7,127,91,91,2025-02-28,Third round,3,3-6,Legs
+223,7,66,33,33,2025-02-28,Third round,3,5-6,Legs
+224,7,41,53,53,2025-02-28,Third round,3,0-6,Legs
+225,7,70,65,65,2025-02-28,Third round,3,5-6,Legs
+226,7,58,44,58,2025-02-28,Third round,3,6-5,Legs
+227,7,70,50,50,2025-02-28,Third round,3,4-6,Legs
+228,7,146,47,47,2025-02-28,Third round,3,4-6,Legs
+229,7,79,31,31,2025-02-28,Third round,3,3-6,Legs
+230,7,45,40,45,2025-02-28,Third round,3,6-5,Legs
+231,7,165,61,61,2025-02-28,Third round,3,3-6,Legs
+232,7,78,56,56,2025-02-28,Third round,3,3-6,Legs
+233,7,74,156,156,2025-02-28,Third round,3,3-6,Legs
+234,7,54,149,149,2025-02-28,Third round,3,3-6,Legs
+235,7,92,77,92,2025-02-28,Third round,3,6-3,Legs
+236,7,152,55,55,2025-02-28,Third round,3,5-6,Legs
+237,7,57,173,57,2025-02-28,Third round,3,6-4,Legs
+238,7,49,68,68,2025-02-28,Third round,3,4-6,Legs
+239,7,168,35,35,2025-02-28,Third round,3,4-6,Legs
+240,7,62,82,62,2025-02-28,Third round,3,6-1,Legs
+241,7,42,136,42,2025-02-28,Third round,3,6-2,Legs
+242,7,48,93,93,2025-02-28,Third round,3,4-6,Legs
+243,7,140,98,98,2025-02-28,Third round,3,4-6,Legs
+244,7,87,86,87,2025-02-28,Third round,3,6-4,Legs
+245,7,97,108,97,2025-02-28,Third round,3,6-4,Legs
+246,7,161,43,161,2025-02-28,Third round,3,6-2,Legs
+247,7,31,62,62,2025-02-28,Fourth round,4,6-10,Legs
+248,7,27,15,15,2025-02-28,Fourth round,4,2-10,Legs
+249,7,28,25,25,2025-02-28,Fourth round,4,6-10,Legs
+250,7,37,91,91,2025-02-28,Fourth round,4,9-10,Legs
+251,7,30,34,34,2025-02-28,Fourth round,4,4-10,Legs
+252,7,61,87,61,2025-02-28,Fourth round,4,10-6,Legs
+253,7,13,45,13,2025-02-28,Fourth round,4,10-9,Legs
+254,7,6,11,6,2025-02-28,Fourth round,4,10-3,Legs
+255,7,36,47,47,2025-02-28,Fourth round,4,7-10,Legs
+256,7,20,85,20,2025-02-28,Fourth round,4,10-7,Legs
+257,7,38,23,23,2025-02-28,Fourth round,4,5-10,Legs
+258,7,60,18,18,2025-02-28,Fourth round,4,4-10,Legs
+259,7,46,29,46,2025-02-28,Fourth round,4,10-9,Legs
+260,7,16,2,2,2025-02-28,Fourth round,4,9-10,Legs
+261,7,57,14,14,2025-02-28,Fourth round,4,7-10,Legs
+262,7,22,35,22,2025-02-28,Fourth round,4,10-6,Legs
+263,7,53,55,53,2025-02-28,Fourth round,4,10-7,Legs
+264,7,65,97,65,2025-02-28,Fourth round,4,10-7,Legs
+265,7,17,68,17,2025-02-28,Fourth round,4,10-7,Legs
+266,7,24,26,24,2025-02-28,Fourth round,4,10-8,Legs
+267,7,149,93,149,2025-02-28,Fourth round,4,10-6,Legs
+268,7,10,50,10,2025-02-28,Fourth round,4,10-2,Legs
+269,7,4,7,7,2025-02-28,Fourth round,4,6-10,Legs
+270,7,161,1,1,2025-02-28,Fourth round,4,7-10,Legs
+271,7,33,19,33,2025-02-28,Fourth round,4,10-4,Legs
+272,7,5,96,5,2025-02-28,Fourth round,4,10-3,Legs
+273,7,42,21,21,2025-02-28,Fourth round,4,6-10,Legs
+274,7,58,98,58,2025-02-28,Fourth round,4,10-7,Legs
+275,7,9,156,9,2025-02-28,Fourth round,4,4-10,Legs
+276,7,8,56,56,2025-02-28,Fourth round,4,9-10,Legs
+277,7,92,12,12,2025-02-28,Fourth round,4,5-10,Legs
+278,7,3,32,3,2025-02-28,Fourth round,4,10-8,Legs
+279,7,17,65,17,2025-03-01,Fifth round,5,10-9,Legs
+280,7,12,14,12,2025-03-01,Fifth round,5,10-9,Legs
+281,7,13,34,34,2025-03-01,Fifth round,5,8-10,Legs
+282,7,22,7,22,2025-03-01,Fifth round,5,10-9,Legs
+283,7,91,24,24,2025-03-01,Fifth round,5,3-10,Legs
+284,7,62,47,47,2025-03-01,Fifth round,5,3-10,Legs
+285,7,53,6,6,2025-03-01,Fifth round,5,7-10,Legs
+286,7,2,25,2,2025-03-01,Fifth round,5,10-4,Legs
+287,7,33,5,5,2025-03-01,Fifth round,5,9-10,Legs
+288,7,149,23,23,2025-03-01,Fifth round,5,2-10,Legs
+289,7,20,1,1,2025-03-01,Fifth round,5,0-10,Legs
+290,7,46,21,21,2025-03-01,Fifth round,5,7-10,Legs
+291,7,56,10,10,2025-03-01,Fifth round,5,7-10,Legs
+292,7,58,3,58,2025-03-01,Fifth round,5,10-8,Legs
+293,7,9,15,9,2025-03-01,Fifth round,5,10-9,Legs
+294,7,18,61,18,2025-03-01,Fifth round,5,10-7,Legs
+295,7,17,6,6,2025-03-01,Sixth round,6,4-10,Legs
+296,7,21,22,21,2025-03-01,Sixth round,6,10-3,Legs
+297,7,58,5,5,2025-03-01,Sixth round,6,8-10,Legs
+298,7,34,2,2,2025-03-01,Sixth round,6,8-10,Legs
+299,7,10,18,18,2025-03-01,Sixth round,6,9-10,Legs
+300,7,24,1,1,2025-03-01,Sixth round,6,2-10,Legs
+301,7,23,47,23,2025-03-01,Sixth round,6,10-8,Legs
+302,7,12,9,12,2025-03-01,Sixth round,6,10-6,Legs
+303,7,18,2,2,2025-03-02,Quarter-Final,10,4-10,Legs
+304,7,12,23,12,2025-03-02,Quarter-Final,10,10-7,Legs
+305,7,6,21,6,2025-03-02,Quarter-Final,10,10-8,Legs
+306,7,5,1,5,2025-03-02,Quarter-Final,10,10-9,Legs
+307,7,6,2,2,2025-03-02,Semi-Final,11,6-11,Legs
+308,7,12,5,5,2025-03-02,Semi-Final,11,2-11,Legs
+309,7,2,5,2,2025-03-02,Final,12,11-2,Legs
+310,8,8,3,3,2025-03-06,Quarter-Final,10,3-6,Legs
+311,8,2,7,2,2025-03-06,Quarter-Final,10,6-5,Legs
+312,8,9,1,9,2025-03-06,Quarter-Final,10,6-4,Legs
+313,8,4,23,23,2025-03-06,Quarter-Final,10,2-6,Legs
+314,8,3,2,2,2025-03-06,Semi-Final,11,2-6,Legs
+315,8,9,23,23,2025-03-06,Semi-Final,11,5-6,Legs
+316,8,2,23,2,2025-03-06,Final,12,6-3,Legs
+317,9,19,156,19,2025-03-07,First round,1,6-5,Legs
+318,9,17,121,17,2025-03-07,First round,1,6-3,Legs
+319,9,21,24,21,2025-03-07,First round,1,6-5,Legs
+320,9,18,67,18,2025-03-07,First round,1,6-4,Legs
+321,9,14,178,14,2025-03-07,First round,1,6-5,Legs
+322,9,33,55,55,2025-03-07,First round,1,5-6,Legs
+323,9,24,179,24,2025-03-07,First round,1,6-2,Legs
+324,9,27,64,27,2025-03-07,First round,1,6-1,Legs
+325,9,20,127,20,2025-03-07,First round,1,6-2,Legs
+326,9,31,180,31,2025-03-07,First round,1,6-4,Legs
+327,9,29,74,29,2025-03-07,First round,1,6-5,Legs
+328,9,28,80,28,2025-03-07,First round,1,6-4,Legs
+329,9,12,181,181,2025-03-07,First round,1,3-6,Legs
+330,9,35,86,35,2025-03-07,First round,1,6-4,Legs
+331,9,39,173,39,2025-03-07,First round,1,6-5,Legs
+332,9,32,99,32,2025-03-07,First round,1,6-4,Legs
+333,9,1,19,19,2025-03-08,Second round,2,4-6,Legs
+334,9,22,17,17,2025-03-08,Second round,2,3-6,Legs
+335,9,10,21,10,2025-03-08,Second round,2,6-0,Legs
+336,9,8,18,8,2025-03-08,Second round,2,6-2,Legs
+337,9,9,14,14,2025-03-08,Second round,2,2-6,Legs
+338,9,16,55,55,2025-03-08,Second round,2,2-6,Legs
+339,9,4,25,4,2025-03-08,Second round,2,6-3,Legs
+340,9,15,27,27,2025-03-08,Second round,2,2-6,Legs
+341,9,2,20,2,2025-03-08,Second round,2,6-3,Legs
+342,9,11,31,31,2025-03-08,Second round,2,2-6,Legs
+343,9,13,29,13,2025-03-08,Second round,2,6-3,Legs
+344,9,23,28,28,2025-03-08,Second round,2,5-6,Legs
+345,9,3,181,181,2025-03-08,Second round,2,4-6,Legs
+346,9,5,35,5,2025-03-08,Second round,2,6-4,Legs
+347,9,6,39,6,2025-03-08,Second round,2,6-5,Legs
+348,9,7,32,32,2025-03-08,Second round,2,5-6,Legs
+349,9,19,17,19,2025-03-09,Third round,3,6-3,Legs
+350,9,10,8,8,2025-03-09,Third round,3,3-6,Legs
+351,9,14,55,14,2025-03-09,Third round,3,6-4,Legs
+352,9,4,27,4,2025-03-09,Third round,3,6-2,Legs
+353,9,2,31,2,2025-03-09,Third round,3,6-4,Legs
+354,9,13,28,13,2025-03-09,Third round,3,6-5,Legs
+355,9,181,5,5,2025-03-09,Third round,3,4-6,Legs
+356,9,6,32,6,2025-03-09,Third round,3,6-5,Legs
+357,9,19,8,17,2025-03-09,Quarter-Final,10,6-4,Legs
+358,9,14,4,14,2025-03-09,Quarter-Final,10,6-5,Legs
+359,9,2,13,2,2025-03-09,Quarter-Final,10,6-4,Legs
+360,9,5,6,5,2025-03-09,Quarter-Final,10,6-4,Legs
+361,9,19,14,19,2025-03-09,Semi-Final,11,7-6,Legs
+362,9,2,5,2,2025-03-09,Semi-Final,11,7-3,Legs
+363,9,19,2,2,2025-03-09,Final,12,5-8,Legs
+364,10,1,2,2,2025-03-13,Quarter-Final,10,4-6,Legs
+365,10,9,7,9,2025-03-13,Quarter-Final,10,6-2,Legs
+366,10,4,8,8,2025-03-13,Quarter-Final,10,4-6,Legs
+367,10,23,3,3,2025-03-13,Quarter-Final,10,4-6,Legs
+368,10,2,9,2,2025-03-13,Semi-Final,11,6-3,Legs
+369,10,8,3,8,2025-03-13,Semi-Final,11,6-1,Legs
+370,10,2,8,8,2025-03-13,Final,12,3-6,Legs
+371,11,7,4,7,2025-03-20,Quarter-Final,10,6-2,Legs
+372,11,1,3,3,2025-03-20,Quarter-Final,10,4-6,Legs
+373,11,2,23,2,2025-03-20,Quarter-Final,10,6-3,Legs
+374,11,8,9,9,2025-03-20,Quarter-Final,10,5-6,Legs
+375,11,7,3,3,2025-03-20,Semi-Final,11,1-6,Legs
+376,11,2,9,2,2025-03-20,Semi-Final,11,6-2,Legs
+377,11,3,2,2,2025-03-20,Final,12,4-6,Legs
+378,12,32,181,181,2025-03-21,First round,1,4-6,Legs
+379,12,29,183,29,2025-03-21,First round,1,6-3,Legs
+380,12,28,42,28,2025-03-21,First round,1,6-2,Legs
+381,12,25,184,25,2025-03-21,First round,1,6-2,Legs
+382,12,17,85,17,2025-03-21,First round,1,6-2,Legs
+383,12,31,95,31,2025-03-21,First round,1,6-4,Legs
+384,12,35,45,45,2025-03-21,First round,1,4-6,Legs
+385,12,14,185,14,2025-03-21,First round,1,6-1,Legs
+386,12,27,72,72,2025-03-21,First round,1,4-6,Legs
+387,12,18,56,18,2025-03-21,First round,1,6-5,Legs
+388,12,20,186,20,2025-03-21,First round,1,6-0,Legs
+389,12,39,187,39,2025-03-21,First round,1,6-5,Legs
+390,12,26,41,26,2025-03-21,First round,1,6-2,Legs
+391,12,24,30,24,2025-03-21,First round,1,6-0,Legs
+392,12,33,53,33,2025-03-21,First round,1,6-2,Legs
+393,12,19,38,19,2025-03-21,First round,1,6-3,Legs
+394,12,1,181,1,2025-03-22,Second round,2,6-4,Legs
+395,12,21,29,21,2025-03-22,Second round,2,6-2,Legs
+396,12,23,28,23,2025-03-22,Second round,2,6-5,Legs
+397,12,7,25,25,2025-03-22,Second round,2,4-6,Legs
+398,12,6,17,17,2025-03-22,Second round,2,1-6,Legs
+399,12,11,31,11,2025-03-22,Second round,2,6-4,Legs
+400,12,13,45,13,2025-03-22,Second round,2,6-1,Legs
+401,12,5,14,14,2025-03-22,Second round,2,2-6,Legs
+402,12,3,72,3,2025-03-22,Second round,2,6-5,Legs
+403,12,12,18,18,2025-03-22,Second round,2,4-6,Legs
+404,12,8,20,8,2025-03-22,Second round,2,6-4,Legs
+405,12,15,39,39,2025-03-22,Second round,2,5-6,Legs
+406,12,9,26,9,2025-03-22,Second round,2,6-4,Legs
+407,12,22,24,24,2025-03-22,Second round,2,4-6,Legs
+408,12,10,33,33,2025-03-22,Second round,2,5-6,Legs
+409,12,16,19,19,2025-03-22,Second round,2,4-6,Legs
+410,12,1,21,1,2025-03-23,Third round,3,6-5,Legs
+411,12,23,25,23,2025-03-23,Third round,3,6-5,Legs
+412,12,17,11,11,2025-03-23,Third round,3,5-6,Legs
+413,12,13,14,14,2025-03-23,Third round,3,4-6,Legs
+414,12,3,18,3,2025-03-23,Third round,3,6-4,Legs
+415,12,8,39,8,2025-03-23,Third round,3,6-3,Legs
+416,12,9,24,24,2025-03-23,Third round,3,4-6,Legs
+417,12,33,19,33,2025-03-23,Third round,3,6-5,Legs
+418,12,1,23,23,2025-03-23,Quarter-Final,10,1-6,Legs
+419,12,11,14,11,2025-03-23,Quarter-Final,10,6-5,Legs
+420,12,3,8,3,2025-03-23,Quarter-Final,10,6-4,Legs
+421,12,24,33,24,2025-03-23,Quarter-Final,10,6-3,Legs
+422,12,23,11,23,2025-03-23,Semi-Final,11,7-6,Legs
+423,12,3,24,24,2025-03-23,Semi-Final,11,5-7,Legs
+424,12,23,24,23,2025-03-23,Final,12,8-4,Legs
+425,13,2,4,2,2025-03-27,Quarter-Final,10,6-0,Legs
+426,13,8,9,9,2025-03-27,Quarter-Final,10,2-6,Legs
+427,13,1,7,1,2025-03-27,Quarter-Final,10,6-3,Legs
+428,13,3,23,23,2025-03-27,Quarter-Final,10,5-6,Legs
+429,13,1,9,1,2025-03-27,Semi-Final,11,6-3,Legs
+430,13,1,23,1,2025-03-27,Semi-Final,11,6-5,Legs
+431,13,2,1,2,2025-03-27,Final,12,6-1,Legs
+432,14,23,4,4,2025-04-03,Quarter-Final,10,2-6,Legs
+433,14,1,9,1,2025-04-03,Quarter-Final,10,6-3,Legs
+434,14,7,2,7,2025-04-03,Quarter-Final,10,6-2,Legs
+435,14,4,1,4,2025-04-03,Semi-Final,11,6-2,Legs
+436,14,7,8,8,2025-04-03,Semi-Final,11,2-6,Legs
+437,14,4,8,4,2025-04-03,Final,12,6-5,Legs
+438,15,32,72,32,2025-04-04,First round,1,6-3,Legs
+439,15,29,34,29,2025-04-04,First round,1,6-2,Legs
+440,15,41,68,68,2025-04-04,First round,1,4-6,Legs
+441,15,20,99,99,2025-04-04,First round,1,3-6,Legs
+442,15,33,188,33,2025-04-04,First round,1,6-0,Legs
+443,15,35,189,35,2025-04-04,First round,1,6-1,Legs
+444,15,25,75,25,2025-04-04,First round,1,4-6,Legs
+445,15,26,47,26,2025-04-04,First round,1,6-3,Legs
+446,15,18,190,18,2025-04-04,First round,1,6-1,Legs
+447,15,19,183,19,2025-04-04,First round,1,6-3,Legs
+448,15,30,58,30,2025-04-04,First round,1,6-1,Legs
+449,15,17,156,17,2025-04-04,First round,1,6-2,Legs
+450,15,21,64,64,2025-04-04,First round,1,3-6,Legs
+451,15,31,55,31,2025-04-04,First round,1,6-3,Legs
+452,15,28,191,28,2025-04-04,First round,1,6-4,Legs
+453,15,1,32,1,2025-04-05,Second round,2,6-1,Legs
+454,15,14,29,14,2025-04-05,Second round,2,6-2,Legs
+455,15,10,68,10,2025-04-05,Second round,2,6-2,Legs
+456,15,7,39,39,2025-04-05,Second round,2,3-6,Legs
+457,15,4,99,4,2025-04-05,Second round,2,6-4,Legs
+458,15,5,33,33,2025-04-05,Second round,2,5-6,Legs
+459,15,6,35,35,2025-04-05,Second round,2,2-6,Legs
+460,15,15,75,75,2025-04-05,Second round,2,4-6,Legs
+461,15,49,26,26,2025-04-05,Second round,2,0-6,Legs
+462,15,12,18,12,2025-04-05,Second round,2,6-4,Legs
+463,15,8,19,8,2025-04-05,Second round,2,6-4,Legs
+464,15,23,30,23,2025-04-05,Second round,2,6-1,Legs
+465,15,22,64,22,2025-04-05,Second round,2,6-4,Legs
+466,15,13,31,13,2025-04-05,Second round,2,6-2,Legs
+467,15,16,28,16,2025-04-05,Second round,2,6-5,Legs
+468,15,1,14,1,2025-04-06,Third round,3,6-2,Legs
+469,15,10,39,39,2025-04-06,Third round,3,2-6,Legs
+470,15,4,33,4,2025-04-06,Third round,3,6-4,Legs
+471,15,35,75,75,2025-04-06,Third round,3,5-6,Legs
+472,15,26,12,12,2025-04-06,Third round,3,4-6,Legs
+473,15,8,23,23,2025-04-06,Third round,3,5-6,Legs
+474,15,17,22,17,2025-04-06,Third round,3,6-0,Legs
+475,15,13,16,16,2025-04-06,Third round,3,1-6,Legs
+476,15,1,39,1,2025-04-06,Quarter-Final,10,6-3,Legs
+477,15,4,75,4,2025-04-06,Quarter-Final,10,6-2,Legs
+478,15,12,23,23,2025-04-06,Quarter-Final,10,2-6,Legs
+479,15,17,16,17,2025-04-06,Quarter-Final,10,6-2,Legs
+480,15,1,4,4,2025-04-06,Semi-Final,11,6-7,Legs
+481,15,23,17,23,2025-04-06,Semi-Final,11,7-4,Legs
+482,15,4,23,4,2025-04-06,Final,12,8-5,Legs
+483,16,7,3,3,2025-04-10,Quarter-Final,10,4-6,Legs
+484,16,23,9,23,2025-04-10,Quarter-Final,10,6-2,Legs
+485,16,2,8,2,2025-04-10,Quarter-Final,10,6-3,Legs
+486,16,4,1,1,2025-04-10,Quarter-Final,10,1-6,Legs
+487,16,3,23,23,2025-04-10,Semi-Final,11,2-6,Legs
+488,16,2,1,1,2025-04-10,Semi-Final,11,4-6,Legs
+489,16,23,1,23,2025-04-10,Final,12,6-4,Legs
+490,17,7,1,7,2025-04-17,Quarter-Final,10,6-3,Legs
+491,17,8,23,23,2025-04-17,Quarter-Final,10,3-6,Legs
+492,17,4,3,4,2025-04-17,Quarter-Final,10,6-5,Legs
+493,17,2,9,2,2025-04-17,Quarter-Final,10,6-5,Legs
+494,17,7,23,7,2025-04-17,Semi-Final,11,6-2,Legs
+495,17,4,2,4,2025-04-17,Semi-Final,11,6-5,Legs
+496,17,7,4,7,2025-04-17,Final,12,6-2,Legs
+497,18,31,86,86,2025-04-19,First round,1,5-6,Legs
+498,18,28,43,43,2025-04-19,First round,1,4-6,Legs
+499,18,19,192,19,2025-04-19,First round,1,6-3,Legs
+500,18,46,88,46,2025-04-19,First round,1,6-3,Legs
+501,18,17,68,17,2025-04-19,First round,1,6-3,Legs
+502,18,32,148,32,2025-04-19,First round,1,6-1,Legs
+503,18,25,185,25,2025-04-19,First round,1,6-3,Legs
+504,18,50,194,50,2025-04-19,First round,1,6-0,Legs
+505,18,33,42,33,2025-04-19,First round,1,6-4,Legs
+506,18,24,195,24,2025-04-19,First round,1,6-1,Legs
+507,18,27,44,44,2025-04-19,First round,1,3-6,Legs
+508,18,29,174,29,2025-04-19,First round,1,6-1,Legs
+509,18,62,34,34,2025-04-19,First round,1,5-6,Legs
+510,18,35,196,35,2025-04-19,First round,1,6-3,Legs
+511,18,39,36,36,2025-04-19,First round,1,4-6,Legs
+512,18,2,86,2,2025-04-20,Second round,2,6-1,Legs
+513,18,30,43,30,2025-04-20,Second round,2,6-2,Legs
+514,18,16,19,16,2025-04-20,Second round,2,6-3,Legs
+515,18,15,46,46,2025-04-20,Second round,2,2-6,Legs
+516,18,6,17,17,2025-04-20,Second round,2,1-6,Legs
+517,18,26,18,18,2025-04-20,Second round,2,4-6,Legs
+518,18,13,32,13,2025-04-20,Second round,2,6-3,Legs
+519,18,14,25,14,2025-04-20,Second round,2,6-4,Legs
+520,18,3,50,3,2025-04-20,Second round,2,6-5,Legs
+521,18,20,33,20,2025-04-20,Second round,2,6-2,Legs
+522,18,10,24,24,2025-04-20,Second round,2,0-6,Legs
+523,18,5,44,44,2025-04-20,Second round,2,2-6,Legs
+524,18,21,34,34,2025-04-20,Second round,2,4-6,Legs
+525,18,8,35,8,2025-04-20,Second round,2,6-3,Legs
+526,18,12,36,12,2025-04-20,Second round,2,6-2,Legs
+527,18,2,30,2,2025-04-21,Third round,3,6-3,Legs
+528,18,16,46,16,2025-04-21,Third round,3,6-4,Legs
+529,18,17,18,18,2025-04-21,Third round,3,4-6,Legs
+530,18,13,14,14,2025-04-21,Third round,3,2-6,Legs
+531,18,3,20,3,2025-04-21,Third round,3,6-1,Legs
+532,18,24,44,24,2025-04-21,Third round,3,6-4,Legs
+533,18,9,34,34,2025-04-21,Third round,3,4-6,Legs
+534,18,8,12,12,2025-04-21,Third round,3,4-6,Legs
+535,18,2,16,2,2025-04-21,Quarter-Final,10,6-5,Legs
+536,18,18,14,18,2025-04-21,Quarter-Final,10,6-3,Legs
+537,18,3,24,3,2025-04-21,Quarter-Final,10,6-4,Legs
+538,18,34,12,12,2025-04-21,Quarter-Final,10,5-6,Legs
+539,18,2,18,18,2025-04-21,Semi-Final,11,4-7,Legs
+540,18,3,12,3,2025-04-21,Semi-Final,11,7-2,Legs
+541,18,3,18,3,2025-04-21,Final,12,5-8,Legs
+542,19,1,23,1,2025-04-24,Quarter-Final,10,6-3,Legs
+543,19,3,2,3,2025-04-24,Quarter-Final,10,6-5,Legs
+544,19,9,4,9,2025-04-24,Quarter-Final,10,6-1,Legs
+545,19,8,7,8,2025-04-24,Quarter-Final,10,6-2,Legs
+546,19,1,3,1,2025-04-24,Semi-Final,11,6-4,Legs
+547,19,9,8,8,2025-04-24,Semi-Final,11,2-6,Legs
+548,19,1,8,8,2025-04-24,Final,12,4-6,Legs
+549,20,25,197,25,2025-04-25,First round,1,6-0,Legs
+550,20,28,62,62,2025-04-25,First round,1,3-6,Legs
+551,20,70,72,72,2025-04-25,First round,1,1-6,Legs
+552,20,34,43,34,2025-04-25,First round,1,6-3,Legs
+553,20,42,78,42,2025-04-25,First round,1,6-3,Legs
+554,20,74,226,74,2025-04-25,First round,1,6-2,Legs
+555,20,29,141,29,2025-04-25,First round,1,6-3,Legs
+556,20,39,47,39,2025-04-25,First round,1,6-4,Legs
+557,20,83,55,55,2025-04-25,First round,1,5-6,Legs
+558,20,32,198,32,2025-04-25,First round,1,6-1,Legs
+559,20,31,82,31,2025-04-25,First round,1,6-5,Legs
+560,20,26,69,69,2025-04-25,First round,1,5-6,Legs
+561,20,35,75,75,2025-04-25,First round,1,2-6,Legs
+562,20,64,199,64,2025-04-25,First round,1,6-3,Legs
+563,20,46,48,48,2025-04-25,First round,1,5-6,Legs
+564,20,24,200,24,2025-04-25,First round,1,6-4,Legs
+565,20,6,25,25,2025-04-26,Second round,2,3-6,Legs
+566,20,27,62,27,2025-04-26,Second round,2,6-1,Legs
+567,20,15,72,15,2025-04-26,Second round,2,6-5,Legs
+568,20,12,34,12,2025-04-26,Second round,2,6-4,Legs
+569,20,23,42,42,2025-04-26,Second round,2,2-6,Legs
+570,20,17,74,17,2025-04-26,Second round,2,6-3,Legs
+571,20,7,29,7,2025-04-26,Second round,2,6-1,Legs
+572,20,19,39,39,2025-04-26,Second round,2,4-6,Legs
+573,20,4,55,55,2025-04-26,Second round,2,4-6,Legs
+574,20,18,32,32,2025-04-26,Second round,2,1-6,Legs
+575,20,14,69,14,2025-04-26,Second round,2,6-1,Legs
+576,20,10,75,10,2025-04-26,Second round,2,6-5,Legs
+577,20,30,64,30,2025-04-26,Second round,2,6-2,Legs
+578,20,13,48,13,2025-04-26,Second round,2,6-3,Legs
+579,20,20,24,24,2025-04-26,Second round,2,1-6,Legs
+580,20,25,27,27,2025-04-27,Third round,3,1-6,Legs
+581,20,15,12,12,2025-04-27,Third round,3,5-6,Legs
+582,20,42,17,17,2025-04-27,Third round,3,5-6,Legs
+583,20,7,39,7,2025-04-27,Third round,3,6-1,Legs
+584,20,55,32,32,2025-04-27,Third round,3,4-6,Legs
+585,20,16,14,14,2025-04-27,Third round,3,5-6,Legs
+586,20,10,30,10,2025-04-27,Third round,3,6-5,Legs
+587,20,13,24,24,2025-04-27,Third round,3,3-6,Legs
+588,20,27,12,12,2025-04-27,Quarter-Final,10,3-6,Legs
+589,20,17,7,17,2025-04-27,Quarter-Final,10,6-4,Legs
+590,20,32,14,14,2025-04-27,Quarter-Final,10,4-6,Legs
+591,20,10,24,24,2025-04-27,Quarter-Final,10,1-6,Legs
+592,20,12,17,17,2025-04-27,Semi-Final,11,6-7,Legs
+593,20,14,24,14,2025-04-27,Semi-Final,11,7-4,Legs
+594,20,17,14,17,2025-04-27,Final,12,8-4,Legs
+595,21,2,4,2,2025-05-01,Quarter-Final,10,6-5,Legs
+596,21,23,7,23,2025-05-01,Quarter-Final,10,6-3,Legs
+597,21,1,8,8,2025-05-01,Quarter-Final,10,5-6,Legs
+598,21,9,3,3,2025-05-01,Quarter-Final,10,4-6,Legs
+599,21,1,23,1,2025-05-01,Semi-Final,11,6-5,Legs
+600,21,8,3,3,2025-05-01,Semi-Final,11,3-6,Legs
+601,21,2,3,2,2025-05-01,Final,12,6-4,Legs
+602,22,28,56,56,2025-05-02,First round,1,2-6,Legs
+603,22,25,183,183,2025-05-02,First round,1,3-6,Legs
+604,22,31,192,31,2025-05-02,First round,1,6-3,Legs
+605,22,14,187,14,2025-05-02,First round,1,6-0,Legs
+606,22,26,40,26,2025-05-02,First round,1,6-5,Legs
+607,22,39,73,39,2025-05-02,First round,1,6-2,Legs
+608,22,33,185,33,2025-05-02,First round,1,6-2,Legs
+609,22,24,142,142,2025-05-02,First round,1,3-6,Legs
+610,22,47,32,32,2025-05-02,First round,1,2-6,Legs
+611,22,17,41,17,2025-05-02,First round,1,6-3,Legs
+612,22,20,44,44,2025-05-02,First round,1,1-6,Legs
+613,22,30,201,30,2025-05-02,First round,1,6-0,Legs
+614,22,19,101,19,2025-05-02,First round,1,6-4,Legs
+615,22,18,82,18,2025-05-02,First round,1,6-3,Legs
+616,22,38,202,38,2025-05-02,First round,1,6-3,Legs
+617,22,35,34,35,2025-05-02,First round,1,6-3,Legs
+618,22,1,56,1,2025-05-03,Second round,2,6-1,Legs
+619,22,21,183,21,2025-05-03,Second round,2,6-5,Legs
+620,22,7,31,31,2025-05-03,Second round,2,4-6,Legs
+621,22,13,14,14,2025-05-03,Second round,2,3-6,Legs
+622,22,6,26,26,2025-05-03,Second round,2,5-6,Legs
+623,22,15,39,15,2025-05-03,Second round,2,6-5,Legs
+624,22,4,33,33,2025-05-03,Second round,2,2-6,Legs
+625,22,16,142,16,2025-05-03,Second round,2,6-4,Legs
+626,22,3,32,32,2025-05-03,Second round,2,3-6,Legs
+627,22,12,17,17,2025-05-03,Second round,2,4-6,Legs
+628,22,23,44,44,2025-05-03,Second round,2,2-6,Legs
+629,22,5,30,5,2025-05-03,Second round,2,6-4,Legs
+630,22,9,19,9,2025-05-03,Second round,2,6-3,Legs
+631,22,11,18,11,2025-05-03,Second round,2,6-5,Legs
+632,22,10,38,38,2025-05-03,Second round,2,2-6,Legs
+633,22,8,35,35,2025-05-03,Second round,2,5-6,Legs
+634,22,1,21,21,2025-05-04,Third round,3,5-6,Legs
+635,22,31,14,31,2025-05-04,Third round,3,6-3,Legs
+636,22,26,15,26,2025-05-04,Third round,3,6-3,Legs
+637,22,33,16,16,2025-05-04,Third round,3,5-6,Legs
+638,22,32,17,32,2025-05-04,Third round,3,6-2,Legs
+639,22,44,5,5,2025-05-04,Third round,3,2-6,Legs
+640,22,9,11,11,2025-05-04,Third round,3,3-6,Legss
+641,22,38,35,38,2025-05-04,Third round,3,6-5,Legs
+642,22,16,31,31,2025-05-04,Quarter-Final,10,5-6,Legs
+643,22,26,16,26,2025-05-04,Quarter-Final,10,6-1,Legs
+644,22,32,5,32,2025-05-04,Quarter-Final,10,6-5,Legs
+645,22,11,38,11,2025-05-04,Quarter-Final,10,6-5,Legs
+646,22,31,26,26,2025-05-04,Semi-Final,11,3-7,Legs
+647,22,32,11,11,2025-05-04,Semi-Final,11,2-7,Legs
+648,22,26,11,11,2025-05-04,Final,12,0-8,Legs
+649,23,9,8,8,2025-05-08,Quarter-Final,10,5-6,Legs
+650,23,23,2,2,2025-05-08,Quarter-Final,10,4-6,Legs
+651,23,3,1,1,2025-05-08,Quarter-Final,10,4-6,Legs
+652,23,4,7,4,2025-05-08,Quarter-Final,10,6-5,Legs
+653,23,8,2,2,2025-05-08,Semi-Final,11,3-6,Legs
+654,23,1,4,1,2025-05-08,Semi-Final,11,6-4,Legs
+655,23,2,1,1,2025-05-08,Final,12,5-6,Legs
+656,24,3,23,23,2025-05-15,Quarter-Final,10,3-6,Legs
+657,24,8,4,4,2025-05-15,Quarter-Final,10,4-6,Legs
+658,24,7,9,7,2025-05-15,Quarter-Final,10,6-2,Legs
+659,24,2,1,2,2025-05-15,Quarter-Final,10,6-3,Legs
+660,24,23,4,23,2025-05-15,Semi-Final,11,6-1,Legs
+661,24,7,2,7,2025-05-15,Semi-Final,11,6-5,Legs
+662,24,23,7,23,2025-05-15,Final,12,6-1,Legs
+663,25,2,4,2,2025-05-22,Quarter-Final,10,6-1,Legs
+664,25,23,3,23,2025-05-22,Quarter-Final,10,6-2,Legs
+665,25,1,9,1,2025-05-22,Quarter-Final,10,6-4,Legs
+666,25,8,7,7,2025-05-22,Quarter-Final,10,5-6,Legs
+667,25,2,23,2,2025-05-22,Semi-Final,11,6-4,Legs
+668,25,1,7,1,2025-05-22,Semi-Final,11,6-2,Legs
+669,25,2,1,1,2025-05-22,Final,12,6-3,Legs
+670,26,33,102,33,2025-05-23,First round,1,6-5,Legs
+671,26,24,119,24,2025-05-23,First round,1,6-5,Legs
+672,26,18,181,181,2025-05-23,First round,1,5-6,Legs
+673,26,28,50,28,2025-05-23,First round,1,6-5,Legs
+674,26,31,101,101,2025-05-23,First round,1,3-6,Legs
+675,26,35,203,35,2025-05-23,First round,1,6-5,Legs
+676,26,26,204,204,2025-05-23,First round,1,2-6,Legs
+677,26,44,68,68,2025-05-23,First round,1,4-6,Legs
+678,26,19,43,43,2025-05-23,First round,1,5-6,Legs
+679,26,30,63,63,2025-05-23,First round,1,1-6,Legs
+680,26,32,200,32,2025-05-23,First round,1,6-0,Legs
+681,26,39,78,39,2025-05-23,First round,1,6-5,Legs
+682,26,25,72,72,2025-05-23,First round,1,3-6,Legs
+683,26,38,70,38,2025-05-23,First round,1,6-2,Legs
+684,26,27,177,27,2025-05-23,First round,1,6-4,Legs
+685,26,29,75,29,2025-05-23,First round,1,6-1,Legs
+686,26,1,33,1,2025-05-24,Second round,2,6-5,Legs
+687,26,21,24,21,2025-05-24,Second round,2,6-5,Legs
+688,26,47,181,47,2025-05-24,Second round,2,6-3,Legs
+689,26,13,28,28,2025-05-24,Second round,2,5-6,Legs
+690,26,6,101,6,2025-05-24,Second round,2,6-2,Legs
+691,26,14,35,14,2025-05-24,Second round,2,6-2,Legs
+692,26,10,200,10,2025-05-24,Second round,2,6-3,Legs
+693,26,15,68,15,2025-05-24,Second round,2,6-2,Legs
+694,26,20,63,20,2025-05-24,Second round,2,6-4,Legs
+695,26,5,32,32,2025-05-24,Second round,2,3-6,Legs
+696,26,16,39,39,2025-05-24,Second round,2,1-6,Legs
+697,26,4,72,72,2025-05-24,Second round,2,5-6,Legs
+698,26,17,38,17,2025-05-24,Second round,2,6-4,Legs
+699,26,7,27,27,2025-05-24,Second round,2,5-6,Legs
+700,26,12,29,29,2025-05-24,Second round,2,4-6,Legs
+701,26,1,16,1,2025-05-25,Third round,3,6-0,Legs
+702,26,47,28,47,2025-05-25,Third round,3,6-3,Legs
+703,26,6,14,6,2025-05-25,Third round,3,6-5,Legs
+704,26,10,15,15,2025-05-25,Third round,3,5-6,Legs
+705,26,43,20,20,2025-05-25,Third round,3,0-6,Legs
+706,26,32,39,39,2025-05-25,Third round,3,5-6,Legs
+707,26,72,17,72,2025-05-25,Third round,3,6-2,Legs
+708,26,27,29,29,2025-05-25,Third round,3,5-6,Legs
+709,26,1,47,1,2025-05-25,Quarter-Final,10,6-3,Legs
+710,26,6,15,6,2025-05-25,Quarter-Final,10,6-4,Legs
+711,26,20,39,39,2025-05-25,Quarter-Final,10,1-6,Legs
+712,26,72,29,72,2025-05-25,Quarter-Final,10,6-2,Legs
+713,26,1,6,6,2025-05-25,Semi-Final,11,5-7,Legs
+714,26,39,72,72,2025-05-25,Semi-Final,11,3-7,Legs
+715,26,6,72,6,2025-05-25,Final,12,8-6,Legs
+716,27,2,8,2,2025-05-29,Semi-Final,11,10-7,Legs
+717,27,1,23,1,2025-05-29,Semi-Final,11,10-7,Legs
+718,27,1,2,1,2025-05-29,Final,12,8-11,Legs
+719,28,1,205,1,2025-05-30,First round,1,6-2,Legs
+720,28,27,49,27,2025-05-30,First round,1,6-2,Legs
+721,28,46,127,127,2025-05-30,First round,1,3-6,Legs
+722,28,39,37,39,2025-05-30,First round,1,6-3,Legs
+723,28,32,72,72,2025-05-30,First round,1,1-6,Legs
+724,28,26,188,26,2025-05-30,First round,1,6-1,Legs
+725,28,30,73,73,2025-05-30,First round,1,5-6,Legs
+726,28,29,206,29,2025-05-30,First round,1,6-2,Legs
+727,28,25,207,25,2025-05-30,First round,1,6-0,Legs
+728,28,20,45,20,2025-05-30,First round,1,6-3,Legs
+729,28,33,50,33,2025-05-30,First round,1,6-4,Legs
+730,28,28,191,28,2025-05-30,First round,1,6-2,Legs
+731,28,47,43,43,2025-05-30,First round,1,5-6,Legs
+732,28,35,158,158,2025-05-30,First round,1,3-6,Legs
+733,28,44,70,70,2025-05-30,First round,1,5-6,Legs
+734,28,55,53,55,2025-05-30,First round,1,6-4,Legs
+735,28,4,31,4,2025-05-31,Second round,2,6-3,Legs
+736,28,18,27,27,2025-05-31,Second round,2,2-6,Legs
+737,28,16,127,16,2025-05-31,Second round,2,6-5,Legs
+738,28,11,39,39,2025-05-31,Second round,2,4-6,Legs
+739,28,7,72,7,2025-05-31,Second round,2,6-5,Legs
+740,28,20,26,26,2025-05-31,Second round,2,5-6,Legs
+741,28,23,73,23,2025-05-31,Second round,2,6-4,Legs
+742,28,17,29,29,2025-05-31,Second round,2,4-6,Legs
+743,28,6,25,6,2025-05-31,Second round,2,6-4,Legs
+744,28,19,24,19,2025-05-31,Second round,2,6-3,Legs
+745,28,13,33,33,2025-05-31,Second round,2,5-6,Legs
+746,28,15,28,28,2025-05-31,Second round,2,2-6,Legs
+747,28,10,43,10,2025-05-31,Second round,2,6-2,Legs
+748,28,16,158,158,2025-05-31,Second round,2,1-6,Legs
+749,28,5,70,5,2025-05-31,Second round,2,6-0,Legs
+750,28,14,55,55,2025-05-31,Second round,2,2-6,Legs
+751,28,4,27,4,2025-06-01,Third round,3,6-5,Legs
+752,28,16,39,39,2025-06-01,Third round,3,4-6,Legs
+753,28,7,26,7,2025-06-01,Third round,3,6-3,Legs
+754,28,23,29,23,2025-06-01,Third round,3,6-3,Legs
+755,28,6,19,6,2025-06-01,Third round,3,6-0,Legs
+756,28,33,28,33,2025-06-01,Third round,3,6-3,Legs
+757,28,10,158,10,2025-06-01,Third round,3,6-4,Legs
+758,28,5,55,55,2025-06-01,Third round,3,3-6,Legs
+759,28,4,39,39,2025-06-01,Quarter-Final,10,5-6,Legs
+760,28,7,23,23,2025-06-01,Quarter-Final,10,5-6,Legs
+761,28,6,33,6,2025-06-01,Quarter-Final,10,6-3,Legs
+762,28,10,55,10,2025-06-01,Quarter-Final,10,6-5,Legs
+763,28,39,23,23,2025-06-01,Semi-Final,11,6-7,Legs
+764,28,6,10,10,2025-06-01,Semi-Final,11,3-7,Legs
+765,28,23,10,23,2025-06-01,Final,12,8-6,Legs
+766,29,7,52,7,2025-06-06,First round,1,6-2,Legs
+767,29,8,162,8,2025-06-06,First round,1,6-3,Legs
+768,29,9,158,9,2025-06-06,First round,1,6-4,Legs
+769,29,1,46,1,2025-06-06,First round,1,6-5,Legs
+770,29,23,94,23,2025-06-06,First round,1,6-0,Legs
+771,29,2,166,2,2025-06-06,First round,1,6-3,Legs
+772,29,4,155,4,2025-06-06,First round,1,6-3,Legs
+773,29,6,99,6,2025-06-06,First round,1,6-5,Legs
+774,29,4,6,4,2025-06-07,Quarter-Final,10,6-3,Legs
+775,29,2,23,23,2025-06-07,Quarter-Final,10,3-6,Legs
+776,29,9,7,9,2025-06-07,Quarter-Final,10,6-0,Legs
+777,29,8,1,8,2025-06-07,Quarter-Final,10,6-3,Legs
+778,29,4,23,4,2025-06-07,Semi-Final,11,7-5,Legs
+779,29,9,8,9,2025-06-07,Semi-Final,11,7-4,Legs
+780,29,4,9,4,2025-06-07,Final,12,8-4,Legs
+781,30,10,121,10,2025-06-28,First round,1,6-1,Legs
+782,30,9,91,91,2025-06-28,First round,1,0-6,Legs
+783,30,4,208,208,2025-06-28,First round,1,4-6,Legs
+784,30,8,209,8,2025-06-28,First round,1,6-2,Legs
+785,30,2,144,2,2025-06-28,First round,1,6-1,Legs
+786,30,23,55,23,2025-06-28,First round,1,6-2,Legs
+787,30,1,104,1,2025-06-28,First round,1,6-4,Legs
+788,30,3,112,3,2025-06-28,First round,1,6-1,Legs
+789,30,208,10,10,2025-06-29,Quarter-Final,10,0-6,Legs
+790,30,2,23,23,2025-06-29,Quarter-Final,10,4-6,Legs
+791,30,91,1,1,2025-06-29,Quarter-Final,10,2-6,Legs
+792,30,8,3,8,2025-06-29,Quarter-Final,10,6-3,Legs
+793,30,10,23,23,2025-06-29,Semi-Final,11,3-7,Legs
+794,30,1,8,1,2025-06-29,Semi-Final,11,7-2,Legs
+795,30,23,1,1,2025-06-29,Final,12,6-8,Legs
+796,31,7,198,7,2025-07-04,First round,1,6-1,Legs
+797,31,8,79,8,2025-07-04,First round,1,6-3,Legs
+798,31,9,210,9,2025-07-04,First round,1,6-2,Legs
+799,31,3,225,3,2025-07-04,First round,1,6-4,Legs
+800,31,4,150,4,2025-07-04,First round,1,6-3,Legs
+801,31,2,75,2,2025-07-04,First round,1,6-4,Legs
+802,31,6,34,34,2025-07-04,First round,1,3-6,Legs
+803,31,23,87,23,2025-07-04,First round,1,6-4,Legs
+804,31,4,34,4,2025-07-05,Quarter-Final,10,6-5,Legs
+805,31,23,2,2,2025-07-05,Quarter-Final,10,3-6,Legs
+806,31,8,7,8,2025-07-05,Quarter-Final,10,6-2,Legs
+807,31,9,3,9,2025-07-05,Quarter-Final,10,6-4,Legs
+808,31,4,2,4,2025-07-05,Semi-Final,11,7-5,Legs
+809,31,8,9,8,2025-07-05,Semi-Final,11,7-3,Legs
+810,31,4,8,8,2025-07-05,Final,12,7-8,Legs
+811,32,43,211,43,2025-07-11,First round,1,6-3,Legs
+812,32,33,212,33,2025-07-11,First round,1,6-5,Legs
+813,32,39,213,39,2025-07-11,First round,1,6-3,Legs
+814,32,47,150,47,2025-07-11,First round,1,6-5,Legs
+815,32,29,79,29,2025-07-11,First round,1,6-2,Legs
+816,32,19,62,19,2025-07-11,First round,1,6-2,Legs
+817,32,32,63,32,2025-07-11,First round,1,6-2,Legs
+818,32,50,48,50,2025-07-11,First round,1,6-3,Legs
+819,32,72,214,72,2025-07-11,First round,1,6-2,Legs
+820,32,25,41,25,2025-07-11,First round,1,6-1,Legs
+821,32,31,215,31,2025-07-11,First round,1,6-2,Legs
+822,32,27,38,27,2025-07-11,First round,1,6-4,Legs
+823,32,18,192,18,2025-07-11,First round,1,6-0,Legs
+824,32,30,92,92,2025-07-11,First round,1,3-6,Legs
+825,32,35,71,71,2025-07-11,First round,1,4-6,Legs
+826,32,49,34,34,2025-07-11,First round,1,2-6,Legs
+827,32,1,43,1,2025-07-12,Second round,2,6-5,Legs
+828,32,20,33,20,2025-07-12,Second round,2,6-3,Legs
+829,32,10,39,39,2025-07-12,Second round,2,3-6,Legs
+830,32,8,47,8,2025-07-12,Second round,2,6-1,Legs
+831,32,23,29,23,2025-07-12,Second round,2,6-4,Legs
+832,32,15,19,15,2025-07-12,Second round,2,6-3,Legs
+833,32,7,32,7,2025-07-12,Second round,2,6-3,Legs
+834,32,14,50,14,2025-07-12,Second round,2,6-0,Legs
+835,32,4,72,72,2025-07-12,Second round,2,2-6,Legs
+836,32,15,25,15,2025-07-12,Second round,2,6-3,Legs
+837,32,5,31,5,2025-07-12,Second round,2,6-1,Legs
+838,32,13,27,27,2025-07-12,Second round,2,3-6,Legs
+839,32,6,18,6,2025-07-12,Second round,2,6-4,Legs
+840,32,12,92,12,2025-07-12,Second round,2,6-1,Legs
+841,32,9,71,71,2025-07-12,Second round,2,2-6,Legs
+842,32,11,34,11,2025-07-12,Second round,2,6-2,Legs
+843,32,1,20,1,2025-07-13,Third round,3,6-0,Legs
+844,32,39,8,8,2025-07-13,Third round,3,5-6,Legs
+845,32,23,15,15,2025-07-13,Third round,3,2-6,Legs
+846,32,7,21,7,2025-07-13,Third round,3,6-3,Legs
+847,32,72,17,17,2025-07-13,Third round,3,4-6,Legs
+848,32,5,27,5,2025-07-13,Third round,3,6-5,Legs
+849,32,6,12,6,2025-07-13,Third round,3,6-2,Legs
+850,32,71,11,11,2025-07-13,Third round,3,3-6,Legs
+851,32,1,8,8,2025-07-13,Quarter-Final,10,3-6,Legs
+852,32,15,7,7,2025-07-13,Quarter-Final,10,1-6,Legs
+853,32,17,5,5,2025-07-13,Quarter-Final,10,3-6,Legs
+854,32,5,11,11,2025-07-13,Quarter-Final,10,1-6,Legs
+855,32,8,7,8,2025-07-13,Semi-Final,11,7-3,Legs
+856,32,5,11,11,2025-07-13,Semi-Final,11,1-7,Legs
+857,32,8,11,8,2025-07-13,Final,12,8-3,Legs
+858,33,5,30,5,2025-07-19,First round,1,10-3,Legs
+859,33,15,33,15,2025-07-19,First round,1,10-2,Legs
+860,33,1,18,18,2025-07-19,First round,1,8-10,Legs
+861,33,23,39,39,2025-07-19,First round,1,6-10,Legs
+862,33,10,26,26,2025-07-20,First round,1,10-12,Legs
+863,33,9,32,32,2025-07-20,First round,1,8-10,Legs
+864,33,16,25,25,2025-07-20,First round,1,8-10,Legs
+865,33,13,19,19,2025-07-20,First round,1,7-10,Legs
+866,33,11,31,11,2025-07-20,First round,1,10-5,Legs
+867,33,6,17,6,2025-07-20,First round,1,10-7,Legs
+868,33,2,20,2,2025-07-20,First round,1,10-2,Legs
+869,33,4,24,4,2025-07-20,First round,1,10-8,Legs
+870,33,7,29,7,2025-07-21,First round,1,10-5,Legs
+871,33,8,27,8,2025-07-21,First round,1,10-7,Legs
+872,33,3,35,3,2025-07-21,First round,1,10-6,Legs
+873,33,14,12,12,2025-07-21,First round,1,5-10,Legs
+874,33,18,15,18,2025-07-22,Second round,2,11-5,Legs
+875,33,39,5,5,2025-07-22,Second round,2,5-11,Legs
+876,33,4,11,4,2025-07-22,Second round,2,12-10,Legs
+877,33,6,19,6,2025-07-22,Second round,2,11-8,Legs
+878,33,26,32,26,2025-07-23,Second round,2,11-5,Legs
+879,33,7,8,8,2025-07-23,Second round,2,3-11,Legs
+880,33,2,25,2,2025-07-23,Second round,2,13-11,Legs
+881,33,3,12,12,2025-07-23,Second round,2,11-13,Legs
+882,33,18,5,5,2025-07-24,Quarter-Final,10,13-16,Legs
+883,33,4,6,6,2025-07-24,Quarter-Final,10,7-16,Legs
+884,33,2,26,2,2025-07-25,Quarter-Final,10,16-14,Legs
+885,33,12,8,12,2025-07-25,Quarter-Final,10,16-11,Legs
+886,33,5,6,5,2025-07-26,Semi-Final,11,20-18,Legs
+887,33,2,12,2,2025-07-26,Semi-Final,11,17-14,Legs
+888,33,5,2,2,2025-07-27,Final,12,13-18,Legs
+889,34,19,216,19,2025-08-08,First round,1,6-2,Legs
+890,34,8,103,8,2025-08-08,First round,1,6-3,Legs
+891,34,4,217,4,2025-08-08,First round,1,6-1,Legs
+892,34,1,220,1,2025-08-08,First round,1,6-3,Legs
+893,34,10,218,10,2025-08-08,First round,1,6-0,Legs
+894,34,2,97,2,2025-08-08,First round,1,6-5,Legs
+895,34,12,223,12,2025-08-08,First round,1,6-1,Legs
+896,34,7,219,7,2025-08-08,First round,1,6-4,Legs
+897,34,4,12,4,2025-08-09,Quarter-Final,10,6-0,Legs
+898,34,2,10,2,2025-08-09,Quarter-Final,10,6-3,Legs
+899,34,8,7,7,2025-08-09,Quarter-Final,10,4-6,Legs
+900,34,1,19,19,2025-08-09,Quarter-Final,10,0-6,Legs
+901,34,4,2,2,2025-08-09,Semi-Final,11,4-7,Legs
+902,34,7,19,19,2025-08-09,Semi-Final,11,4-7,Legs
+903,34,2,19,2,2025-08-09,Final,12,8-4,Legs
+904,35,19,125,19,2025-08-15,First round,1,6-1,Legs
+905,35,12,221,12,2025-08-15,First round,1,6-2,Legs
+906,35,8,220,8,2025-08-15,First round,1,6-4,Legs
+907,35,10,222,10,2025-08-15,First round,1,6-1,Legs
+908,35,4,109,4,2025-08-15,First round,1,6-3,Legs
+909,35,1,97,1,2025-08-15,First round,1,6-3,Legs
+910,35,2,227,2,2025-08-15,First round,1,6-4,Legs
+911,35,4,223,4,2025-08-15,First round,1,6-4,Legs
+912,35,4,7,7,2025-08-16,Quarter-Final,10,3-6,Legs
+913,35,1,10,1,2025-08-16,Quarter-Final,10,6-2,Legs
+914,35,8,12,8,2025-08-16,Quarter-Final,10,6-5,Legs
+915,35,2,19,2,2025-08-16,Quarter-Final,10,6-2,Legs
+916,35,7,1,1,2025-08-16,Semi-Final,11,4-7,Legs
+917,35,8,2,2,2025-08-16,Semi-Final,11,2-7,Legs
+918,35,1,2,2,2025-08-16,Final,12,4-8,Legs

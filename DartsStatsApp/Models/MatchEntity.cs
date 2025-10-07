@@ -16,6 +16,7 @@ namespace DartsStatsApp.Models
 
         public DateTime Date { get; set; }
         public string RoundName { get; set; }
+        public int RoundOrder {get; set; }
         public string MatchScore { get; set; }
         public string MatchFormat { get; set; }
 
