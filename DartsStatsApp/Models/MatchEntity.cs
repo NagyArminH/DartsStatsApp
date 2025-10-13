@@ -20,5 +20,9 @@ namespace DartsStatsApp.Models
         public string MatchScore { get; set; }
         public string MatchFormat { get; set; }
 
+        [Ignore]
+        public string Player1Name { get; set; }
+        [Ignore]
+        public string Player2Name { get; set; }
     }
 }

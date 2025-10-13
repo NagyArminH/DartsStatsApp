@@ -30,11 +30,12 @@
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="*"/>
                                                 <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
                                             </Grid.ColumnDefinitions>
 
-                                            <Label Text="{Binding Player1Id}" Grid.Column="0"/>
-                                            <Label Text="{Binding MatchScore}" Grid.Column="0" HorizontalOptions="Center"/>
-                                            <Label Text="{Binding Player2Id}" Grid.Column="1" HorizontalOptions="End"/>
+                                            <Label Text="{Binding Player1Name}" Grid.Column="0" HorizontalOptions="Start"/>
+                                            <Label Text="{Binding MatchScore}" Grid.Column="1" HorizontalOptions="Center" FontAttributes="Bold"/>
+                                            <Label Text="{Binding Player2Name}" Grid.Column="2" HorizontalOptions="End"/>
                                         </Grid>
                                     </DataTemplate>
                                 </CollectionView.ItemTemplate>

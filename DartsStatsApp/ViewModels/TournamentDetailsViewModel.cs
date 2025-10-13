@@ -49,7 +49,16 @@ namespace DartsStatsApp.ViewModels
         {
             Tournament = (await _dbService.GetData<TournamentEntity>()).FirstOrDefault(t => t.Id == tournamentId);
 
+            var allPlayers = await _dbService.GetData<PlayerEntity>();
+            var playerMap = allPlayers.ToDictionary(p => p.Id, p => p.Name);
+
             var allMatches = (await _dbService.GetData<MatchEntity>()).Where(m => m.TournamentId == tournamentId).ToList();
+
+            foreach (var match in allMatches)
+            {
+                match.Player1Name = playerMap.GetValueOrDefault(match.Player1Id, string.Empty);
+                match.Player2Name = playerMap.GetValueOrDefault(match.Player2Id, string.Empty);
+            }
 
             var grouped = from g in allMatches
                           group g by g.RoundOrder into g
