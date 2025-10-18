@@ -2,6 +2,7 @@
 using DartsStatsApp.ViewModels;
 using DartsStatsApp.Views;
 using Microsoft.Extensions.Logging;
+using CommunityToolkit.Maui;
 
 namespace DartsStatsApp;
 
@@ -12,6 +13,7 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
+			.UseMauiCommunityToolkit()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -24,7 +26,13 @@ public static class MauiProgram
 		builder.Services.AddSingleton<DbService>();
 
 		builder.Services.AddTransient<OOMListView>();
+        builder.Services.AddTransient<TournamentsView>();
+        builder.Services.AddTransient<TournamentDetailsView>();
+
         builder.Services.AddTransient<OOMListViewModel>();
-		return builder.Build();
+		builder.Services.AddTransient<TournamentsViewModel>();
+        builder.Services.AddTransient<TournamentDetailsViewModel>();
+
+        return builder.Build();
 	}
 }

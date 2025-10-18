@@ -11,7 +11,7 @@ namespace DartsStatsApp
         }
         private void registerRoutes()
         {
-            Routing.RegisterRoute(nameof(OOMListView), typeof(OOMListView));
+            Routing.RegisterRoute(nameof(TournamentDetailsView), typeof(TournamentDetailsView));
         }
     }
 }

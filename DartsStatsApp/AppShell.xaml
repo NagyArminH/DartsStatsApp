@@ -12,8 +12,8 @@
         <Tab Title="OOM List">
             <ShellContent ContentTemplate="{DataTemplate views:OOMListView}"/>
         </Tab>
-        <Tab Title="OOM List">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        <Tab Title="Tournaments">
+            <ShellContent ContentTemplate="{DataTemplate views:TournamentsView}"/>
         </Tab>
     </TabBar>
 

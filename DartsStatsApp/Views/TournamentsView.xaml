@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+             x:Name="PageRoot"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="DartsStatsApp.Views.TournamentsView"
+             Title="TournamentsView">
+    
+    <CollectionView ItemsSource="{Binding GroupedTournaments}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <toolkit:Expander IsExpanded="False">
+
+                    <toolkit:Expander.Header>
+                        <Grid Padding="10" BackgroundColor="#eee">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="30"/>
+                            </Grid.ColumnDefinitions>
+                            
+                        <!-- Month header -->
+                        <Label Text="{Binding Month}"
+                           FontAttributes="Bold"
+                           FontSize="18"
+                           Padding="5"
+                           BackgroundColor="#eee"/>
+
+                        <Label FontSize="18" Grid.Column="1">
+                            <Label.Triggers>
+                                    <DataTrigger TargetType="Label" Binding="{Binding Source={RelativeSource AncestorType={x:Type toolkit:Expander}}, Path=IsExpanded}" Value="True">
+                                        <Setter Property="Text" Value="▲"/>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Label" Binding="{Binding Source={RelativeSource AncestorType={x:Type toolkit:Expander}}, Path=IsExpanded}" Value="False">
+                                        <Setter Property="Text" Value="▼"/>
+                                    </DataTrigger>
+                            </Label.Triggers>
+                        </Label>
+                        </Grid>
+                    </toolkit:Expander.Header>
+
+                    <toolkit:Expander.Content>
+                    <!-- Inner CollectionView a tournamentekre-->
+                    <CollectionView ItemsSource="{Binding Tournaments}"
+                                    SelectionMode="None"
+                                    BackgroundColor="#fafafa"
+                                    Margin="10,0,0,10">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Padding="5" ColumnSpacing="10">
+                                        <Grid.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.NavigateToTournamentDetailsView}"
+                                                CommandParameter="{Binding .}"
+                                                />
+                                        </Grid.GestureRecognizers>
+                                    
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Text="{Binding TournamentName}" Grid.Column="0" VerticalOptions="Center"/>
+                                    <Label Text="{Binding StartDate, StringFormat='{0:yyyy.MM.dd.}'}" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End"/>
+                                            
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    </toolkit:Expander.Content>
+                </toolkit:Expander>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>
