@@ -8,7 +8,6 @@ namespace DartsStatsApp.Models
         // Egy játékosnak egy meccsen játszott statisztikái
 
         [PrimaryKey]
-        [AutoIncrement]
         public int Id { get; set; }
 
         // Idegen kulcsok
@@ -21,6 +20,6 @@ namespace DartsStatsApp.Models
         public int Total140s { get; set; }
         public int HighestCheckout { get; set; }
         public int LegsWon { get; set; }
-        public int SetsWon { get; set; }
+        public int? SetsWon { get; set; }
     }
 }
