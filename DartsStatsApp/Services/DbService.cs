@@ -26,14 +26,15 @@ namespace DartsStatsApp.Services
             await _connection.DeleteAllAsync<MatchStatEntity>();
             await _connection.DeleteAllAsync<MatchEntity>();
 
-            await _connection.DeleteAllAsync<PlayerEntity>();
             await _connection.DeleteAllAsync<TournamentEntity>();
+            await _connection.DeleteAllAsync<PlayerEntity>();
         }
         public async Task InsertDataIntoDb()
         {
             await GetDataFromPlayers();
             await GetDataFromTournaments();
             await GetDataFromMatches();
+            await GetDataFromMatchStats();
         }
 
         public async Task GetDataFromPlayers()
@@ -120,20 +121,22 @@ namespace DartsStatsApp.Services
                 string row = await reader.ReadLineAsync();
                 string[] helper = row.Split(',');
 
-                MatchStatEntity matches = new MatchStatEntity
-                {
-                    Id = int.Parse(helper[0]),
-                    MatchId = int.Parse(helper[1]),
-                    PlayerId = int.Parse(helper[2]),
-                    Average = double.Parse(helper[3]),
-                    CheckoutPercentage = double.Parse(helper[4]),
-                    Total180s = int.Parse(helper[5]),
-                    Total140s = int.Parse(helper[6]),
-                    HighestCheckout = int.Parse(helper[7]),
-                    LegsWon = int.Parse(helper[8]),
-                    SetsWon = int.TryParse(helper[9], out int stsw) ? (int?)stsw : null,
-                };
-                await Create(matches);
+                
+                    MatchStatEntity matches = new MatchStatEntity
+                    {
+                        Id = int.Parse(helper[0]),
+                        MatchId = int.Parse(helper[1]),
+                        PlayerId = int.Parse(helper[2]),
+                        Average = double.Parse(helper[3], CultureInfo.InvariantCulture),
+                        CheckoutPercentage = double.Parse(helper[4], CultureInfo.InvariantCulture),
+                        Total180s = int.Parse(helper[5]),
+                        Total140s = int.Parse(helper[6]),
+                        HighestCheckout = int.Parse(helper[7]),
+                        LegsWon = int.Parse(helper[8]),
+                        SetsWon = int.TryParse(helper[9], out int stsw) ? (int?)stsw : null
+                        
+                    };
+                    await Create(matches);
 
             }
         }
