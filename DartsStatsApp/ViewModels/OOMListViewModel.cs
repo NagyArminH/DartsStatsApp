@@ -13,6 +13,7 @@ namespace DartsStatsApp.ViewModels
         private string _searchText;
         private List<PlayerEntity> allPlayers = new List<PlayerEntity>();
         #endregion
+
         #region properties
         public ObservableCollection<PlayerEntity> PlayerList { get; } = new ObservableCollection<PlayerEntity>();
 
