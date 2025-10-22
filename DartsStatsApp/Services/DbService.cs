@@ -110,6 +110,34 @@ namespace DartsStatsApp.Services
             }
         }
 
+        public async Task GetDataFromMatchStats()
+        {
+            using var stream = await FileSystem.OpenAppPackageFileAsync("MatchStatData.csv");
+            using var reader = new StreamReader(stream);
+
+            while (!reader.EndOfStream)
+            {
+                string row = await reader.ReadLineAsync();
+                string[] helper = row.Split(',');
+
+                MatchStatEntity matches = new MatchStatEntity
+                {
+                    Id = int.Parse(helper[0]),
+                    MatchId = int.Parse(helper[1]),
+                    PlayerId = int.Parse(helper[2]),
+                    Average = double.Parse(helper[3]),
+                    CheckoutPercentage = double.Parse(helper[4]),
+                    Total180s = int.Parse(helper[5]),
+                    Total140s = int.Parse(helper[6]),
+                    HighestCheckout = int.Parse(helper[7]),
+                    LegsWon = int.Parse(helper[8]),
+                    SetsWon = int.TryParse(helper[9], out int stsw) ? (int?)stsw : null,
+                };
+                await Create(matches);
+
+            }
+        }
+
         public async Task Create<T> (T entity) where T : new()
         {
             await _connection.InsertAsync(entity);

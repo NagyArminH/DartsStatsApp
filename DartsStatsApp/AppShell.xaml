@@ -15,6 +15,9 @@
         <Tab Title="Tournaments">
             <ShellContent ContentTemplate="{DataTemplate views:TournamentsView}"/>
         </Tab>
+        <Tab Title="Comparison">
+            <ShellContent ContentTemplate="{DataTemplate views:PlayerComparisonView}"/>
+        </Tab>
     </TabBar>
 
 </Shell>

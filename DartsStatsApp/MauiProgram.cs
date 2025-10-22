@@ -28,10 +28,12 @@ public static class MauiProgram
 		builder.Services.AddTransient<OOMListView>();
         builder.Services.AddTransient<TournamentsView>();
         builder.Services.AddTransient<TournamentDetailsView>();
+		builder.Services.AddTransient<PlayerComparisonView>();
 
         builder.Services.AddTransient<OOMListViewModel>();
 		builder.Services.AddTransient<TournamentsViewModel>();
         builder.Services.AddTransient<TournamentDetailsViewModel>();
+		builder.Services.AddTransient<PlayerComparisonViewModel>();
 
         return builder.Build();
 	}
