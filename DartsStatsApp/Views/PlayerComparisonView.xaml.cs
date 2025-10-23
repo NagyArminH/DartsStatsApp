@@ -1,9 +1,14 @@
+using DartsStatsApp.ViewModels;
+
 namespace DartsStatsApp.Views;
 
 public partial class PlayerComparisonView : ContentPage
 {
-	public PlayerComparisonView()
+	private PlayerComparisonViewModel _viewModel;
+	public PlayerComparisonView(PlayerComparisonViewModel vm)
 	{
 		InitializeComponent();
-	}
+        _viewModel = vm;
+        BindingContext = _viewModel;
+    }
 }

@@ -35,6 +35,9 @@ namespace DartsStatsApp.Services
             await GetDataFromTournaments();
             await GetDataFromMatches();
             await GetDataFromMatchStats();
+
+            StatSummaryService sum = new StatSummaryService(this);
+            await sum.PlayerStatSummary();
         }
 
         public async Task GetDataFromPlayers()
@@ -153,6 +156,11 @@ namespace DartsStatsApp.Services
         public async Task StatSummaryCreator()
         {
             await _connection.DeleteAllAsync<PlayerDataSummaryEntity>();
+        }
+
+        public async Task InsertPlayerDataSummary(List<PlayerDataSummaryEntity> summary)
+        {
+            await _connection.InsertAllAsync(summary, runInTransaction:true);
         }
     }
 }

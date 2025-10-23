@@ -2,11 +2,58 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DartsStatsApp.Views.PlayerComparisonView"
-             Title="PlayerComparisonView">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Player Comparison">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="10">
+            <Label Text="Compare two players" FontSize="20" FontAttributes="Bold"/>
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="12" RowSpacing="8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Player A"/>
+                <Picker Grid.Row="1" Grid.Column="0"
+                        ItemsSource="{Binding PlayerOptionsA}"
+                        ItemDisplayBinding="{Binding DisplayName}"
+                        SelectedItem="{Binding SelectedPlayerA}"/>
+
+                <Label Grid.Row="0" Grid.Column="1" Text="Player B"/>
+                <Picker Grid.Row="1" Grid.Column="1"
+                        ItemsSource="{Binding PlayerOptionsB}"
+                        ItemDisplayBinding="{Binding DisplayName}"
+                        SelectedItem="{Binding SelectedPlayerB}"/>
+            </Grid>
+
+            <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}"/>
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="12" RowSpacing="12">
+                <Frame Grid.Column="0" Padding="12">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding SelectedPlayerA.DisplayName}" FontAttributes="Italic"/>
+                    <Label Text="{Binding PlayerFormA.Matches, StringFormat='Matches: {0}'}"/>
+                    <Label Text="{Binding PlayerFormA.Average, StringFormat='Average: {0:F2}'}"/>
+                    <Label Text="{Binding PlayerFormA.CheckoutPercentage, StringFormat='Checkout %: {0:F2}'}"/>
+                    <Label Text="{Binding PlayerFormA.Total180s, StringFormat='180s: {0}'}"/>
+                    <Label Text="{Binding PlayerFormA.Total140s, StringFormat='140s: {0}'}"/>
+                    <Label Text="{Binding PlayerFormA.Total100PlusCheckouts, StringFormat='100+ CO: {0}'}"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Column="1" Padding="12">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding SelectedPlayerB.DisplayName}" FontAttributes="Italic"/>
+                        <Label Text="{Binding PlayerFormB.Matches, StringFormat='Matches: {0}'}"/>
+                        <Label Text="{Binding PlayerFormB.Average, StringFormat='Average: {0:F2}'}"/>
+                        <Label Text="{Binding PlayerFormB.CheckoutPercentage, StringFormat='Checkout %: {0:F2}'}"/>
+                        <Label Text="{Binding PlayerFormB.Total180s, StringFormat='180s: {0}'}"/>
+                        <Label Text="{Binding PlayerFormB.Total140s, StringFormat='140s: {0}'}"/>
+                        <Label Text="{Binding PlayerFormB.Total100PlusCheckouts, StringFormat='100+ CO: {0}'}"/>
+                    </VerticalStackLayout>
+                </Frame>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

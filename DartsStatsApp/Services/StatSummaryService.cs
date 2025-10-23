@@ -1,9 +1,4 @@
 ﻿using DartsStatsApp.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DartsStatsApp.Services
 {
@@ -72,6 +67,8 @@ namespace DartsStatsApp.Services
                                       Total140s = g.Sum(x=> x.Total140s),
                                       Total100Checkouts = g.Sum(x=> x.Total100Checkouts),
                                   }).ToList();
+
+            await _dbService.InsertPlayerDataSummary(sumPlayersStats);
         }
     }
 }
