@@ -18,7 +18,7 @@ namespace DartsStatsApp.Services
         public async Task InitializeDb()
         {
             await _connection.ExecuteAsync("PRAGMA foreign_keys = ON;"); // idegen kulcsok engedélyezése
-            await _connection.CreateTablesAsync<PlayerEntity, TournamentEntity, MatchEntity, MatchStatEntity>(); // táblák létrehozása
+            await _connection.CreateTablesAsync<PlayerEntity, TournamentEntity, MatchEntity, MatchStatEntity, PlayerDataSummaryEntity>(); // táblák létrehozása
             await ClearAllTables();
         }
         private async Task ClearAllTables()
@@ -149,6 +149,10 @@ namespace DartsStatsApp.Services
         public async Task<List<T>> GetData<T>() where T : new()
         {
             return await _connection.Table<T>().ToListAsync();
+        }
+        public async Task StatSummaryCreator()
+        {
+            await _connection.DeleteAllAsync<PlayerDataSummaryEntity>();
         }
     }
 }

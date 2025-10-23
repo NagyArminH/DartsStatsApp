@@ -15,7 +15,5 @@ namespace DartsStatsApp.ViewModels
         {
             _dbService = dbService;
         }
-
-
     }
 }
