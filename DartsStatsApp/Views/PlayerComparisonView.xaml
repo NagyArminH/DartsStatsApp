@@ -17,12 +17,14 @@
                 <Picker Grid.Row="1" Grid.Column="0"
                         ItemsSource="{Binding PlayerOptionsA}"
                         ItemDisplayBinding="{Binding DisplayName}"
+                        Title="Choose a player"
                         SelectedItem="{Binding SelectedPlayerA}"
                         HorizontalTextAlignment="Center"/>
 
                 <Picker Grid.Row="1" Grid.Column="1"
                         ItemsSource="{Binding PlayerOptionsB}"
                         ItemDisplayBinding="{Binding DisplayName}"
+                        Title="Choose a player"
                         SelectedItem="{Binding SelectedPlayerB}"
                         HorizontalTextAlignment="Center"/>
             </Grid>
