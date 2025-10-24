@@ -13,14 +13,13 @@ namespace DartsStatsApp.ViewModels
     public class PlayerComparisonViewModel : ObservableObject
     {
         // ugyanazok a játékosok kiszűrése
-        // ha az egyik játékos van csak kiválasztva és a másik üres nincs a kiválasztottban adat fix: isReady miatt nem látszódik a grid
-        // UI update: középre a nevek, bal jobb oldalt pedig a számok
         #region fields
         private DbService _dbService;
         private ObservableCollection<PlayerOption> _playerOptionA = new ObservableCollection<PlayerOption>();
         private ObservableCollection<PlayerOption> _playerOptionB = new ObservableCollection<PlayerOption>();
         private List<PlayerDataSummaryEntity> _summary = new List<PlayerDataSummaryEntity>();
         private List<MatchStatEntity> _stats = new List<MatchStatEntity>();
+        private List<PlayerOption> _allPlayers = new List<PlayerOption>();
         private PlayerOption? _selectedPlayerA;
         private PlayerOption? _selectedPlayerB;
         private PlayerStatSummary _playerFormA;
@@ -93,21 +92,20 @@ namespace DartsStatsApp.ViewModels
             }
         }
         #endregion
-
-        #region commands
-
-        #endregion
         public PlayerComparisonViewModel(DbService dbService)
         {
             _dbService = dbService;
-            _ = LoadPlayers();
-            _ = LoadPrecomputedData();
+            _ = InitializeMethods();
         }
-
+        private async Task InitializeMethods()
+        {
+            await LoadPrecomputedData();
+            await LoadPlayers();
+        }
         private async Task LoadPlayers()
         {
             var players = await _dbService.GetData<PlayerEntity>();
-            var orderedPlayers = (from p in players
+            _allPlayers = (from p in players
                                   orderby p.Name
                                   select new PlayerOption
                                   {
@@ -115,22 +113,31 @@ namespace DartsStatsApp.ViewModels
                                       DisplayName = p.Name,
                                   }).ToList();
 
-            
+            var idHelper = (from s in _summary
+                            where s.TotalMatches >= 3
+                            select s.PlayerId).ToList();
+
+            var filteredPlayers = (from f in _allPlayers
+                                   where idHelper.Contains(f.PlayerId)
+                                   orderby f.DisplayName
+                                   select f).ToList();
+
             PlayerOptionsA.Clear();
             PlayerOptionsB.Clear();
 
-            foreach (var player in orderedPlayers)
+            foreach (var player in filteredPlayers)
             {
                 PlayerOptionsA.Add(player);
                 PlayerOptionsB.Add(player);
             }
+
+            UpdateUIWhenPlayersSelected();
         }
 
         private async Task LoadPrecomputedData()
         {
             _summary = await _dbService.GetData<PlayerDataSummaryEntity>();
             _stats = await _dbService.GetData<MatchStatEntity>();
-            UpdateUIWhenPlayersSelected();
         }
 
         private PlayerStatSummary BuildPlayerData(int playerId)
