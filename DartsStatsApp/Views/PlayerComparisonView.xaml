@@ -6,7 +6,7 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="10" Spacing="10">
-            <Label Text="Compare two players" FontSize="20" FontAttributes="Bold"/>
+            <Label Text="Compare two players" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center"/>
 
             <Grid ColumnDefinitions="*,*" ColumnSpacing="12" RowSpacing="8">
                 <Grid.RowDefinitions>
@@ -14,45 +14,84 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <Label Grid.Row="0" Grid.Column="0" Text="Player A"/>
                 <Picker Grid.Row="1" Grid.Column="0"
                         ItemsSource="{Binding PlayerOptionsA}"
                         ItemDisplayBinding="{Binding DisplayName}"
-                        SelectedItem="{Binding SelectedPlayerA}"/>
+                        SelectedItem="{Binding SelectedPlayerA}"
+                        HorizontalTextAlignment="Center"/>
 
-                <Label Grid.Row="0" Grid.Column="1" Text="Player B"/>
                 <Picker Grid.Row="1" Grid.Column="1"
                         ItemsSource="{Binding PlayerOptionsB}"
                         ItemDisplayBinding="{Binding DisplayName}"
-                        SelectedItem="{Binding SelectedPlayerB}"/>
+                        SelectedItem="{Binding SelectedPlayerB}"
+                        HorizontalTextAlignment="Center"/>
             </Grid>
 
-            <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}"/>
+            <Label Text="Select two different players to compare their statistics" HorizontalOptions="Center" FontAttributes="Italic" TextColor="Gray">
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label" Binding="{Binding IsReady}" Value="True">
+                        <Setter Property="IsVisible" Value="False"/>
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
 
-            <Grid ColumnDefinitions="*,*" ColumnSpacing="12" RowSpacing="12">
-                <Frame Grid.Column="0" Padding="12">
-                    <VerticalStackLayout>
-                        <Label Text="{Binding SelectedPlayerA.DisplayName}" FontAttributes="Italic"/>
-                    <Label Text="{Binding PlayerFormA.Matches, StringFormat='Matches: {0}'}"/>
-                    <Label Text="{Binding PlayerFormA.Average, StringFormat='Average: {0:F2}'}"/>
-                    <Label Text="{Binding PlayerFormA.CheckoutPercentage, StringFormat='Checkout %: {0:F2}'}"/>
-                    <Label Text="{Binding PlayerFormA.Total180s, StringFormat='180s: {0}'}"/>
-                    <Label Text="{Binding PlayerFormA.Total140s, StringFormat='140s: {0}'}"/>
-                    <Label Text="{Binding PlayerFormA.Total100PlusCheckouts, StringFormat='100+ CO: {0}'}"/>
-                    </VerticalStackLayout>
-                </Frame>
+            <Grid ColumnSpacing="12" RowSpacing="40" IsVisible="{Binding IsReady}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-                <Frame Grid.Column="1" Padding="12">
-                    <VerticalStackLayout>
-                        <Label Text="{Binding SelectedPlayerB.DisplayName}" FontAttributes="Italic"/>
-                        <Label Text="{Binding PlayerFormB.Matches, StringFormat='Matches: {0}'}"/>
-                        <Label Text="{Binding PlayerFormB.Average, StringFormat='Average: {0:F2}'}"/>
-                        <Label Text="{Binding PlayerFormB.CheckoutPercentage, StringFormat='Checkout %: {0:F2}'}"/>
-                        <Label Text="{Binding PlayerFormB.Total180s, StringFormat='180s: {0}'}"/>
-                        <Label Text="{Binding PlayerFormB.Total140s, StringFormat='140s: {0}'}"/>
-                        <Label Text="{Binding PlayerFormB.Total100PlusCheckouts, StringFormat='100+ CO: {0}'}"/>
-                    </VerticalStackLayout>
-                </Frame>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0"
+                    Text="{Binding PlayerFormA.Matches}" HorizontalTextAlignment="Center"/>
+                <Label Grid.Row="0" Grid.Column="1"
+                    Text="Total Matches" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Grid.Row="0" Grid.Column="2"
+                    Text="{Binding PlayerFormB.Matches}" HorizontalTextAlignment="Center"/>
+
+                <Label Grid.Row="1" Grid.Column="0"
+                       Text="{Binding PlayerFormA.Average, StringFormat='{}{0:N2}'}" HorizontalTextAlignment="Center"/>
+                <Label Grid.Row="1" Grid.Column="1"
+                       Text="Average" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.Column="2"
+                       Text="{Binding PlayerFormB.Average, StringFormat='{}{0:N2}'}" HorizontalTextAlignment="Center"/>
+
+                <Label Grid.Row="2" Grid.Column="0"
+                    Text="{Binding PlayerFormA.CheckoutPercentage, StringFormat='{}{0:N2} %'}" HorizontalTextAlignment="Center"/>
+                <Label Grid.Row="2" Grid.Column="1"
+                    Text="Checkout %" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Grid.Row="2" Grid.Column="2"
+                    Text="{Binding PlayerFormB.CheckoutPercentage, StringFormat='{}{0:N2} %'}" HorizontalTextAlignment="Center"/>
+
+                <Label Grid.Row="3" Grid.Column="0"
+                    Text="{Binding PlayerFormA.Total180s}" HorizontalTextAlignment="Center"/>
+                <Label Grid.Row="3" Grid.Column="1"
+                    Text="180s" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Grid.Row="3" Grid.Column="2"
+                    Text="{Binding PlayerFormB.Total180s}" HorizontalTextAlignment="Center"/>
+
+                <Label Grid.Row="4" Grid.Column="0"
+                    Text="{Binding PlayerFormA.Total140s}" HorizontalTextAlignment="Center"/>
+                <Label Grid.Row="4" Grid.Column="1"
+                    Text="140s" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Grid.Row="4" Grid.Column="2"
+                    Text="{Binding PlayerFormB.Total140s}" HorizontalTextAlignment="Center"/>
+
+                <Label Grid.Row="5" Grid.Column="0"
+                    Text="{Binding PlayerFormA.Total100PlusCheckouts}" HorizontalTextAlignment="Center"/>
+                <Label Grid.Row="5" Grid.Column="1"
+                    Text="100+ CO" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Grid.Row="5" Grid.Column="2"
+                    Text="{Binding PlayerFormB.Total100PlusCheckouts}" HorizontalTextAlignment="Center"/>
             </Grid>
         </VerticalStackLayout>
     </ScrollView>

@@ -13,19 +13,19 @@ namespace DartsStatsApp.ViewModels
     public class PlayerComparisonViewModel : ObservableObject
     {
         // ugyanazok a játékosok kiszűrése
-        // ha az egyik játékos van csak kiválasztva és a másik üres nincs a kiválasztottban adat
+        // ha az egyik játékos van csak kiválasztva és a másik üres nincs a kiválasztottban adat fix: isReady miatt nem látszódik a grid
         // UI update: középre a nevek, bal jobb oldalt pedig a számok
         #region fields
         private DbService _dbService;
         private ObservableCollection<PlayerOption> _playerOptionA = new ObservableCollection<PlayerOption>();
         private ObservableCollection<PlayerOption> _playerOptionB = new ObservableCollection<PlayerOption>();
-        private bool _isBusy;
         private List<PlayerDataSummaryEntity> _summary = new List<PlayerDataSummaryEntity>();
         private List<MatchStatEntity> _stats = new List<MatchStatEntity>();
         private PlayerOption? _selectedPlayerA;
         private PlayerOption? _selectedPlayerB;
         private PlayerStatSummary _playerFormA;
         private PlayerStatSummary _playerFormB;
+        private bool _isReady;
         #endregion
 
         #region properties
@@ -47,12 +47,12 @@ namespace DartsStatsApp.ViewModels
             }
         }
 
-        public bool IsBusy
+        public bool IsReady
         {
-            get => _isBusy;
+            get => _isReady;
             set
             {
-                SetProperty(ref _isBusy, value);
+                SetProperty(ref _isReady, value);
             }
         }
 
@@ -106,35 +106,23 @@ namespace DartsStatsApp.ViewModels
 
         private async Task LoadPlayers()
         {
-            try
-            {
-                IsBusy = true;
+            var players = await _dbService.GetData<PlayerEntity>();
+            var orderedPlayers = (from p in players
+                                  orderby p.Name
+                                  select new PlayerOption
+                                  {
+                                      PlayerId = p.Id,
+                                      DisplayName = p.Name,
+                                  }).ToList();
 
-                var players = await _dbService.GetData<PlayerEntity>();
-                var orderedPlayers = (from p in players
-                                      orderby p.Name
-                                      select new PlayerOption
-                                      {
-                                          PlayerId = p.Id,
-                                          DisplayName = p.Name,
-                                      }).ToList();
+            
+            PlayerOptionsA.Clear();
+            PlayerOptionsB.Clear();
 
-                PlayerOptionsA.Clear();
-                PlayerOptionsB.Clear();
-
-                foreach (var player in orderedPlayers)
-                {
-                    PlayerOptionsA.Add(player);
-                    PlayerOptionsB.Add(player);
-                }
-            }
-            catch (Exception)
+            foreach (var player in orderedPlayers)
             {
-                throw;
-            }
-            finally
-            {
-                IsBusy = false;
+                PlayerOptionsA.Add(player);
+                PlayerOptionsB.Add(player);
             }
         }
 
@@ -164,10 +152,12 @@ namespace DartsStatsApp.ViewModels
         {
             int? playerAId = _selectedPlayerA?.PlayerId;
             int? playerBId = _selectedPlayerB?.PlayerId;
+
             bool bothHasValue = playerAId.HasValue && playerBId.HasValue;
             bool differentPlayers = playerAId != playerBId;
+            IsReady = bothHasValue && differentPlayers;
 
-            if(bothHasValue && differentPlayers)
+            if(IsReady)
             {
                 PlayerFormA = BuildPlayerData(playerAId.Value);
                 PlayerFormB = BuildPlayerData(playerBId.Value);
