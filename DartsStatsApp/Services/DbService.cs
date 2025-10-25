@@ -18,7 +18,7 @@ namespace DartsStatsApp.Services
         public async Task InitializeDb()
         {
             await _connection.ExecuteAsync("PRAGMA foreign_keys = ON;"); // idegen kulcsok engedélyezése
-            await _connection.CreateTablesAsync<PlayerEntity, TournamentEntity, MatchEntity, MatchStatEntity>(); // táblák létrehozása
+            await _connection.CreateTablesAsync<PlayerEntity, TournamentEntity, MatchEntity, MatchStatEntity, PlayerDataSummaryEntity>(); // táblák létrehozása
             await ClearAllTables();
         }
         private async Task ClearAllTables()
@@ -26,14 +26,18 @@ namespace DartsStatsApp.Services
             await _connection.DeleteAllAsync<MatchStatEntity>();
             await _connection.DeleteAllAsync<MatchEntity>();
 
-            await _connection.DeleteAllAsync<PlayerEntity>();
             await _connection.DeleteAllAsync<TournamentEntity>();
+            await _connection.DeleteAllAsync<PlayerEntity>();
         }
         public async Task InsertDataIntoDb()
         {
             await GetDataFromPlayers();
             await GetDataFromTournaments();
             await GetDataFromMatches();
+            await GetDataFromMatchStats();
+
+            StatSummaryService sum = new StatSummaryService(this);
+            await sum.PlayerStatSummary();
         }
 
         public async Task GetDataFromPlayers()
@@ -110,6 +114,36 @@ namespace DartsStatsApp.Services
             }
         }
 
+        public async Task GetDataFromMatchStats()
+        {
+            using var stream = await FileSystem.OpenAppPackageFileAsync("MatchStatData.csv");
+            using var reader = new StreamReader(stream);
+
+            while (!reader.EndOfStream)
+            {
+                string row = await reader.ReadLineAsync();
+                string[] helper = row.Split(',');
+
+                
+                    MatchStatEntity matches = new MatchStatEntity
+                    {
+                        Id = int.Parse(helper[0]),
+                        MatchId = int.Parse(helper[1]),
+                        PlayerId = int.Parse(helper[2]),
+                        Average = double.Parse(helper[3], CultureInfo.InvariantCulture),
+                        CheckoutPercentage = double.Parse(helper[4], CultureInfo.InvariantCulture),
+                        Total180s = int.Parse(helper[5]),
+                        Total140s = int.Parse(helper[6]),
+                        HighestCheckout = int.Parse(helper[7]),
+                        LegsWon = int.Parse(helper[8]),
+                        SetsWon = int.TryParse(helper[9], out int stsw) ? (int?)stsw : null
+                        
+                    };
+                    await Create(matches);
+
+            }
+        }
+
         public async Task Create<T> (T entity) where T : new()
         {
             await _connection.InsertAsync(entity);
@@ -118,6 +152,15 @@ namespace DartsStatsApp.Services
         public async Task<List<T>> GetData<T>() where T : new()
         {
             return await _connection.Table<T>().ToListAsync();
+        }
+        public async Task StatSummaryCreator()
+        {
+            await _connection.DeleteAllAsync<PlayerDataSummaryEntity>();
+        }
+
+        public async Task InsertPlayerDataSummary(List<PlayerDataSummaryEntity> summary)
+        {
+            await _connection.InsertAllAsync(summary, runInTransaction:true);
         }
     }
 }
