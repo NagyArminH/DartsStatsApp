@@ -5,7 +5,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="DartsStatsApp.Views.TournamentsView"
-             Title="TournamentsView">
+             Title="Tournaments">
     
     <CollectionView ItemsSource="{Binding GroupedTournaments}">
         <CollectionView.ItemsLayout>
@@ -63,7 +63,7 @@
                                             <ColumnDefinition Width="75"/>
                                         </Grid.ColumnDefinitions>
                                         <Label Text="{Binding TournamentName}" Grid.Column="0" VerticalOptions="Center" FontSize="13"/>
-                                    <Label Text="{Binding StartDate, StringFormat='{0:yyyy.MM.dd.}'}" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" FontSize="13"/>
+                                        <Label Text="{Binding StartDate, StringFormat='{0:yyyy.MM.dd.}'}" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" FontSize="13"/>
                                             
                                 </Grid>
                             </DataTemplate>
