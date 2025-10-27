@@ -3,6 +3,7 @@ using DartsStatsApp.Models;
 using DartsStatsApp.Services;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace DartsStatsApp.ViewModels
         private int _id;
         private PlayerEntity? _player;
         private PlayerDataSummaryEntity _dataSummary;
+        private ObservableCollection<MonthlyAvg> _monthlyAverages = new ObservableCollection<MonthlyAvg>();
         
         #endregion
 
@@ -49,6 +51,14 @@ namespace DartsStatsApp.ViewModels
                 SetProperty(ref _dataSummary, value);
             }
         }
+        public ObservableCollection<MonthlyAvg> MonthlyAverages
+        {
+            get => _monthlyAverages;
+            set
+            {
+                SetProperty(ref _monthlyAverages, value);
+            }
+        }
         #endregion
 
         public PlayerProfileViewModel(DbService dbService)
@@ -62,6 +72,44 @@ namespace DartsStatsApp.ViewModels
 
             var summary = await _dbService.GetData<PlayerDataSummaryEntity>();
             DataSummary = summary.FirstOrDefault(s => s.PlayerId == Id);
+
+            await GetMonthlyAverages();
         }
+
+        private async Task GetMonthlyAverages()
+        {
+            var allStats = await _dbService.GetData<MatchStatEntity>();
+            var allMatches = await _dbService.GetData<MatchEntity>();
+
+            var playerStatWithDate = from p in allStats
+                                      where p.PlayerId == Id
+                                      join m in allMatches on p.MatchId equals m.Id
+                                      select new
+                                      {
+                                          m.Date,
+                                          p.Average
+                                      };
+            var groupByMonths = from s in playerStatWithDate
+                                let helper = new DateTime(s.Date.Year, s.Date.Month, 1)
+                                group s by helper into g
+                                orderby g.Key
+                                select new MonthlyAvg
+                                {
+                                    DateName = $"{g.Key:yyyy.MM}",
+                                    Average = Math.Round(g.Average(v => v.Average))
+                                };
+            MonthlyAverages.Clear();
+
+            foreach (var item in groupByMonths)
+            {
+                MonthlyAverages.Add(item);
+            }
+        }
+    }
+
+    public class MonthlyAvg
+    {
+        public string DateName { get; set; }
+        public double Average { get; set; }
     }
 }

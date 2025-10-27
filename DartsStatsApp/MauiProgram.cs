@@ -3,6 +3,7 @@ using DartsStatsApp.ViewModels;
 using DartsStatsApp.Views;
 using Microsoft.Extensions.Logging;
 using CommunityToolkit.Maui;
+using Telerik.Maui.Controls.Compatibility;
 
 namespace DartsStatsApp;
 
@@ -14,6 +15,7 @@ public static class MauiProgram
 		builder
 			.UseMauiApp<App>()
 			.UseMauiCommunityToolkit()
+			.UseTelerik()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
