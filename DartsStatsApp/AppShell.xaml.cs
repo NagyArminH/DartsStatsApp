@@ -12,6 +12,7 @@ namespace DartsStatsApp
         private void registerRoutes()
         {
             Routing.RegisterRoute(nameof(TournamentDetailsView), typeof(TournamentDetailsView));
+            Routing.RegisterRoute(nameof(PlayerProfileView), typeof(PlayerProfileView));
         }
     }
 }

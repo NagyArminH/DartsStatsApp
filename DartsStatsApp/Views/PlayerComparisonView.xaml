@@ -51,6 +51,7 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
                 <Label Grid.Row="0" Grid.Column="0"
@@ -61,38 +62,45 @@
                     Text="{Binding PlayerFormB.Matches}" HorizontalTextAlignment="Center"/>
 
                 <Label Grid.Row="1" Grid.Column="0"
-                       Text="{Binding PlayerFormA.Average, StringFormat='{}{0:N2}'}" HorizontalTextAlignment="Center"/>
-                <Label Grid.Row="1" Grid.Column="1"
-                       Text="Average" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    Text="{Binding PlayerFormA.WinPercentage}" HorizontalTextAlignment="Center"/>
+                    <Label Grid.Row="1" Grid.Column="1"
+                    Text="Win %" FontAttributes="Bold" HorizontalOptions="Center"/>
                 <Label Grid.Row="1" Grid.Column="2"
-                       Text="{Binding PlayerFormB.Average, StringFormat='{}{0:N2}'}" HorizontalTextAlignment="Center"/>
+                    Text="{Binding PlayerFormB.WinPercentage}" HorizontalTextAlignment="Center"/>
 
                 <Label Grid.Row="2" Grid.Column="0"
-                    Text="{Binding PlayerFormA.CheckoutPercentage, StringFormat='{}{0:N2} %'}" HorizontalTextAlignment="Center"/>
+                       Text="{Binding PlayerFormA.Average, StringFormat='{}{0:N2}'}" HorizontalTextAlignment="Center"/>
                 <Label Grid.Row="2" Grid.Column="1"
-                    Text="Checkout %" FontAttributes="Bold" HorizontalOptions="Center"/>
+                       Text="Average" FontAttributes="Bold" HorizontalOptions="Center"/>
                 <Label Grid.Row="2" Grid.Column="2"
-                    Text="{Binding PlayerFormB.CheckoutPercentage, StringFormat='{}{0:N2} %'}" HorizontalTextAlignment="Center"/>
+                       Text="{Binding PlayerFormB.Average, StringFormat='{}{0:N2}'}" HorizontalTextAlignment="Center"/>
 
                 <Label Grid.Row="3" Grid.Column="0"
-                    Text="{Binding PlayerFormA.Total180s}" HorizontalTextAlignment="Center"/>
+                    Text="{Binding PlayerFormA.CheckoutPercentage, StringFormat='{}{0:N2} %'}" HorizontalTextAlignment="Center"/>
                 <Label Grid.Row="3" Grid.Column="1"
-                    Text="180s" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    Text="Checkout %" FontAttributes="Bold" HorizontalOptions="Center"/>
                 <Label Grid.Row="3" Grid.Column="2"
-                    Text="{Binding PlayerFormB.Total180s}" HorizontalTextAlignment="Center"/>
+                    Text="{Binding PlayerFormB.CheckoutPercentage, StringFormat='{}{0:N2} %'}" HorizontalTextAlignment="Center"/>
 
                 <Label Grid.Row="4" Grid.Column="0"
-                    Text="{Binding PlayerFormA.Total140s}" HorizontalTextAlignment="Center"/>
+                    Text="{Binding PlayerFormA.Total180s}" HorizontalTextAlignment="Center"/>
                 <Label Grid.Row="4" Grid.Column="1"
-                    Text="140s" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    Text="180s" FontAttributes="Bold" HorizontalOptions="Center"/>
                 <Label Grid.Row="4" Grid.Column="2"
-                    Text="{Binding PlayerFormB.Total140s}" HorizontalTextAlignment="Center"/>
+                    Text="{Binding PlayerFormB.Total180s}" HorizontalTextAlignment="Center"/>
 
                 <Label Grid.Row="5" Grid.Column="0"
-                    Text="{Binding PlayerFormA.Total100PlusCheckouts}" HorizontalTextAlignment="Center"/>
+                    Text="{Binding PlayerFormA.Total140s}" HorizontalTextAlignment="Center"/>
                 <Label Grid.Row="5" Grid.Column="1"
-                    Text="100+ CO" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    Text="140s" FontAttributes="Bold" HorizontalOptions="Center"/>
                 <Label Grid.Row="5" Grid.Column="2"
+                    Text="{Binding PlayerFormB.Total140s}" HorizontalTextAlignment="Center"/>
+
+                <Label Grid.Row="6" Grid.Column="0"
+                    Text="{Binding PlayerFormA.Total100PlusCheckouts}" HorizontalTextAlignment="Center"/>
+                <Label Grid.Row="6" Grid.Column="1"
+                    Text="100+ CO" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Grid.Row="6" Grid.Column="2"
                     Text="{Binding PlayerFormB.Total100PlusCheckouts}" HorizontalTextAlignment="Center"/>
             </Grid>
         </VerticalStackLayout>

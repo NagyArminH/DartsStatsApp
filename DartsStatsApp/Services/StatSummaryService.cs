@@ -29,15 +29,24 @@ namespace DartsStatsApp.Services
 
             foreach (var matchEntry in statsByMatch.Values)
             {
+                bool ifSets = matchEntry.Any(s => s.SetsWon.HasValue);
+
                 foreach (var row in matchEntry)
                 {
                     int legsLost = matchEntry.Where(r => r.PlayerId != row.PlayerId).Sum(r=> r.LegsWon); // megkeressük az ellenfelet és annak a játékosnak számoljuk meg a nyert legjét, ez lesz a jelenlegi iterált játékos vesztes legje
                     int setsLost = matchEntry.Where(r => r.PlayerId != row.PlayerId).Sum(r=> r.SetsWon ?? 0); // ugyanaz csak szettben
 
+                    bool isWin;
+                    if (ifSets)
+                        isWin = (row.SetsWon ?? 0) > setsLost;
+                    else
+                        isWin = row.LegsWon > legsLost;
+
                     extendedDataList.Add(new PlayerDataSummaryEntity
                     {
                         PlayerId = row.PlayerId,
                         TotalMatches = 0,
+                        MatchesWon = isWin ? 1 : 0,
                         LegsWon = row.LegsWon,
                         LegsLost = legsLost,
                         SetsWon = row.SetsWon ?? 0,
@@ -57,6 +66,7 @@ namespace DartsStatsApp.Services
                                   {
                                       PlayerId = g.Key,
                                       TotalMatches = g.Count(),
+                                      WinPercentage = g.Count() == 0 ? 0 : Math.Round((double)g.Sum(x=>x.MatchesWon) / g.Count() * 100),
                                       LegsWon = g.Sum(x => x.LegsWon),
                                       LegsLost = g.Sum(x => x.LegsLost),
                                       SetsWon = g.Sum(x=> x.SetsWon),

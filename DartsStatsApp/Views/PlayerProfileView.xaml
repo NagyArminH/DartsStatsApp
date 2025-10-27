@@ -2,11 +2,44 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DartsStatsApp.Views.PlayerProfileView"
-             Title="PlayerProfileView">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Player Profile">
+    <ScrollView>
+        <VerticalStackLayout Padding="15" Spacing="15">
+            <Grid ColumnDefinitions="Auto,*" ColumnSpacing="12">
+                <Image HeightRequest="80" WidthRequest="80" Aspect="AspectFill" Source="{Binding Id, StringFormat='p{0}.jpg'}">
+                    <Image.Clip>
+                        <EllipseGeometry Center="40,40" RadiusX="40" RadiusY="40"/>
+                    </Image.Clip>
+                </Image>
+
+                <VerticalStackLayout Grid.Column="1" Spacing="3">
+                    <Label Text="{Binding Player.Name}" FontSize="25" FontAttributes="Bold" Margin="0,0,0,10"/>
+                    <VerticalStackLayout Spacing="8">
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Country: " FontAttributes="Bold" FontSize="16"/>
+                                    <Span Text="{Binding Player.Country}" FontSize="16"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Born: " FontAttributes="Bold" FontSize="16"/>
+                                    <Span Text="{Binding Player.BirthDate, StringFormat='{0:yyyy.MM.dd.}', TargetNullValue='Unknown'}" FontSize="16"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </Grid>
+            
+            <HorizontalStackLayout Spacing="12">
+                <Label Text="{Binding Player.OOMPlacement, StringFormat='Rank: {0}'}"/>
+                <Label Text="{Binding Player.TotalEarnings, StringFormat='Total Earnings: £{0:N0}'}"/>
+                <Label Text="{Binding Player.OOMEarnings, StringFormat='Current Earnings: £{0:N0}'}"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

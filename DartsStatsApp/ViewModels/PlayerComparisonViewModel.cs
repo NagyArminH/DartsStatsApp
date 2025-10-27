@@ -12,7 +12,6 @@ namespace DartsStatsApp.ViewModels
 {
     public class PlayerComparisonViewModel : ObservableObject
     {
-        // ugyanazok a játékosok kiszűrése
         #region fields
         private DbService _dbService;
         private ObservableCollection<PlayerOption> _playerOptionA = new ObservableCollection<PlayerOption>();
@@ -149,6 +148,7 @@ namespace DartsStatsApp.ViewModels
             {
                 Matches = sum.TotalMatches,
                 Average = sum.Average,
+                WinPercentage = sum.WinPercentage,
                 CheckoutPercentage = sum.CheckoutPercentage,
                 Total180s = sum.Total180s,
                 Total140s = sum.Total140s,
@@ -187,6 +187,7 @@ namespace DartsStatsApp.ViewModels
     {
         public int Matches { get; set; }
         public double  Average { get; set; }
+        public double WinPercentage { get; set; }
         public double CheckoutPercentage { get; set; }
         public int Total180s { get; set; }
         public int Total140s { get; set; }
