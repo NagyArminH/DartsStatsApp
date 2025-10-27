@@ -6,9 +6,9 @@
     <ScrollView>
         <VerticalStackLayout Padding="15" Spacing="15">
             <Grid ColumnDefinitions="Auto,*" ColumnSpacing="12">
-                <Image HeightRequest="80" WidthRequest="80" Aspect="AspectFill" Source="{Binding Id, StringFormat='p{0}.jpg'}">
+                <Image HeightRequest="120" WidthRequest="120" Aspect="AspectFill" Source="{Binding Id, StringFormat='p{0}.jpg'}">
                     <Image.Clip>
-                        <EllipseGeometry Center="40,40" RadiusX="40" RadiusY="40"/>
+                        <EllipseGeometry Center="60,60" RadiusX="60" RadiusY="60"/>
                     </Image.Clip>
                 </Image>
 
@@ -34,12 +34,110 @@
                     </VerticalStackLayout>
                 </VerticalStackLayout>
             </Grid>
-            
-            <HorizontalStackLayout Spacing="12">
-                <Label Text="{Binding Player.OOMPlacement, StringFormat='Rank: {0}'}"/>
-                <Label Text="{Binding Player.TotalEarnings, StringFormat='Total Earnings: £{0:N0}'}"/>
-                <Label Text="{Binding Player.OOMEarnings, StringFormat='Current Earnings: £{0:N0}'}"/>
-            </HorizontalStackLayout>
+            <FlexLayout Margin="0,10,0,0" Wrap="Wrap" JustifyContent="SpaceBetween" AlignItems="Stretch" Direction="Row">
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Player.OOMPlacement}" HorizontalTextAlignment="Center" FontSize="20" FontAttributes="Bold"/>
+                        <Label Text="Rank" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Player.TotalEarnings, StringFormat='£{0:N0}'}"  FontSize="13" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                        <Label Text="Total Earnings" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Player.OOMEarnings, StringFormat='£{0:N0}'}" FontSize="14" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                        <Label Text="Current Earnings" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">  
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Player.Total9Darters}" HorizontalTextAlignment="Center" FontSize="18" FontAttributes="Bold"/>
+                        <Label Text="Total 9 Darters" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">  
+                    <VerticalStackLayout>
+                        <Label Text="{Binding DataSummary.Average}" HorizontalTextAlignment="Center" FontSize="18" FontAttributes="Bold"/>
+                        <Label Text="Average" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">  
+                    <VerticalStackLayout>
+                        <Label Text="{Binding DataSummary.CheckoutPercentage, StringFormat='{0}%'}" HorizontalTextAlignment="Center" FontSize="18" FontAttributes="Bold"/>
+                        <Label Text="Checkout %" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">  
+                    <VerticalStackLayout>
+                        <Label Text="{Binding DataSummary.WinPercentage, StringFormat='{0}%'}" HorizontalTextAlignment="Center" FontSize="18" FontAttributes="Bold"/>
+                        <Label Text="Win %" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding DataSummary.Total180s}" HorizontalTextAlignment="Center" FontSize="18" FontAttributes="Bold"/>
+                        <Label Text="Total 180s" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding DataSummary.Total140s}" HorizontalTextAlignment="Center" FontSize="18" FontAttributes="Bold"/>
+                        <Label Text="Total 140s" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+            </FlexLayout>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
