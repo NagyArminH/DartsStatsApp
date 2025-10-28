@@ -18,7 +18,6 @@ namespace DartsStatsApp.ViewModels
         private ObservableCollection<PlayerOption> _playerOptionB = new ObservableCollection<PlayerOption>();
         private List<PlayerDataSummaryEntity> _summary = new List<PlayerDataSummaryEntity>();
         private List<MatchStatEntity> _stats = new List<MatchStatEntity>();
-        private List<PlayerOption> _allPlayers = new List<PlayerOption>();
         private PlayerOption? _selectedPlayerA;
         private PlayerOption? _selectedPlayerB;
         private PlayerStatSummary _playerFormA;
@@ -104,22 +103,18 @@ namespace DartsStatsApp.ViewModels
         private async Task LoadPlayers()
         {
             var players = await _dbService.GetData<PlayerEntity>();
-            _allPlayers = (from p in players
-                                  where p.OOMPlacement > 0
-                                  orderby p.Name
-                                  select new PlayerOption
-                                  {
-                                      PlayerId = p.Id,
-                                      DisplayName = p.Name,
-                                  }).ToList();
+            var rankedPlayers = from p in players
+                           where p.OOMPlacement > 0
+                           select p;
 
-            var idHelper = (from s in _summary
-                            select s.PlayerId).ToList();
-
-            var filteredPlayers = (from f in _allPlayers
-                                   where idHelper.Contains(f.PlayerId)
-                                   orderby f.DisplayName
-                                   select f).ToList();
+            var filteredPlayers = (from f in rankedPlayers
+                                   join s in _summary on f.Id equals s.PlayerId
+                                   orderby f.OOMPlacement
+                                   select new PlayerOption
+                                   {
+                                       PlayerId = f.Id,
+                                       DisplayName = f.Name,
+                                   }).ToList();
 
             PlayerOptionsA.Clear();
             PlayerOptionsB.Clear();

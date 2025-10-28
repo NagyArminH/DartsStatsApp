@@ -20,6 +20,8 @@ namespace DartsStatsApp.ViewModels
         private PlayerDataSummaryEntity _dataSummary;
         private ObservableCollection<MonthlyAvg> _monthlyAverages = new ObservableCollection<MonthlyAvg>();
         private double _monthlyAverageMax;
+        private bool _showChart;
+        private string _noDataMsg;
         
         #endregion
 
@@ -69,6 +71,22 @@ namespace DartsStatsApp.ViewModels
                 SetProperty(ref _monthlyAverageMax, value);
             }
         }
+        public bool ShowChart
+        {
+            get => _showChart;
+            set
+            {
+                SetProperty(ref _showChart, value);
+            }
+        }
+        public string NoDataMsg
+        {
+            get => _noDataMsg;
+            set
+            {
+                SetProperty(ref _noDataMsg, value);
+            }
+        }
         #endregion
 
         public PlayerProfileViewModel(DbService dbService)
@@ -99,6 +117,10 @@ namespace DartsStatsApp.ViewModels
                                           m.Date,
                                           p.Average
                                       };
+
+            int minMatches = 2;
+            int totalMatches = playerStatWithDate.Count();
+
             var groupByMonths = from s in playerStatWithDate
                                 let helper = new DateTime(s.Date.Year, s.Date.Month, 1)
                                 group s by helper into g
@@ -108,6 +130,19 @@ namespace DartsStatsApp.ViewModels
                                     DateName = $"{g.Key:yyyy.MM}",
                                     Average = Math.Round(g.Average(v => v.Average))
                                 };
+
+            var monthlyList = groupByMonths.ToList();
+            int distinctMonths = monthlyList.Count(); // jan : 95,1 feb : 92,3 = 2 külön hónap
+
+            if (totalMatches < minMatches || distinctMonths <= 2)
+            {
+                ShowChart = false;
+                NoDataMsg = totalMatches < minMatches ? $"Not enough data to display chart" : "Not enough distinct months to plot data";
+                MonthlyAverages.Clear();
+                MonthlyAverageMax = 0;
+                return;
+            }
+
             MonthlyAverages.Clear();
 
             foreach (var item in groupByMonths)
@@ -118,6 +153,7 @@ namespace DartsStatsApp.ViewModels
             {
                 MonthlyAverageMax = MonthlyAverages.Max(x=> x.Average) + 2;
             }
+            ShowChart = true;
         }
     }
 
