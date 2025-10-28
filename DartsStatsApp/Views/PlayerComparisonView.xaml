@@ -56,6 +56,11 @@
                 </Label.Triggers>
             </Label>
 
+            <Border Stroke="#E2E8F0" StrokeThickness="1" BackgroundColor="White" Padding="15" StrokeShape="RoundRectangle 14" IsVisible="{Binding IsReady}">
+                <Border.Shadow>
+                    <Shadow Opacity="0.15" Radius="8"/>
+                </Border.Shadow>
+                
             <Grid ColumnSpacing="12" RowSpacing="40" IsVisible="{Binding IsReady}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -75,53 +80,83 @@
 
                 <Label Grid.Row="0" Grid.Column="0"
                     Text="{Binding PlayerFormA.Matches}" HorizontalTextAlignment="Center"/>
+                
+                    <Border Grid.Row="0" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
                 <Label Grid.Row="0" Grid.Column="1"
                     Text="Total Matches" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    </Border>
+                
                 <Label Grid.Row="0" Grid.Column="2"
                     Text="{Binding PlayerFormB.Matches}" HorizontalTextAlignment="Center"/>
 
                 <Label Grid.Row="1" Grid.Column="0"
-                    Text="{Binding PlayerFormA.WinPercentage}" HorizontalTextAlignment="Center"/>
-                <Label Grid.Row="1" Grid.Column="1"
-                    Text="Win %" FontAttributes="Bold" HorizontalOptions="Center"/>
-                <Label Grid.Row="1" Grid.Column="2"
-                    Text="{Binding PlayerFormB.WinPercentage}" HorizontalTextAlignment="Center"/>
+                    Text="{Binding PlayerFormA.WinPercentage, StringFormat='{0}%'}" HorizontalTextAlignment="Center"/>
+                
+                    <Border Grid.Row="1" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
+                        <Label Grid.Row="1" Grid.Column="1"
+                        Text="Win %" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    </Border>
+                
+                    <Label Grid.Row="1" Grid.Column="2"
+                    Text="{Binding PlayerFormB.WinPercentage, StringFormat='{0}%'}" HorizontalTextAlignment="Center"/>
 
                 <Label Grid.Row="2" Grid.Column="0"
                        Text="{Binding PlayerFormA.Average, StringFormat='{}{0:N2}'}" HorizontalTextAlignment="Center"/>
-                <Label Grid.Row="2" Grid.Column="1"
-                       Text="Average" FontAttributes="Bold" HorizontalOptions="Center"/>
+                
+                    <Border Grid.Row="2" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
+                        <Label Grid.Row="2" Grid.Column="1"
+                               Text="Average" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    </Border>
+                
                 <Label Grid.Row="2" Grid.Column="2"
                        Text="{Binding PlayerFormB.Average, StringFormat='{}{0:N2}'}" HorizontalTextAlignment="Center"/>
 
                 <Label Grid.Row="3" Grid.Column="0"
-                    Text="{Binding PlayerFormA.CheckoutPercentage, StringFormat='{}{0:N2} %'}" HorizontalTextAlignment="Center"/>
-                <Label Grid.Row="3" Grid.Column="1"
-                    Text="Checkout %" FontAttributes="Bold" HorizontalOptions="Center"/>
-                <Label Grid.Row="3" Grid.Column="2"
+                       Text="{Binding PlayerFormA.CheckoutPercentage, StringFormat='{}{0:N2} %'}" 
+                       HorizontalTextAlignment="Center"/>
+                
+                    <Border Grid.Row="3" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
+                        <Label Grid.Row="3" Grid.Column="1"
+                               Text="Checkout %" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    </Border>
+                
+                 <Label Grid.Row="3" Grid.Column="2"
                     Text="{Binding PlayerFormB.CheckoutPercentage, StringFormat='{}{0:N2} %'}" HorizontalTextAlignment="Center"/>
 
                 <Label Grid.Row="4" Grid.Column="0"
                     Text="{Binding PlayerFormA.Total180s}" HorizontalTextAlignment="Center"/>
-                <Label Grid.Row="4" Grid.Column="1"
-                    Text="180s" FontAttributes="Bold" HorizontalOptions="Center"/>
-                <Label Grid.Row="4" Grid.Column="2"
+                
+                    <Border Grid.Row="4" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
+                        <Label Grid.Row="4" Grid.Column="1"
+                               Text="Total 180s" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    </Border>
+                
+                 <Label Grid.Row="4" Grid.Column="2"
                     Text="{Binding PlayerFormB.Total180s}" HorizontalTextAlignment="Center"/>
 
                 <Label Grid.Row="5" Grid.Column="0"
                     Text="{Binding PlayerFormA.Total140s}" HorizontalTextAlignment="Center"/>
-                <Label Grid.Row="5" Grid.Column="1"
-                    Text="140s" FontAttributes="Bold" HorizontalOptions="Center"/>
-                <Label Grid.Row="5" Grid.Column="2"
-                    Text="{Binding PlayerFormB.Total140s}" HorizontalTextAlignment="Center"/>
+                
+                    <Border Grid.Row="5" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
+                        <Label Grid.Row="5" Grid.Column="1"
+                               Text="Total 140s" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    </Border>
+                
+                 <Label Grid.Row="5" Grid.Column="2"
+                        Text="{Binding PlayerFormB.Total140s}" HorizontalTextAlignment="Center"/>
 
                 <Label Grid.Row="6" Grid.Column="0"
                     Text="{Binding PlayerFormA.Total100PlusCheckouts}" HorizontalTextAlignment="Center"/>
-                <Label Grid.Row="6" Grid.Column="1"
-                    Text="100+ CO" FontAttributes="Bold" HorizontalOptions="Center"/>
-                <Label Grid.Row="6" Grid.Column="2"
-                    Text="{Binding PlayerFormB.Total100PlusCheckouts}" HorizontalTextAlignment="Center"/>
+                
+                    <Border Grid.Row="6" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
+                        <Label Grid.Row="6" Grid.Column="1"
+                               Text="100+ Checkouts" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    </Border>
+                
+                 <Label Grid.Row="6" Grid.Column="2"
+                        Text="{Binding PlayerFormB.Total100PlusCheckouts}" HorizontalTextAlignment="Center"/>
             </Grid>
+            </Border>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
