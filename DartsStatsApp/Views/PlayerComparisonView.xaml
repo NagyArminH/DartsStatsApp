@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
              x:Class="DartsStatsApp.Views.PlayerComparisonView"
              Title="Player Comparison">
 
@@ -14,19 +15,37 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <Picker Grid.Row="1" Grid.Column="0"
-                        ItemsSource="{Binding PlayerOptionsA}"
-                        ItemDisplayBinding="{Binding DisplayName}"
-                        Title="Choose a player"
-                        SelectedItem="{Binding SelectedPlayerA}"
-                        HorizontalTextAlignment="Center"/>
+                <telerik:RadComboBox
+                    x:Name="CmbBxA"
+                    ItemsSource="{Binding PlayerOptionsA}"
+                    DisplayMemberPath="DisplayName"
+                    SelectedItem="{Binding SelectedPlayerA}"
+                    IsEditable="True"
+                    IsFilteringEnabled="True"
+                    SearchMode="Contains"
+                    HighlightTextColor="Red"
+                    SearchTextPath="DisplayName"
+                    Placeholder="Choose a player"
+                    IsDropDownClosedOnSelection="True"
+                    Grid.Row="0"
+                    Grid.Column="0">
+                </telerik:RadComboBox>
 
-                <Picker Grid.Row="1" Grid.Column="1"
-                        ItemsSource="{Binding PlayerOptionsB}"
-                        ItemDisplayBinding="{Binding DisplayName}"
-                        Title="Choose a player"
-                        SelectedItem="{Binding SelectedPlayerB}"
-                        HorizontalTextAlignment="Center"/>
+                <telerik:RadComboBox
+                    x:Name="CmbBxB"
+                    ItemsSource="{Binding PlayerOptionsB}"
+                    DisplayMemberPath="DisplayName"
+                    SelectedItem="{Binding SelectedPlayerB}"
+                    IsEditable="True"
+                    IsFilteringEnabled="True"
+                    SearchMode="Contains"
+                    SearchTextPath="DisplayName"
+                    HighlightTextColor="Red"
+                    Placeholder="Choose a player"
+                    IsDropDownClosedOnSelection="True"
+                    Grid.Row="0"
+                    Grid.Column="1">
+                </telerik:RadComboBox>
             </Grid>
 
             <Label Text="Select two different players to compare their statistics" HorizontalOptions="Center" FontAttributes="Italic" TextColor="Gray">
@@ -63,7 +82,7 @@
 
                 <Label Grid.Row="1" Grid.Column="0"
                     Text="{Binding PlayerFormA.WinPercentage}" HorizontalTextAlignment="Center"/>
-                    <Label Grid.Row="1" Grid.Column="1"
+                <Label Grid.Row="1" Grid.Column="1"
                     Text="Win %" FontAttributes="Bold" HorizontalOptions="Center"/>
                 <Label Grid.Row="1" Grid.Column="2"
                     Text="{Binding PlayerFormB.WinPercentage}" HorizontalTextAlignment="Center"/>
