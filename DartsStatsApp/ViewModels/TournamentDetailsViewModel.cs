@@ -2,6 +2,7 @@
 using DartsStatsApp.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using System.Collections.ObjectModel;
+using CommunityToolkit.Mvvm.Input;
 
 namespace DartsStatsApp.ViewModels
 {
@@ -12,6 +13,11 @@ namespace DartsStatsApp.ViewModels
         private int _tournamentId;
         private DbService _dbService;
         private TournamentEntity _tournament;
+
+        private bool _matchOpen;
+        private MatchEntity? _selectedMatch;
+        private MatchStatEntity? _playerAStats;
+        private MatchStatEntity? _playerBStats;
         #endregion
 
         #region properties
@@ -38,11 +44,49 @@ namespace DartsStatsApp.ViewModels
                 SetProperty(ref _tournament, value);
             }
         }
+
+        public bool MatchOpen
+        {
+            get => _matchOpen;
+            set
+            {
+                SetProperty(ref _matchOpen, value);
+            }
+        }
+
+        public MatchEntity? SelectedMatch
+        {
+            get => _selectedMatch;
+            set
+            {
+                SetProperty(ref _selectedMatch, value);
+            }
+        }
+
+        public MatchStatEntity? PlayerAStats
+        {
+            get => _playerAStats;
+            set
+            {
+                SetProperty(ref _playerAStats, value);
+            }
+        }
+        public MatchStatEntity? PlayerBStats
+        {
+            get => _playerBStats;
+            set
+            {
+                SetProperty(ref _playerBStats, value);
+            }
+        }
         #endregion
-        
+        public IAsyncRelayCommand<int> OpenMatchupCommand { get; }
+        public IRelayCommand CloseMatchupCommand { get; }
         public TournamentDetailsViewModel(DbService dbService)
         {
             _dbService = dbService;
+            OpenMatchupCommand = new AsyncRelayCommand<int>(OpenSelectedMatch);
+            CloseMatchupCommand = new RelayCommand(CloseMatchup);
         }
 
         public async Task LoadTournamentDetails(int tournamentId)
@@ -73,6 +117,28 @@ namespace DartsStatsApp.ViewModels
 
             foreach (var match in grouped)
                 GroupedMatches.Add(match);
+        }
+
+        public async Task OpenSelectedMatch(int matchId)
+        {
+            var match = (from gr in GroupedMatches
+                        from m in gr.Matches
+                        where m.Id == matchId
+                        select m).FirstOrDefault();
+            if (match == null)
+                return;
+
+            
+            SelectedMatch = match;
+            var getStats = await _dbService.GetData<MatchStatEntity>();
+            PlayerAStats = getStats.FirstOrDefault(s => s.MatchId == matchId && s.PlayerId == match.Player1Id);
+            PlayerBStats = getStats.FirstOrDefault(s => s.MatchId == matchId && s.PlayerId == match.Player2Id);
+            
+            MatchOpen = true;
+        }
+        private void CloseMatchup()
+        {
+            MatchOpen = false;
         }
     }
 

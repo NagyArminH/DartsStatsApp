@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="DartsStatsApp.Views.TournamentDetailsView"
              Title="{Binding Tournament.TournamentName}">
@@ -27,6 +28,11 @@
                                 <CollectionView.ItemTemplate>
                                     <DataTemplate>
                                         <Grid Padding="5">
+                                            <Grid.GestureRecognizers>
+                                                <TapGestureRecognizer
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.OpenMatchupCommand}"
+                                                    CommandParameter="{Binding Id}"/>
+                                            </Grid.GestureRecognizers>
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="*"/>
                                                 <ColumnDefinition Width="Auto"/>
@@ -45,5 +51,179 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </VerticalStackLayout>
+
+
+        <telerik:RadPopup.Popup>
+            <telerik:RadPopup IsOpen="{Binding MatchOpen}" IsModal="True" Placement="Center" OutsideBackgroundColor="#80000000">
+                <Border BackgroundColor="White" Stroke="#ddd" StrokeThickness="5" StrokeShape="RoundRectangle 14" Padding="15">
+                    
+                    <VerticalStackLayout Spacing="12" WidthRequest="350">
+
+                        <Grid ColumnDefinitions="80,*,80" RowDefinitions="auto,auto" ColumnSpacing="15" HorizontalOptions="Fill">
+
+
+                            <Image WidthRequest="80"
+                                       HeightRequest="80" 
+                                       Aspect="AspectFill" 
+                                       Source="{Binding SelectedMatch.Player1Id, StringFormat='p{0}.jpg'}"
+                                       Grid.Row="0"
+                                       Grid.Column="0">
+                                <Image.Clip>
+                                    <RoundRectangleGeometry CornerRadius="8" Rect="0,0,80,80"/>
+                                </Image.Clip>
+                            </Image>
+
+                            <Label Text="{Binding SelectedMatch.MatchScore}" FontAttributes="Bold" FontSize="30" 
+                                   HorizontalOptions="Center"
+                                   HorizontalTextAlignment="Center"
+                                   Grid.Row="0"
+                                   Grid.Column="1" 
+                                   VerticalOptions="Center" 
+                                   VerticalTextAlignment="Center"/>
+
+                            <Image WidthRequest="80" 
+                                   HeightRequest="80" 
+                                   Aspect="AspectFill" 
+                                   Source="{Binding SelectedMatch.Player2Id, StringFormat='p{0}.jpg'}"
+                                   Grid.Row="0"
+                                   Grid.Column="2">
+                                    <Image.Clip>
+                                        <RoundRectangleGeometry CornerRadius="8" Rect="0,0,80,80"/>
+                                    </Image.Clip>
+                                </Image>
+                            
+                            <Label Text="{Binding SelectedMatch.Player1Name}" 
+                                   FontAttributes="Bold" 
+                                   HorizontalTextAlignment="Center"
+                                   Grid.Row="1"
+                                   Grid.Column="0"
+                                   MaxLines="2"
+                                   LineBreakMode="WordWrap"
+                                   FontSize="13"/>
+
+                            <Label Text="{Binding SelectedMatch.Player2Name}" 
+                                   FontAttributes="Bold" 
+                                   HorizontalTextAlignment="Center"
+                                   Grid.Row="1"
+                                   Grid.Column="2"
+                                   MaxLines="2"
+                                   LineBreakMode="WordWrap"
+                                   FontSize="13"/>
+                        </Grid>
+
+                        <Label Text="{Binding SelectedMatch.Date, StringFormat='{0:yyyy.MM.dd.}'}" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                        <Grid ColumnDefinitions="*,auto,*" RowSpacing="20" ColumnSpacing="30">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Text="{Binding PlayerAStats.Average}"
+                                FontSize="16"
+                                HorizontalTextAlignment="Center"/>
+                            <Label 
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Text="Average"
+                                FontAttributes="Bold"
+                                FontSize="16"
+                                HorizontalTextAlignment="Center"/>
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                Text="{Binding PlayerBStats.Average}"
+                                FontSize="16"
+                                HorizontalTextAlignment="Center"/>
+
+                            <Label
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                Text="{Binding PlayerAStats.CheckoutPercentage, StringFormat='{0}%'}"
+                                FontSize="16"
+                                HorizontalTextAlignment="Center"/>
+                            <Label 
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                Text="Checkout %"
+                                FontAttributes="Bold"
+                                FontSize="16"
+                                HorizontalTextAlignment="Center"/>
+                            <Label
+                                Grid.Row="1"
+                                Grid.Column="2"
+                                Text="{Binding PlayerBStats.CheckoutPercentage, StringFormat='{0}%'}"
+                                FontSize="16"
+                                HorizontalTextAlignment="Center"/>
+
+                            <Label
+                                Grid.Row="2"
+                                Grid.Column="0"
+                                Text="{Binding PlayerAStats.HighestCheckout}"
+                                FontSize="16"
+                                HorizontalTextAlignment="Center"/>
+                            <Label 
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                Text="Highest Checkout"
+                                FontAttributes="Bold"
+                                FontSize="16"
+                                HorizontalTextAlignment="Center"/>
+                            <Label
+                                Grid.Row="2"
+                                Grid.Column="2"
+                                Text="{Binding PlayerBStats.HighestCheckout}"
+                                FontSize="16"
+                                HorizontalTextAlignment="Center"/>
+
+                            <Label
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                Text="{Binding PlayerAStats.Total180s}"
+                                FontSize="16"
+                                HorizontalTextAlignment="Center"/>
+                            <Label 
+                                Grid.Row="3"
+                                Grid.Column="1"
+                                Text="180"
+                                FontAttributes="Bold"
+                                FontSize="16"
+                                HorizontalTextAlignment="Center"/>
+                            <Label
+                                Grid.Row="3"
+                                Grid.Column="2"
+                                Text="{Binding PlayerBStats.Total180s}"
+                                FontSize="16"
+                                HorizontalTextAlignment="Center"/>
+
+                            <Label
+                                Grid.Row="4"
+                                Grid.Column="0"
+                                Text="{Binding PlayerAStats.Total140s}"
+                                FontSize="16"
+                                HorizontalTextAlignment="Center"/>
+                            <Label 
+                                Grid.Row="4"
+                                Grid.Column="1"
+                                Text="140+"
+                                FontAttributes="Bold"
+                                FontSize="16"
+                                HorizontalTextAlignment="Center"/>
+                            <Label
+                                Grid.Row="4"
+                                Grid.Column="2"
+                                Text="{Binding PlayerBStats.Total140s}"
+                                FontSize="16"
+                                HorizontalTextAlignment="Center"/>
+                        </Grid>
+                        <Button Text="Close" Command="{Binding CloseMatchupCommand}"/>
+                    </VerticalStackLayout>
+                </Border>
+            </telerik:RadPopup>
+        </telerik:RadPopup.Popup>
     </ScrollView>
 </ContentPage>
