@@ -39,37 +39,44 @@
                         </Grid>
                     </toolkit:Expander.Header>
 
-                    <toolkit:Expander.Content>
-                    <!-- Inner CollectionView a tournamentekre-->
+
+
                     <CollectionView ItemsSource="{Binding Tournaments}"
                                     SelectionMode="None"
                                     BackgroundColor="#fafafa"
                                     Margin="10,0,0,10">
-                            <CollectionView.ItemsLayout>
-                                <LinearItemsLayout Orientation="Vertical" ItemSpacing="7"/>
-                            </CollectionView.ItemsLayout>
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Vertical" ItemSpacing="7"/>
+                        </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
-                                <Grid Padding="5" ColumnSpacing="10">
-                                        <Grid.GestureRecognizers>
-                                            <TapGestureRecognizer
-                                                Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.NavigateToTournamentDetailsView}"
-                                                CommandParameter="{Binding .}"
-                                                />
-                                        </Grid.GestureRecognizers>
+                                <Grid Padding="5" 
+                                      HorizontalOptions="Fill"
+                                      WidthRequest="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=Width}"
+                                      ColumnDefinitions="*,Auto">
                                     
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="75"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Label Text="{Binding TournamentName}" Grid.Column="0" VerticalOptions="Center" FontSize="13"/>
-                                        <Label Text="{Binding StartDate, StringFormat='{0:yyyy.MM.dd.}'}" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" FontSize="13"/>
-                                            
+                                <Grid.GestureRecognizers>
+                                        <TapGestureRecognizer 
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.NavigateToTournamentDetailsView}"
+                                            CommandParameter="{Binding .}"/>
+                                </Grid.GestureRecognizers>
+                                    
+                                    <Label Text="{Binding TournamentName}"
+                                           Grid.Column="0"
+                                               VerticalOptions="Center"
+                                               FontSize="13" 
+                                               FontAttributes="Bold"/>
+                                    
+                                    <Label Text="{Binding StartDate, StringFormat='{0:yyyy.MM.dd.}'}"
+                                           Grid.Column="1"
+                                           VerticalOptions="Center"
+                                           HorizontalTextAlignment="End" 
+                                           FontSize="13"
+                                           FontAttributes="Bold"/>
                                 </Grid>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
-                    </toolkit:Expander.Content>
                 </toolkit:Expander>
             </DataTemplate>
         </CollectionView.ItemTemplate>
