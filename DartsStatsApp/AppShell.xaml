@@ -9,14 +9,17 @@
     Title="DartsStatsApp">
 
     <TabBar>
-        <Tab Title="OOM List">
-            <ShellContent ContentTemplate="{DataTemplate views:OOMListView}"/>
+        <Tab Title="Home">
+            <ShellContent ContentTemplate="{DataTemplate views:HomePageView}"/>
+        </Tab>
+        <Tab Title="World Ranking">
+            <ShellContent Route="OOM" ContentTemplate="{DataTemplate views:OOMListView}"/>
         </Tab>
         <Tab Title="Tournaments">
-            <ShellContent ContentTemplate="{DataTemplate views:TournamentsView}"/>
+            <ShellContent Route="Tournaments" ContentTemplate="{DataTemplate views:TournamentsView}"/>
         </Tab>
         <Tab Title="Comparison">
-            <ShellContent ContentTemplate="{DataTemplate views:PlayerComparisonView}"/>
+            <ShellContent Route="Compare" ContentTemplate="{DataTemplate views:PlayerComparisonView}"/>
         </Tab>
     </TabBar>
 

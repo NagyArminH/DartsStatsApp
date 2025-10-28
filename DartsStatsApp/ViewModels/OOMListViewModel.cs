@@ -2,7 +2,9 @@
 using CommunityToolkit.Mvvm.Input;
 using DartsStatsApp.Models;
 using DartsStatsApp.Services;
+using DartsStatsApp.Views;
 using System.Collections.ObjectModel;
+using System.Windows.Input;
 
 namespace DartsStatsApp.ViewModels
 {
@@ -29,11 +31,13 @@ namespace DartsStatsApp.ViewModels
         }
         #endregion
         public IRelayCommand SearchCommand { get; }
+        public IRelayCommand<PlayerEntity> NavigateToPlayerProfile {  get; }
 
         public OOMListViewModel(DbService dbService)
         {
             _dbService = dbService;
             SearchCommand = new RelayCommand(SearchFilter);
+            NavigateToPlayerProfile = new RelayCommand<PlayerEntity>(navigateToPlayerProfile);
             getAllOOMPlayers();
         }
         private async void getAllOOMPlayers()
@@ -60,6 +64,14 @@ namespace DartsStatsApp.ViewModels
             PlayerList.Clear();
             foreach (var player in search)
                 PlayerList.Add(player);
+        }
+
+        private async void navigateToPlayerProfile(PlayerEntity player)
+        {
+            if (player == null)
+                return;
+
+            await Shell.Current.GoToAsync($"{nameof(PlayerProfileView)}?Id={player.Id}");
         }
     }
 }

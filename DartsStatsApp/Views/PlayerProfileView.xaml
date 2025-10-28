@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
+             x:Class="DartsStatsApp.Views.PlayerProfileView"
+             Title="Player Profile">
+    <ScrollView>
+        <VerticalStackLayout Padding="15" Spacing="15">
+            <Grid ColumnDefinitions="Auto,*" ColumnSpacing="12">
+                <Image HeightRequest="120" WidthRequest="120" Aspect="AspectFill" Source="{Binding Id, StringFormat='p{0}.jpg'}">
+                    <Image.Clip>
+                        <EllipseGeometry Center="60,60" RadiusX="60" RadiusY="60"/>
+                    </Image.Clip>
+                </Image>
+
+                <VerticalStackLayout Grid.Column="1" Spacing="3">
+                    <Label Text="{Binding Player.Name}" FontSize="25" FontAttributes="Bold" Margin="0,0,0,10"/>
+                    <VerticalStackLayout Spacing="8">
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Country: " FontAttributes="Bold" FontSize="16"/>
+                                    <Span Text="{Binding Player.Country}" FontSize="16"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Born: " FontAttributes="Bold" FontSize="16"/>
+                                    <Span Text="{Binding Player.BirthDate, StringFormat='{0:yyyy.MM.dd.}', TargetNullValue='Unknown'}" FontSize="16"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </Grid>
+            <FlexLayout Margin="0,10,0,0" Wrap="Wrap" JustifyContent="SpaceBetween" AlignItems="Stretch" Direction="Row">
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Player.OOMPlacement}" HorizontalTextAlignment="Center" FontSize="20" FontAttributes="Bold"/>
+                        <Label Text="Rank" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Player.TotalEarnings, StringFormat='£{0:N0}'}"  FontSize="13" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                        <Label Text="Total Earnings" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Player.OOMEarnings, StringFormat='£{0:N0}'}" FontSize="14" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                        <Label Text="Current Earnings" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">  
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Player.Total9Darters}" HorizontalTextAlignment="Center" FontSize="18" FontAttributes="Bold"/>
+                        <Label Text="Total 9 Darters" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">  
+                    <VerticalStackLayout>
+                        <Label Text="{Binding DataSummary.Average}" HorizontalTextAlignment="Center" FontSize="18" FontAttributes="Bold"/>
+                        <Label Text="Average" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">  
+                    <VerticalStackLayout>
+                        <Label Text="{Binding DataSummary.CheckoutPercentage, StringFormat='{0}%'}" HorizontalTextAlignment="Center" FontSize="18" FontAttributes="Bold"/>
+                        <Label Text="Checkout %" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">  
+                    <VerticalStackLayout>
+                        <Label Text="{Binding DataSummary.WinPercentage, StringFormat='{0}%'}" HorizontalTextAlignment="Center" FontSize="18" FontAttributes="Bold"/>
+                        <Label Text="Win %" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding DataSummary.Total180s}" HorizontalTextAlignment="Center" FontSize="18" FontAttributes="Bold"/>
+                        <Label Text="Total 180s" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Padding="10"
+                       Margin="0,0,10,10"
+                       CornerRadius="10"
+                       BorderColor="#DDD"
+                       BackgroundColor="#F7F7F7"
+                       WidthRequest="100">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding DataSummary.Total140s}" HorizontalTextAlignment="Center" FontSize="18" FontAttributes="Bold"/>
+                        <Label Text="Total 140s" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+            </FlexLayout>
+
+            <Label Text="Averages per Month" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Center" IsVisible="{Binding ShowChart}"/>
+            <Label Text="{Binding NoDataMsg}" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="16">
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label" Binding="{Binding ShowChart}" Value="True">
+                        <Setter Property="IsVisible" Value="False"/>
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+
+            <telerik:RadCartesianChart Margin="0,10,0,0" HeightRequest="350" IsVisible="{Binding ShowChart}">
+                <telerik:RadCartesianChart.HorizontalAxis>
+                    <telerik:CategoricalAxis LabelFitMode="Rotate"
+                              PlotMode="BetweenTicks" />
+                </telerik:RadCartesianChart.HorizontalAxis>
+                <telerik:RadCartesianChart.VerticalAxis>
+                    <telerik:NumericalAxis 
+                        Maximum="{Binding MonthlyAverageMax}"
+                        />
+                </telerik:RadCartesianChart.VerticalAxis>
+                <telerik:RadCartesianChart.Series>
+                    <telerik:LineSeries 
+                        ItemsSource="{Binding MonthlyAverages}"
+                        CategoryBinding="DateName"
+                        ValueBinding="Average"
+                        StrokeThickness="4"
+                        ShowLabels="True"/>
+                </telerik:RadCartesianChart.Series>
+            </telerik:RadCartesianChart>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

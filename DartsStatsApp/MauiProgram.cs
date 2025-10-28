@@ -3,6 +3,7 @@ using DartsStatsApp.ViewModels;
 using DartsStatsApp.Views;
 using Microsoft.Extensions.Logging;
 using CommunityToolkit.Maui;
+using Telerik.Maui.Controls.Compatibility;
 
 namespace DartsStatsApp;
 
@@ -14,6 +15,7 @@ public static class MauiProgram
 		builder
 			.UseMauiApp<App>()
 			.UseMauiCommunityToolkit()
+			.UseTelerik()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -29,11 +31,15 @@ public static class MauiProgram
         builder.Services.AddTransient<TournamentsView>();
         builder.Services.AddTransient<TournamentDetailsView>();
 		builder.Services.AddTransient<PlayerComparisonView>();
+		builder.Services.AddTransient<HomePageView>();
+		builder.Services.AddTransient<PlayerProfileView>();
 
         builder.Services.AddTransient<OOMListViewModel>();
 		builder.Services.AddTransient<TournamentsViewModel>();
         builder.Services.AddTransient<TournamentDetailsViewModel>();
 		builder.Services.AddTransient<PlayerComparisonViewModel>();
+		builder.Services.AddTransient<HomePageViewModel>();
+		builder.Services.AddTransient<PlayerProfileViewModel>();
 
         return builder.Build();
 	}

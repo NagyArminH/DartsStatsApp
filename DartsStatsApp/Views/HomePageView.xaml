@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="DartsStatsApp.Views.HomePageView"
+             Title="Welcome!">
+    <ScrollView>
+        <VerticalStackLayout Spacing="10">
+
+            <Label Text="This application aggregates the 2025 data of darts players and presents them in multiple ways.&#10;&#10;Below you can navigate to the main features."
+                   LineBreakMode="WordWrap"
+                   Margin="0,20,0,0" Padding="3"/>
+
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Grid Padding="10" BackgroundColor="#f2f2f2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="30"/>
+                        </Grid.ColumnDefinitions>
+                    
+
+                    <Label Text="World Ranking" FontAttributes="Bold" VerticalOptions="Center" FontSize="18"/>
+                    <Label FontSize="18" Text="▼" Grid.Column="1">
+                        <Label.Triggers>
+                            <DataTrigger TargetType="Label" Binding="{Binding Source={RelativeSource AncestorType={x:Type toolkit:Expander}}, Path=IsExpanded}" Value="True">
+                                <Setter Property="Text" Value="▲"/>
+                            </DataTrigger>
+                        </Label.Triggers>
+                    </Label>
+                    </Grid>
+                </toolkit:Expander.Header>
+
+                <toolkit:Expander.Content>
+                    <VerticalStackLayout>
+                        <Label Text="Browse through the world ranking of players who have played atleast a single match in 2025.&#10;Browse by name or just scroll through the list, you can see their earnings and placement.&#10;&#10;Disclaimers: Placements after #100 may have some skips in them, since this only tracks players who have played atleast one match, the placement of players after #100 are still in their correct place&#10;&#10;Data up to date: 2025.08.16."
+                               LineBreakMode="WordWrap"
+                               Padding="3"
+                               Margin="0,5,0,5"/>
+                    </VerticalStackLayout>
+                </toolkit:Expander.Content>
+            </toolkit:Expander>
+
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Grid Padding="10" BackgroundColor="#eee">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="30"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Label Text="Tournaments" FontAttributes="Bold" VerticalOptions="Center" FontSize="18"/>
+                        <Label FontSize="18" Text="▼" Grid.Column="1">
+                            <Label.Triggers>
+                                <DataTrigger TargetType="Label" Binding="{Binding Source={RelativeSource AncestorType={x:Type toolkit:Expander}}, Path=IsExpanded}" Value="True">
+                                    <Setter Property="Text" Value="▲"/>
+                                </DataTrigger>
+                            </Label.Triggers>
+                        </Label>
+                    </Grid>
+                </toolkit:Expander.Header>
+
+                <toolkit:Expander.Content>
+                    <VerticalStackLayout>
+                        <Label Text="Browse tournaments played in 2025.&#10;&#10;Tournaments are divided by month, each tournament is clickable which brings to the breakdown of the tournament, where you can view each round."
+                               LineBreakMode="WordWrap"
+                               Padding="3"
+                               Margin="0,5,0,5"/>
+                    </VerticalStackLayout>
+                </toolkit:Expander.Content>
+            </toolkit:Expander>
+
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Grid Padding="10" BackgroundColor="#eee">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="30"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Label Text="Player Comparison" FontAttributes="Bold" VerticalOptions="Center" FontSize="18"/>
+                        <Label FontSize="18" Text="▼" Grid.Column="1">
+                            <Label.Triggers>
+                                <DataTrigger TargetType="Label" Binding="{Binding Source={RelativeSource AncestorType={x:Type toolkit:Expander}}, Path=IsExpanded}" Value="True">
+                                    <Setter Property="Text" Value="▲"/>
+                                </DataTrigger>
+                            </Label.Triggers>
+                        </Label>
+                    </Grid>
+                </toolkit:Expander.Header>
+
+                <toolkit:Expander.Content>
+                    <VerticalStackLayout>
+                        <Label Text="Pick two players to compare their statistics: total matches played, averages, 180s, Checkout % and so on."
+                               LineBreakMode="WordWrap"
+                               Padding="3"
+                               Margin="0,3,0,5"/>
+                    </VerticalStackLayout>
+                </toolkit:Expander.Content>
+            </toolkit:Expander>
+
+            
+            <Button Text="Go to World Ranking" Command="{Binding NavigateToOOM}"/>
+            <Button Text="Go to Tournaments" Command="{Binding NavigateToTournaments}"/>
+            <Button Text="Go to Player Comparison" Command="{Binding NavigateToComparison}"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

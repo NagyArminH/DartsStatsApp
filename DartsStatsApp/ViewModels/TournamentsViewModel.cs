@@ -33,7 +33,8 @@ namespace DartsStatsApp.ViewModels
                                  select p).ToList();
             
             var groupedTourneys = from t in tournamentList
-                                  group t by new { t.StartDate.Year, t.StartDate.Month } into g
+                                  let helper = new DateTime(t.StartDate.Year, t.StartDate.Month,1)
+                                  group t by helper into g
                                   orderby g.Key.Year, g.Key.Month
                                   select new TournamentsPerMonth
                                   { 

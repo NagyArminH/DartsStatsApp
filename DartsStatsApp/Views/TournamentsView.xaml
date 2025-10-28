@@ -5,9 +5,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="DartsStatsApp.Views.TournamentsView"
-             Title="TournamentsView">
+             Title="Tournaments">
     
     <CollectionView ItemsSource="{Binding GroupedTournaments}">
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout Orientation="Vertical" ItemSpacing="5"/>
+        </CollectionView.ItemsLayout>
+        
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <toolkit:Expander IsExpanded="False">
@@ -19,20 +23,16 @@
                                 <ColumnDefinition Width="30"/>
                             </Grid.ColumnDefinitions>
                             
-                        <!-- Month header -->
                         <Label Text="{Binding Month}"
                            FontAttributes="Bold"
                            FontSize="18"
                            Padding="5"
                            BackgroundColor="#eee"/>
 
-                        <Label FontSize="18" Grid.Column="1">
+                            <Label FontSize="18" Grid.Column="1" Text="▼">
                             <Label.Triggers>
                                     <DataTrigger TargetType="Label" Binding="{Binding Source={RelativeSource AncestorType={x:Type toolkit:Expander}}, Path=IsExpanded}" Value="True">
                                         <Setter Property="Text" Value="▲"/>
-                                    </DataTrigger>
-                                    <DataTrigger TargetType="Label" Binding="{Binding Source={RelativeSource AncestorType={x:Type toolkit:Expander}}, Path=IsExpanded}" Value="False">
-                                        <Setter Property="Text" Value="▼"/>
                                     </DataTrigger>
                             </Label.Triggers>
                         </Label>
@@ -45,6 +45,9 @@
                                     SelectionMode="None"
                                     BackgroundColor="#fafafa"
                                     Margin="10,0,0,10">
+                            <CollectionView.ItemsLayout>
+                                <LinearItemsLayout Orientation="Vertical" ItemSpacing="7"/>
+                            </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
                                 <Grid Padding="5" ColumnSpacing="10">
@@ -57,10 +60,10 @@
                                     
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="75"/>
                                         </Grid.ColumnDefinitions>
-                                        <Label Text="{Binding TournamentName}" Grid.Column="0" VerticalOptions="Center"/>
-                                    <Label Text="{Binding StartDate, StringFormat='{0:yyyy.MM.dd.}'}" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End"/>
+                                        <Label Text="{Binding TournamentName}" Grid.Column="0" VerticalOptions="Center" FontSize="13"/>
+                                        <Label Text="{Binding StartDate, StringFormat='{0:yyyy.MM.dd.}'}" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" FontSize="13"/>
                                             
                                 </Grid>
                             </DataTemplate>
