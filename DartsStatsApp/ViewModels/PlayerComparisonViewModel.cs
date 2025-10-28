@@ -105,6 +105,7 @@ namespace DartsStatsApp.ViewModels
         {
             var players = await _dbService.GetData<PlayerEntity>();
             _allPlayers = (from p in players
+                                  where p.OOMPlacement > 0
                                   orderby p.Name
                                   select new PlayerOption
                                   {
@@ -113,7 +114,6 @@ namespace DartsStatsApp.ViewModels
                                   }).ToList();
 
             var idHelper = (from s in _summary
-                            where s.TotalMatches >= 3
                             select s.PlayerId).ToList();
 
             var filteredPlayers = (from f in _allPlayers

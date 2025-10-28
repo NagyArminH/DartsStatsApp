@@ -148,6 +148,7 @@
                 </telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:RadCartesianChart.VerticalAxis>
                     <telerik:NumericalAxis 
+                        Maximum="{Binding MonthlyAverageMax}"
                         />
                 </telerik:RadCartesianChart.VerticalAxis>
                 <telerik:RadCartesianChart.Series>
@@ -155,7 +156,7 @@
                         ItemsSource="{Binding MonthlyAverages}"
                         CategoryBinding="DateName"
                         ValueBinding="Average"
-                        StrokeThickness="2"
+                        StrokeThickness="4"
                         DisplayName="Monthly Average"/>
                 </telerik:RadCartesianChart.Series>
             </telerik:RadCartesianChart>

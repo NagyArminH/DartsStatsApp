@@ -19,6 +19,7 @@ namespace DartsStatsApp.ViewModels
         private PlayerEntity? _player;
         private PlayerDataSummaryEntity _dataSummary;
         private ObservableCollection<MonthlyAvg> _monthlyAverages = new ObservableCollection<MonthlyAvg>();
+        private double _monthlyAverageMax;
         
         #endregion
 
@@ -57,6 +58,15 @@ namespace DartsStatsApp.ViewModels
             set
             {
                 SetProperty(ref _monthlyAverages, value);
+            }
+        }
+
+        public double MonthlyAverageMax
+        {
+            get => _monthlyAverageMax;
+            set
+            {
+                SetProperty(ref _monthlyAverageMax, value);
             }
         }
         #endregion
@@ -103,6 +113,10 @@ namespace DartsStatsApp.ViewModels
             foreach (var item in groupByMonths)
             {
                 MonthlyAverages.Add(item);
+            }
+            if (MonthlyAverages.Count() > 0)
+            {
+                MonthlyAverageMax = MonthlyAverages.Max(x=> x.Average) + 2;
             }
         }
     }
