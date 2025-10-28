@@ -7,8 +7,9 @@
     <ScrollView>
         <VerticalStackLayout Spacing="10">
 
-            <Label Text="This application aggregates the 2025 data of darts players and presents them in multiple ways.&#10;&#10;Below you can navigate to the main features."
+            <Label Text="This application aggregates the 2025 data of darts players and presents them in multiple ways."
                    LineBreakMode="WordWrap"
+                   FontSize="16"
                    Margin="0,20,0,0" Padding="3"/>
 
             <toolkit:Expander>
@@ -33,9 +34,9 @@
 
                 <toolkit:Expander.Content>
                     <VerticalStackLayout>
-                        <Label Text="Browse through the world ranking of players who have played atleast a single match in 2025.&#10;Browse by name or just scroll through the list, you can see their earnings and placement.&#10;&#10;Disclaimers: Placements after #100 may have some skips in them, since this only tracks players who have played atleast one match, the placement of players after #100 are still in their correct place&#10;&#10;Data up to date: 2025.08.16."
+                        <Label Text="Browse through the world ranking of players who have played atleast a single match in 2025.&#10;Browse by name or just scroll through the list, you can see their earnings and placement.&#10;&#10;Tap on a player's row and it brings up a new window where you can get a general info about the player, their statistics and a graph that shows their average by month.&#10;&#10;If there is not enough data, the graph won't show, instead there will be a text saying there is not enough data to make a graph.&#10;&#10;Disclaimer: Placements after #100 may have some skips in them, since this only tracks players who have played atleast one match, the placement of players after #100 are still in their correct place&#10;&#10;Data up to date: 2025.08.16."
                                LineBreakMode="WordWrap"
-                               Padding="3"
+                               Padding="5"
                                Margin="0,5,0,5"/>
                     </VerticalStackLayout>
                 </toolkit:Expander.Content>
@@ -63,7 +64,7 @@
 
                 <toolkit:Expander.Content>
                     <VerticalStackLayout>
-                        <Label Text="Browse tournaments played in 2025.&#10;&#10;Tournaments are divided by month, each tournament is clickable which brings to the breakdown of the tournament, where you can view each round."
+                        <Label Text="Browse tournaments played in 2025.&#10;&#10;Tournaments are divided by month, each tournament is clickable which brings to the breakdown of the tournament, where you can view each round.&#10;&#10;Tap on a match row to get a popup window where you can see the players' statistics inside that match."
                                LineBreakMode="WordWrap"
                                Padding="3"
                                Margin="0,5,0,5"/>
@@ -93,18 +94,13 @@
 
                 <toolkit:Expander.Content>
                     <VerticalStackLayout>
-                        <Label Text="Pick two players to compare their statistics: total matches played, averages, 180s, Checkout % and so on."
+                        <Label Text="Pick two players to compare their statistics: total matches played, win rate, averages, 180s, and so on.&#10;&#10;You can either scroll through the list or start typing and it will highlight the text in the player's name."
                                LineBreakMode="WordWrap"
                                Padding="3"
                                Margin="0,3,0,5"/>
                     </VerticalStackLayout>
                 </toolkit:Expander.Content>
             </toolkit:Expander>
-
-            
-            <Button Text="Go to World Ranking" Command="{Binding NavigateToOOM}"/>
-            <Button Text="Go to Tournaments" Command="{Binding NavigateToTournaments}"/>
-            <Button Text="Go to Player Comparison" Command="{Binding NavigateToComparison}"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
