@@ -3,23 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             x:Class="DartsStatsApp.Views.TournamentDetailsView"
-             Title="{Binding Tournament.TournamentName}">
+             x:Class="DartsStatsApp.Views.TournamentDetailsView">
 
     <ScrollView>
         <VerticalStackLayout Padding="10" Spacing="5">
 
             <Label Text="{Binding Tournament.TournamentName}"
                    FontAttributes="Bold"
-                   FontSize="22"
-                   HorizontalOptions="Center"/>
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"/>
 
             <CollectionView ItemsSource="{Binding GroupedMatches}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <toolkit:Expander IsExpanded="True">
                             <toolkit:Expander.Header>
-                                <Grid Padding="5" BackgroundColor="#eee">
+                                <Grid Padding="5" BackgroundColor="#eee" InputTransparent="True">
                                     <Label Text="{Binding Round}" FontAttributes="Bold" FontSize="18"/>
                                 </Grid>
                             </toolkit:Expander.Header>
@@ -126,13 +126,15 @@
                                 Text="{Binding PlayerAStats.Average}"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
-                            <Label 
+                            <Border Grid.Row="0" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
+                                <Label 
                                 Grid.Row="0"
                                 Grid.Column="1"
                                 Text="Average"
                                 FontAttributes="Bold"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
+                            </Border>
                             <Label
                                 Grid.Row="0"
                                 Grid.Column="2"
@@ -146,13 +148,15 @@
                                 Text="{Binding PlayerAStats.CheckoutPercentage, StringFormat='{0}%'}"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
-                            <Label 
+                            <Border Grid.Row="1" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
+                                <Label 
                                 Grid.Row="1"
                                 Grid.Column="1"
                                 Text="Checkout %"
                                 FontAttributes="Bold"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
+                            </Border>
                             <Label
                                 Grid.Row="1"
                                 Grid.Column="2"
@@ -166,13 +170,15 @@
                                 Text="{Binding PlayerAStats.HighestCheckout}"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
-                            <Label 
+                            <Border Grid.Row="2" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
+                                <Label 
                                 Grid.Row="2"
                                 Grid.Column="1"
                                 Text="Highest Checkout"
                                 FontAttributes="Bold"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
+                            </Border>
                             <Label
                                 Grid.Row="2"
                                 Grid.Column="2"
@@ -186,13 +192,15 @@
                                 Text="{Binding PlayerAStats.Total180s}"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
-                            <Label 
+                            <Border Grid.Row="3" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
+                                <Label 
                                 Grid.Row="3"
                                 Grid.Column="1"
                                 Text="180"
                                 FontAttributes="Bold"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
+                            </Border>
                             <Label
                                 Grid.Row="3"
                                 Grid.Column="2"
@@ -206,13 +214,15 @@
                                 Text="{Binding PlayerAStats.Total140s}"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
-                            <Label 
+                            <Border Grid.Row="4" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
+                                <Label 
                                 Grid.Row="4"
                                 Grid.Column="1"
                                 Text="140+"
                                 FontAttributes="Bold"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
+                            </Border>
                             <Label
                                 Grid.Row="4"
                                 Grid.Column="2"
