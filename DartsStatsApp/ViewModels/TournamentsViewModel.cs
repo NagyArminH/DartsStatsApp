@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using CommunityToolkit.Mvvm.Input;
 
 namespace DartsStatsApp.ViewModels
 {
@@ -15,12 +16,12 @@ namespace DartsStatsApp.ViewModels
     {
         private DbService _dbService;
         public ObservableCollection<TournamentsPerMonth> GroupedTournaments { get; } = new ObservableCollection<TournamentsPerMonth>();
-        public ICommand NavigateToTournamentDetailsView { get; set; }
+        public IAsyncRelayCommand NavigateToTournamentDetailsView { get; set; }
 
         public TournamentsViewModel(DbService dbService)
         {
             _dbService = dbService;
-            NavigateToTournamentDetailsView = new Command<TournamentEntity>(navigateToTournamentDetalisView);
+            NavigateToTournamentDetailsView = new AsyncRelayCommand<TournamentEntity>(navigateToTournamentDetalisView);
             getTournaments();
         }
 
@@ -48,7 +49,7 @@ namespace DartsStatsApp.ViewModels
                 GroupedTournaments.Add(group);
         }
 
-        private async void navigateToTournamentDetalisView(TournamentEntity tournament)
+        private async Task navigateToTournamentDetalisView(TournamentEntity tournament)
         {
             if (tournament == null)
                 return;
