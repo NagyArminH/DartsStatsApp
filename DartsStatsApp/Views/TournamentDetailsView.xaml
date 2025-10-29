@@ -12,37 +12,56 @@
                    FontAttributes="Bold"
                    FontSize="20"
                    HorizontalOptions="Center"
-                   HorizontalTextAlignment="Center"/>
+                   HorizontalTextAlignment="Center"
+                   Padding="0,10,0,10"/>
 
             <CollectionView ItemsSource="{Binding GroupedMatches}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <toolkit:Expander IsExpanded="True">
                             <toolkit:Expander.Header>
-                                <Grid Padding="5" BackgroundColor="#eee" InputTransparent="True">
-                                    <Label Text="{Binding Round}" FontAttributes="Bold" FontSize="18"/>
-                                </Grid>
+                                <Border Stroke="#E2E8F0" StrokeThickness="1" StrokeShape="RoundRectangle 12" BackgroundColor="#F8FAFC" Padding="5">
+                                    <Grid Padding="5" InputTransparent="True">
+                                        <Label Text="{Binding Round}" FontAttributes="Bold" FontSize="18"/>
+                                    </Grid>
+                                </Border>
                             </toolkit:Expander.Header>
 
                             <CollectionView ItemsSource="{Binding Matches}" SelectionMode="None">
                                 <CollectionView.ItemTemplate>
                                     <DataTemplate>
-                                        <Grid Padding="5">
-                                            <Grid.GestureRecognizers>
-                                                <TapGestureRecognizer
+                                        <Border Stroke="#E2E8F0" StrokeThickness="1" StrokeShape="RoundRectangle 12" BackgroundColor="White" Padding="5" Margin="5">
+                                            <Grid Padding="5">
+                                                <Grid.GestureRecognizers>
+                                                    <TapGestureRecognizer
                                                     Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.OpenMatchupCommand}"
                                                     CommandParameter="{Binding Id}"/>
-                                            </Grid.GestureRecognizers>
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="*"/>
-                                                <ColumnDefinition Width="Auto"/>
-                                                <ColumnDefinition Width="*"/>
-                                            </Grid.ColumnDefinitions>
+                                                </Grid.GestureRecognizers>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
 
-                                            <Label Text="{Binding Player1Name}" Grid.Column="0" HorizontalOptions="Start"/>
-                                            <Label Text="{Binding MatchScore}" Grid.Column="1" HorizontalOptions="Center" FontAttributes="Bold"/>
-                                            <Label Text="{Binding Player2Name}" Grid.Column="2" HorizontalOptions="End"/>
-                                        </Grid>
+                                                <Label Text="{Binding Player1Name}" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" FontSize="13"/>
+
+                                                <Border Stroke="#CBD5E1" 
+                                                        StrokeThickness="1" 
+                                                        StrokeShape="RoundRectangle 20" 
+                                                        BackgroundColor="#F1F5F9" 
+                                                        Grid.Column="1"
+                                                        Padding="10,4">
+                                                    
+                                                    <Label Text="{Binding MatchScore}" 
+                                                           Grid.Column="1" 
+                                                           HorizontalOptions="Center" 
+                                                           FontAttributes="Bold"/>
+                                                    
+                                                </Border>
+
+                                                <Label Text="{Binding Player2Name}" Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center" FontSize="13"/>
+                                            </Grid> 
+                                        </Border>
                                     </DataTemplate>
                                 </CollectionView.ItemTemplate>
                             </CollectionView>
@@ -97,21 +116,25 @@
                                    HorizontalTextAlignment="Center"
                                    Grid.Row="1"
                                    Grid.Column="0"
-                                   MaxLines="2"
                                    LineBreakMode="WordWrap"
                                    FontSize="13"/>
 
+                            <Label Grid.Row="1"
+                                   Grid.Column="1"
+                                   Text="{Binding SelectedMatch.Date, StringFormat='{0:yyyy.MM.dd.}'}" 
+                                   HorizontalTextAlignment="Center" 
+                                   FontAttributes="Bold"/>
+                            
                             <Label Text="{Binding SelectedMatch.Player2Name}" 
                                    FontAttributes="Bold" 
                                    HorizontalTextAlignment="Center"
                                    Grid.Row="1"
                                    Grid.Column="2"
-                                   MaxLines="2"
                                    LineBreakMode="WordWrap"
                                    FontSize="13"/>
                         </Grid>
 
-                        <Label Text="{Binding SelectedMatch.Date, StringFormat='{0:yyyy.MM.dd.}'}" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                        
                         <Grid ColumnDefinitions="*,auto,*" RowSpacing="20" ColumnSpacing="30">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
