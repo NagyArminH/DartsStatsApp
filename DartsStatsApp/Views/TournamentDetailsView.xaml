@@ -21,7 +21,7 @@
                         <toolkit:Expander IsExpanded="True">
                             <toolkit:Expander.Header>
                                 <Border Stroke="#E2E8F0" StrokeThickness="1" StrokeShape="RoundRectangle 12" BackgroundColor="#F8FAFC" Padding="5">
-                                    <Grid Padding="5" InputTransparent="True">
+                                    <Grid Padding="5">
                                         <Label Text="{Binding Round}" FontAttributes="Bold" FontSize="18"/>
                                     </Grid>
                                 </Border>
