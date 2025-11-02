@@ -24,7 +24,7 @@
                                 <ColumnDefinition Width="30"/>
                             </Grid.ColumnDefinitions>
                             
-                        <Label Text="{Binding Month}"
+                        <Label Text="{Binding MonthName}"
                            FontAttributes="Bold"
                            FontSize="18"
                            Padding="5"/>

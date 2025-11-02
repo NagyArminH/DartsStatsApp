@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using CommunityToolkit.Mvvm.Input;
+using System.Globalization;
 
 namespace DartsStatsApp.ViewModels
 {
@@ -39,7 +40,7 @@ namespace DartsStatsApp.ViewModels
                                   orderby g.Key.Year, g.Key.Month
                                   select new TournamentsPerMonth
                                   { 
-                                      Month = new DateTime(g.Key.Year, g.Key.Month,1).ToString("yyyy. MMMM"),
+                                      Month = g.Key,
                                       Tournaments = new ObservableCollection<TournamentEntity>(g)
                                   };
 
@@ -60,7 +61,8 @@ namespace DartsStatsApp.ViewModels
 
     public class TournamentsPerMonth
     {
-        public string Month { get; set; }
+        public DateTime Month { get; set; }
+        public string MonthName => Month.ToString("yyyy. MMMM", new CultureInfo("en-US"));
         public ObservableCollection<TournamentEntity> Tournaments { get; set; }
     }
 }
