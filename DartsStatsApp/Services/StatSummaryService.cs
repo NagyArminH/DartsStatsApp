@@ -25,7 +25,7 @@ namespace DartsStatsApp.Services
                                    List = g.ToList()
                                }).ToDictionary(x=> x.Key, x=> x.List);
            
-            var extendedDataList = new List<PlayerDataSummaryEntity>();
+            List<PlayerDataSummaryEntity> extendedDataList = new List<PlayerDataSummaryEntity>();
 
             foreach (var matchEntry in statsByMatch.Values)
             {

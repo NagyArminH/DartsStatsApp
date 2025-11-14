@@ -31,16 +31,16 @@ namespace DartsStatsApp.ViewModels
         }
         #endregion
         public IRelayCommand SearchCommand { get; }
-        public IRelayCommand<PlayerEntity> NavigateToPlayerProfile {  get; }
+        public IAsyncRelayCommand<PlayerEntity> NavigateToPlayerProfile {  get; }
 
         public OOMListViewModel(DbService dbService)
         {
             _dbService = dbService;
             SearchCommand = new RelayCommand(SearchFilter);
-            NavigateToPlayerProfile = new RelayCommand<PlayerEntity>(navigateToPlayerProfile);
-            getAllOOMPlayers();
+            NavigateToPlayerProfile = new AsyncRelayCommand<PlayerEntity>(navigateToPlayerProfile);
+            _ = GetAllOOMPlayers();
         }
-        private async void getAllOOMPlayers()
+        private async Task GetAllOOMPlayers()
         {
             var players = await _dbService.GetData<PlayerEntity>();
 
@@ -66,7 +66,7 @@ namespace DartsStatsApp.ViewModels
                 PlayerList.Add(player);
         }
 
-        private async void navigateToPlayerProfile(PlayerEntity player)
+        private async Task navigateToPlayerProfile(PlayerEntity player)
         {
             if (player == null)
                 return;

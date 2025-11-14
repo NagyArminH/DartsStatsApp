@@ -22,11 +22,11 @@ namespace DartsStatsApp.ViewModels
         public TournamentsViewModel(DbService dbService)
         {
             _dbService = dbService;
-            NavigateToTournamentDetailsView = new AsyncRelayCommand<TournamentEntity>(navigateToTournamentDetalisView);
-            getTournaments();
+            NavigateToTournamentDetailsView = new AsyncRelayCommand<TournamentEntity>(navigateToTournamentDetailsView);
+            _ = GetTournaments();
         }
 
-        private async void getTournaments()
+        private async Task GetTournaments()
         {
             var tourneys = await _dbService.GetData<TournamentEntity>();
 
@@ -50,7 +50,7 @@ namespace DartsStatsApp.ViewModels
                 GroupedTournaments.Add(group);
         }
 
-        private async Task navigateToTournamentDetalisView(TournamentEntity tournament)
+        private async Task navigateToTournamentDetailsView(TournamentEntity tournament)
         {
             if (tournament == null)
                 return;

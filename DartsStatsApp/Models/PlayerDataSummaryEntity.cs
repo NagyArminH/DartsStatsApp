@@ -9,7 +9,6 @@ namespace DartsStatsApp.Models
     public class PlayerDataSummaryEntity
     {
         public int PlayerId { get; set; }
-        public int MatchId { get; set; }
         public int TotalMatches { get; set; }
         public int MatchesWon { get; set; }
         public double WinPercentage { get; set; }
