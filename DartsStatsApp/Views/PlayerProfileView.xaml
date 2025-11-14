@@ -7,9 +7,9 @@
     <ScrollView>
         <VerticalStackLayout Padding="15" Spacing="15">
             <Grid ColumnDefinitions="Auto,*" ColumnSpacing="12">
-                <Image HeightRequest="120" WidthRequest="120" Aspect="AspectFill" Source="{Binding Id, StringFormat='p{0}.jpg'}">
+                <Image HeightRequest="80" WidthRequest="80" Aspect="AspectFill" Source="darts.png">
                     <Image.Clip>
-                        <EllipseGeometry Center="60,60" RadiusX="60" RadiusY="60"/>
+                        <EllipseGeometry Center="40,40" RadiusX="40" RadiusY="40"/>
                     </Image.Clip>
                 </Image>
 
