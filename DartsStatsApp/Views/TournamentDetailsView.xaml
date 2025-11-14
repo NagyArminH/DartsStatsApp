@@ -84,7 +84,7 @@
                             <Image WidthRequest="80"
                                        HeightRequest="80" 
                                        Aspect="AspectFill" 
-                                       Source="{Binding SelectedMatch.Player1Id, StringFormat='p{0}.jpg'}"
+                                       Source="darts.png"
                                        Grid.Row="0"
                                        Grid.Column="0">
                                 <Image.Clip>
@@ -103,7 +103,7 @@
                             <Image WidthRequest="80" 
                                    HeightRequest="80" 
                                    Aspect="AspectFill" 
-                                   Source="{Binding SelectedMatch.Player2Id, StringFormat='p{0}.jpg'}"
+                                   Source="darts.png"
                                    Grid.Row="0"
                                    Grid.Column="2">
                                     <Image.Clip>
