@@ -11,3 +11,5 @@ Ranglista ikon: Ranking Icon made by [kerismaker](https://www.flaticon.com/autho
 Trófea ikon: Trophy Icon made by [Freepik](https://www.flaticon.com/authors/freepik) from [Flaticon](https://www.flaticon.com/)
 
 Hasonlító ikon: Compare Icon made by [Laisa Islam Ani](https://www.flaticon.com/authors/laisa-islam-ani) from [Flaticon](https://www.flaticon.com/)
+
+Avatar ikon: Avatar Icon made by [justicon](https://www.flaticon.com/authors/justicon) from [Flaticon](https://www.flaticon.com/)
