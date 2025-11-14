@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using CommunityToolkit.Mvvm.Input;
+using System.Globalization;
 
 namespace DartsStatsApp.ViewModels
 {
@@ -15,16 +17,16 @@ namespace DartsStatsApp.ViewModels
     {
         private DbService _dbService;
         public ObservableCollection<TournamentsPerMonth> GroupedTournaments { get; } = new ObservableCollection<TournamentsPerMonth>();
-        public ICommand NavigateToTournamentDetailsView { get; set; }
+        public IAsyncRelayCommand NavigateToTournamentDetailsView { get; set; }
 
         public TournamentsViewModel(DbService dbService)
         {
             _dbService = dbService;
-            NavigateToTournamentDetailsView = new Command<TournamentEntity>(navigateToTournamentDetalisView);
-            getTournaments();
+            NavigateToTournamentDetailsView = new AsyncRelayCommand<TournamentEntity>(navigateToTournamentDetailsView);
+            _ = GetTournaments();
         }
 
-        private async void getTournaments()
+        private async Task GetTournaments()
         {
             var tourneys = await _dbService.GetData<TournamentEntity>();
 
@@ -38,7 +40,7 @@ namespace DartsStatsApp.ViewModels
                                   orderby g.Key.Year, g.Key.Month
                                   select new TournamentsPerMonth
                                   { 
-                                      Month = new DateTime(g.Key.Year, g.Key.Month,1).ToString("yyyy. MMMM"),
+                                      Month = g.Key,
                                       Tournaments = new ObservableCollection<TournamentEntity>(g)
                                   };
 
@@ -48,7 +50,7 @@ namespace DartsStatsApp.ViewModels
                 GroupedTournaments.Add(group);
         }
 
-        private async void navigateToTournamentDetalisView(TournamentEntity tournament)
+        private async Task navigateToTournamentDetailsView(TournamentEntity tournament)
         {
             if (tournament == null)
                 return;
@@ -59,7 +61,8 @@ namespace DartsStatsApp.ViewModels
 
     public class TournamentsPerMonth
     {
-        public string Month { get; set; }
+        public DateTime Month { get; set; }
+        public string MonthName => Month.ToString("yyyy. MMMM", new CultureInfo("en-US"));
         public ObservableCollection<TournamentEntity> Tournaments { get; set; }
     }
 }

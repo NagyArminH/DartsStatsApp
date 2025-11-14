@@ -131,8 +131,8 @@ namespace DartsStatsApp.ViewModels
             
             SelectedMatch = match;
             var getStats = await _dbService.GetData<MatchStatEntity>();
-            PlayerAStats = getStats.FirstOrDefault(s => s.MatchId == matchId && s.PlayerId == match.Player1Id);
-            PlayerBStats = getStats.FirstOrDefault(s => s.MatchId == matchId && s.PlayerId == match.Player2Id);
+            PlayerAStats = getStats.FirstOrDefault(s => s.MatchId == SelectedMatch.Id && s.PlayerId == SelectedMatch.Player1Id);
+            PlayerBStats = getStats.FirstOrDefault(s => s.MatchId == SelectedMatch.Id && s.PlayerId == SelectedMatch.Player2Id);
             
             MatchOpen = true;
         }

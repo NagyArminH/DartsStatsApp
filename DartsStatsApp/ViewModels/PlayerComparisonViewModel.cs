@@ -17,7 +17,6 @@ namespace DartsStatsApp.ViewModels
         private ObservableCollection<PlayerOption> _playerOptionA = new ObservableCollection<PlayerOption>();
         private ObservableCollection<PlayerOption> _playerOptionB = new ObservableCollection<PlayerOption>();
         private List<PlayerDataSummaryEntity> _summary = new List<PlayerDataSummaryEntity>();
-        private List<MatchStatEntity> _stats = new List<MatchStatEntity>();
         private PlayerOption? _selectedPlayerA;
         private PlayerOption? _selectedPlayerB;
         private PlayerStatSummary _playerFormA;
@@ -93,15 +92,12 @@ namespace DartsStatsApp.ViewModels
         public PlayerComparisonViewModel(DbService dbService)
         {
             _dbService = dbService;
-            _ = InitializeMethods();
-        }
-        private async Task InitializeMethods()
-        {
-            await LoadPrecomputedData();
-            await LoadPlayers();
+            _ = LoadPlayers();
         }
         private async Task LoadPlayers()
         {
+            _summary = await _dbService.GetData<PlayerDataSummaryEntity>();
+
             var players = await _dbService.GetData<PlayerEntity>();
             var rankedPlayers = from p in players
                            where p.OOMPlacement > 0
@@ -126,12 +122,6 @@ namespace DartsStatsApp.ViewModels
             }
 
             UpdateUIWhenPlayersSelected();
-        }
-
-        private async Task LoadPrecomputedData()
-        {
-            _summary = await _dbService.GetData<PlayerDataSummaryEntity>();
-            _stats = await _dbService.GetData<MatchStatEntity>();
         }
 
         private PlayerStatSummary BuildPlayerData(int playerId)

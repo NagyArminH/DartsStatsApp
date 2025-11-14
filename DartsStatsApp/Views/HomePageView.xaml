@@ -5,101 +5,117 @@
              x:Class="DartsStatsApp.Views.HomePageView"
              Title="Welcome!">
     <ScrollView>
-        <VerticalStackLayout Spacing="10">
+        <VerticalStackLayout Spacing="10" Padding="10">
+
+            <Label Text="Darts 2025 - Player Statistics"
+                   FontAttributes="Bold"
+                   FontSize="22"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,4"/>
 
             <Label Text="This application aggregates the 2025 data of darts players and presents them in multiple ways."
                    LineBreakMode="WordWrap"
-                   FontSize="16"
-                   Margin="0,20,0,0" Padding="3"/>
+                   TextColor="#4B5563"
+                   FontSize="14"
+                   Margin="4,0,4,8"/>
 
             <toolkit:Expander>
                 <toolkit:Expander.Header>
-                    <Grid Padding="10" BackgroundColor="#f2f2f2">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="30"/>
-                        </Grid.ColumnDefinitions>
-                    
+                    <Border Stroke="#E2E8F0" StrokeThickness="1" StrokeShape="RoundRectangle 12" BackgroundColor="#F8FAFC" Padding="10" Margin="0,4">
+                        
+                        <Grid Padding="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="30"/>
+                            </Grid.ColumnDefinitions>
 
-                    <Label Text="World Ranking" FontAttributes="Bold" VerticalOptions="Center" FontSize="18"/>
-                    <Label FontSize="18" Text="▼" Grid.Column="1">
-                        <Label.Triggers>
-                            <DataTrigger TargetType="Label" Binding="{Binding Source={RelativeSource AncestorType={x:Type toolkit:Expander}}, Path=IsExpanded}" Value="True">
-                                <Setter Property="Text" Value="▲"/>
-                            </DataTrigger>
-                        </Label.Triggers>
-                    </Label>
-                    </Grid>
+                            <Label Text="World Ranking" FontAttributes="Bold" VerticalOptions="Center" FontSize="18"/>
+                            <Label FontSize="18" Text="▼" Grid.Column="1">
+                                <Label.Triggers>
+                                    <DataTrigger TargetType="Label" Binding="{Binding Source={RelativeSource AncestorType={x:Type toolkit:Expander}}, Path=IsExpanded}" Value="True">
+                                        <Setter Property="Text" Value="▲"/>
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
+                        </Grid>
+                    </Border>
                 </toolkit:Expander.Header>
-
-                <toolkit:Expander.Content>
+                <Border Stroke="#E2E8F0" StrokeThickness="1" StrokeShape="RoundRectangle 12" BackgroundColor="#F8FAFC" Padding="10" Margin="0,4">
                     <VerticalStackLayout>
                         <Label Text="Browse through the world ranking of players who have played atleast a single match in 2025.&#10;Browse by name or just scroll through the list, you can see their earnings and placement.&#10;&#10;Tap on a player's row and it brings up a new window where you can get a general info about the player, their statistics and a graph that shows their average by month.&#10;&#10;If there is not enough data, the graph won't show, instead there will be a text saying there is not enough data to make a graph.&#10;&#10;Disclaimer: Placements after #100 may have some skips in them, since this only tracks players who have played atleast one match, the placement of players after #100 are still in their correct place&#10;&#10;Data up to date: 2025.08.16."
                                LineBreakMode="WordWrap"
                                Padding="5"
+                               FontSize="15"
                                Margin="0,5,0,5"/>
                     </VerticalStackLayout>
-                </toolkit:Expander.Content>
+                </Border>
             </toolkit:Expander>
 
             <toolkit:Expander>
                 <toolkit:Expander.Header>
-                    <Grid Padding="10" BackgroundColor="#eee">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="30"/>
-                        </Grid.ColumnDefinitions>
+                    <Border Stroke="#E2E8F0" StrokeThickness="1" StrokeShape="RoundRectangle 12" BackgroundColor="#F8FAFC" Padding="10" Margin="0,4">
+                        <Grid Padding="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="30"/>
+                            </Grid.ColumnDefinitions>
 
 
-                        <Label Text="Tournaments" FontAttributes="Bold" VerticalOptions="Center" FontSize="18"/>
-                        <Label FontSize="18" Text="▼" Grid.Column="1">
-                            <Label.Triggers>
-                                <DataTrigger TargetType="Label" Binding="{Binding Source={RelativeSource AncestorType={x:Type toolkit:Expander}}, Path=IsExpanded}" Value="True">
-                                    <Setter Property="Text" Value="▲"/>
-                                </DataTrigger>
-                            </Label.Triggers>
-                        </Label>
-                    </Grid>
+                            <Label Text="Tournaments" FontAttributes="Bold" VerticalOptions="Center" FontSize="18"/>
+                            <Label FontSize="18" Text="▼" Grid.Column="1">
+                                <Label.Triggers>
+                                    <DataTrigger TargetType="Label" Binding="{Binding Source={RelativeSource AncestorType={x:Type toolkit:Expander}}, Path=IsExpanded}" Value="True">
+                                        <Setter Property="Text" Value="▲"/>
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
+                        </Grid>
+                    </Border>
                 </toolkit:Expander.Header>
 
-                <toolkit:Expander.Content>
                     <VerticalStackLayout>
+                    <Border Stroke="#E2E8F0" StrokeThickness="1" StrokeShape="RoundRectangle 12" BackgroundColor="#F8FAFC" Padding="10" Margin="0,4">
                         <Label Text="Browse tournaments played in 2025.&#10;&#10;Tournaments are divided by month, each tournament is clickable which brings to the breakdown of the tournament, where you can view each round.&#10;&#10;Tap on a match row to get a popup window where you can see the players' statistics inside that match."
                                LineBreakMode="WordWrap"
                                Padding="3"
+                               FontSize="15"
                                Margin="0,5,0,5"/>
-                    </VerticalStackLayout>
-                </toolkit:Expander.Content>
+                    </Border>
+                </VerticalStackLayout>
             </toolkit:Expander>
 
             <toolkit:Expander>
                 <toolkit:Expander.Header>
-                    <Grid Padding="10" BackgroundColor="#eee">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="30"/>
-                        </Grid.ColumnDefinitions>
+                    <Border Stroke="#E2E8F0" StrokeThickness="1" StrokeShape="RoundRectangle 12" BackgroundColor="#F8FAFC" Padding="10" Margin="0,4">
+                        <Grid Padding="10">
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="30"/>
+                            </Grid.ColumnDefinitions>
 
 
-                        <Label Text="Player Comparison" FontAttributes="Bold" VerticalOptions="Center" FontSize="18"/>
-                        <Label FontSize="18" Text="▼" Grid.Column="1">
-                            <Label.Triggers>
-                                <DataTrigger TargetType="Label" Binding="{Binding Source={RelativeSource AncestorType={x:Type toolkit:Expander}}, Path=IsExpanded}" Value="True">
-                                    <Setter Property="Text" Value="▲"/>
-                                </DataTrigger>
-                            </Label.Triggers>
-                        </Label>
-                    </Grid>
+                            <Label Text="Player Comparison" FontAttributes="Bold" VerticalOptions="Center" FontSize="18"/>
+                            <Label FontSize="18" Text="▼" Grid.Column="1">
+                                <Label.Triggers>
+                                    <DataTrigger TargetType="Label" Binding="{Binding Source={RelativeSource AncestorType={x:Type toolkit:Expander}}, Path=IsExpanded}" Value="True">
+                                        <Setter Property="Text" Value="▲"/>
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
+                        </Grid>
+                    </Border>
                 </toolkit:Expander.Header>
 
-                <toolkit:Expander.Content>
+                <Border Stroke="#E2E8F0" StrokeThickness="1" StrokeShape="RoundRectangle 12" BackgroundColor="#F8FAFC" Padding="10" Margin="0,4">
                     <VerticalStackLayout>
                         <Label Text="Pick two players to compare their statistics: total matches played, win rate, averages, 180s, and so on.&#10;&#10;You can either scroll through the list or start typing and it will highlight the text in the player's name."
                                LineBreakMode="WordWrap"
                                Padding="3"
+                               FontSize="15"
                                Margin="0,3,0,5"/>
                     </VerticalStackLayout>
-                </toolkit:Expander.Content>
+                </Border>
             </toolkit:Expander>
         </VerticalStackLayout>
     </ScrollView>

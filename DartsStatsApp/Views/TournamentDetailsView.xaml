@@ -3,46 +3,65 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             x:Class="DartsStatsApp.Views.TournamentDetailsView"
-             Title="{Binding Tournament.TournamentName}">
+             x:Class="DartsStatsApp.Views.TournamentDetailsView">
 
     <ScrollView>
         <VerticalStackLayout Padding="10" Spacing="5">
 
             <Label Text="{Binding Tournament.TournamentName}"
                    FontAttributes="Bold"
-                   FontSize="22"
-                   HorizontalOptions="Center"/>
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   Padding="0,10,0,10"/>
 
             <CollectionView ItemsSource="{Binding GroupedMatches}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <toolkit:Expander IsExpanded="True">
                             <toolkit:Expander.Header>
-                                <Grid Padding="5" BackgroundColor="#eee">
-                                    <Label Text="{Binding Round}" FontAttributes="Bold" FontSize="18"/>
-                                </Grid>
+                                <Border Stroke="#E2E8F0" StrokeThickness="1" StrokeShape="RoundRectangle 12" BackgroundColor="#F8FAFC" Padding="5">
+                                    <Grid Padding="5">
+                                        <Label Text="{Binding Round}" FontAttributes="Bold" FontSize="18" HorizontalTextAlignment="Center"/>
+                                    </Grid>
+                                </Border>
                             </toolkit:Expander.Header>
 
                             <CollectionView ItemsSource="{Binding Matches}" SelectionMode="None">
                                 <CollectionView.ItemTemplate>
                                     <DataTemplate>
-                                        <Grid Padding="5">
-                                            <Grid.GestureRecognizers>
-                                                <TapGestureRecognizer
+                                        <Border Stroke="#E2E8F0" StrokeThickness="1" StrokeShape="RoundRectangle 12" BackgroundColor="White" Padding="5" Margin="5">
+                                            <Grid Padding="5">
+                                                <Grid.GestureRecognizers>
+                                                    <TapGestureRecognizer
                                                     Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.OpenMatchupCommand}"
                                                     CommandParameter="{Binding Id}"/>
-                                            </Grid.GestureRecognizers>
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="*"/>
-                                                <ColumnDefinition Width="Auto"/>
-                                                <ColumnDefinition Width="*"/>
-                                            </Grid.ColumnDefinitions>
+                                                </Grid.GestureRecognizers>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
 
-                                            <Label Text="{Binding Player1Name}" Grid.Column="0" HorizontalOptions="Start"/>
-                                            <Label Text="{Binding MatchScore}" Grid.Column="1" HorizontalOptions="Center" FontAttributes="Bold"/>
-                                            <Label Text="{Binding Player2Name}" Grid.Column="2" HorizontalOptions="End"/>
-                                        </Grid>
+                                                <Label Text="{Binding Player1Name}" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" FontSize="13"/>
+
+                                                <Border Stroke="#CBD5E1" 
+                                                        StrokeThickness="1" 
+                                                        StrokeShape="RoundRectangle 20" 
+                                                        BackgroundColor="#F1F5F9" 
+                                                        Grid.Column="1"
+                                                        Padding="10,4">
+                                                    
+                                                    <Label Text="{Binding MatchScore}" 
+                                                           Grid.Column="1" 
+                                                           HorizontalOptions="Center" 
+                                                           FontAttributes="Bold"/>
+                                                    
+                                                </Border>
+
+                                                <Label Text="{Binding Player2Name}" Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center" FontSize="13"/>
+                                            </Grid> 
+                                        </Border>
                                     </DataTemplate>
                                 </CollectionView.ItemTemplate>
                             </CollectionView>
@@ -97,21 +116,25 @@
                                    HorizontalTextAlignment="Center"
                                    Grid.Row="1"
                                    Grid.Column="0"
-                                   MaxLines="2"
                                    LineBreakMode="WordWrap"
                                    FontSize="13"/>
 
+                            <Label Grid.Row="1"
+                                   Grid.Column="1"
+                                   Text="{Binding SelectedMatch.Date, StringFormat='{0:yyyy.MM.dd.}'}" 
+                                   HorizontalTextAlignment="Center" 
+                                   FontAttributes="Bold"/>
+                            
                             <Label Text="{Binding SelectedMatch.Player2Name}" 
                                    FontAttributes="Bold" 
                                    HorizontalTextAlignment="Center"
                                    Grid.Row="1"
                                    Grid.Column="2"
-                                   MaxLines="2"
                                    LineBreakMode="WordWrap"
                                    FontSize="13"/>
                         </Grid>
 
-                        <Label Text="{Binding SelectedMatch.Date, StringFormat='{0:yyyy.MM.dd.}'}" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                        
                         <Grid ColumnDefinitions="*,auto,*" RowSpacing="20" ColumnSpacing="30">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
@@ -126,13 +149,15 @@
                                 Text="{Binding PlayerAStats.Average}"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
-                            <Label 
+                            <Border Grid.Row="0" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
+                                <Label 
                                 Grid.Row="0"
                                 Grid.Column="1"
                                 Text="Average"
                                 FontAttributes="Bold"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
+                            </Border>
                             <Label
                                 Grid.Row="0"
                                 Grid.Column="2"
@@ -146,13 +171,15 @@
                                 Text="{Binding PlayerAStats.CheckoutPercentage, StringFormat='{0}%'}"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
-                            <Label 
+                            <Border Grid.Row="1" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
+                                <Label 
                                 Grid.Row="1"
                                 Grid.Column="1"
                                 Text="Checkout %"
                                 FontAttributes="Bold"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
+                            </Border>
                             <Label
                                 Grid.Row="1"
                                 Grid.Column="2"
@@ -166,13 +193,15 @@
                                 Text="{Binding PlayerAStats.HighestCheckout}"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
-                            <Label 
+                            <Border Grid.Row="2" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
+                                <Label 
                                 Grid.Row="2"
                                 Grid.Column="1"
                                 Text="Highest Checkout"
                                 FontAttributes="Bold"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
+                            </Border>
                             <Label
                                 Grid.Row="2"
                                 Grid.Column="2"
@@ -186,13 +215,15 @@
                                 Text="{Binding PlayerAStats.Total180s}"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
-                            <Label 
+                            <Border Grid.Row="3" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
+                                <Label 
                                 Grid.Row="3"
                                 Grid.Column="1"
                                 Text="180"
                                 FontAttributes="Bold"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
+                            </Border>
                             <Label
                                 Grid.Row="3"
                                 Grid.Column="2"
@@ -206,13 +237,15 @@
                                 Text="{Binding PlayerAStats.Total140s}"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
-                            <Label 
+                            <Border Grid.Row="4" Grid.Column="1" Padding="10,4" BackgroundColor="#F1F5F9" Stroke="#CBD5E1" StrokeThickness="1" StrokeShape="RoundRectangle 10">
+                                <Label 
                                 Grid.Row="4"
                                 Grid.Column="1"
                                 Text="140+"
                                 FontAttributes="Bold"
                                 FontSize="16"
                                 HorizontalTextAlignment="Center"/>
+                            </Border>
                             <Label
                                 Grid.Row="4"
                                 Grid.Column="2"

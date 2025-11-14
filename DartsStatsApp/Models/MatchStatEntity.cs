@@ -11,7 +11,7 @@ namespace DartsStatsApp.Models
         public int Id { get; set; }
 
         // Idegen kulcsok
-        public int MatchId { get; set; } // MathEntity.Id
+        public int MatchId { get; set; } // MatchEntity.Id
         public int PlayerId { get; set; } //PlayerEntity.Id
 
         public double Average { get; set; }

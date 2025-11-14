@@ -17,17 +17,17 @@
                 <toolkit:Expander IsExpanded="False">
 
                     <toolkit:Expander.Header>
-                        <Grid Padding="10" BackgroundColor="#eee">
+                        <Border Stroke="#E2E8F0" StrokeThickness="1" StrokeShape="RoundRectangle 10" BackgroundColor="#F8FAFC" Padding="10" Margin="10,2">
+                        <Grid Padding="1">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="30"/>
                             </Grid.ColumnDefinitions>
                             
-                        <Label Text="{Binding Month}"
+                        <Label Text="{Binding MonthName}"
                            FontAttributes="Bold"
                            FontSize="18"
-                           Padding="5"
-                           BackgroundColor="#eee"/>
+                           Padding="5"/>
 
                             <Label FontSize="18" Grid.Column="1" Text="▼">
                             <Label.Triggers>
@@ -37,39 +37,48 @@
                             </Label.Triggers>
                         </Label>
                         </Grid>
+                        </Border>
                     </toolkit:Expander.Header>
 
-                    <toolkit:Expander.Content>
-                    <!-- Inner CollectionView a tournamentekre-->
+
+
                     <CollectionView ItemsSource="{Binding Tournaments}"
                                     SelectionMode="None"
-                                    BackgroundColor="#fafafa"
-                                    Margin="10,0,0,10">
-                            <CollectionView.ItemsLayout>
-                                <LinearItemsLayout Orientation="Vertical" ItemSpacing="7"/>
-                            </CollectionView.ItemsLayout>
+                                    Margin="5,10,0,10">
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Vertical" ItemSpacing="7"/>
+                        </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
-                                <Grid Padding="5" ColumnSpacing="10">
-                                        <Grid.GestureRecognizers>
-                                            <TapGestureRecognizer
-                                                Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.NavigateToTournamentDetailsView}"
-                                                CommandParameter="{Binding .}"
-                                                />
-                                        </Grid.GestureRecognizers>
+                                <Border Stroke="#E2E8F0" StrokeThickness="1" StrokeShape="RoundRectangle 10" BackgroundColor="White" Padding="5">
+                                <Grid Padding="5"
+                                      HorizontalOptions="Fill"
+                                      WidthRequest="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=Width}"
+                                      ColumnDefinitions="*,Auto">
                                     
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="75"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Label Text="{Binding TournamentName}" Grid.Column="0" VerticalOptions="Center" FontSize="13"/>
-                                        <Label Text="{Binding StartDate, StringFormat='{0:yyyy.MM.dd.}'}" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" FontSize="13"/>
-                                            
+                                <Grid.GestureRecognizers>
+                                        <TapGestureRecognizer 
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.NavigateToTournamentDetailsView}"
+                                            CommandParameter="{Binding .}"/>
+                                </Grid.GestureRecognizers>
+                                    
+                                    <Label Text="{Binding TournamentName}"
+                                           Grid.Column="0"
+                                           VerticalOptions="Center"
+                                           FontSize="13" 
+                                           FontAttributes="Bold"/>
+                                    
+                                    <Label Text="{Binding StartDate, StringFormat='{0:yyyy.MM.dd.}'}"
+                                           Grid.Column="1"
+                                           VerticalOptions="Center"
+                                           HorizontalTextAlignment="End" 
+                                           FontSize="13"
+                                           FontAttributes="Bold"/>
                                 </Grid>
+                                </Border>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
-                    </toolkit:Expander.Content>
                 </toolkit:Expander>
             </DataTemplate>
         </CollectionView.ItemTemplate>

@@ -9,10 +9,10 @@ namespace DartsStatsApp
         {
             InitializeComponent();
             _dbService = dbService;
-            Task.Run(async () => await initializeDatabase()).Wait();
+            Task.Run(async () => await InitializeDatabase()).Wait();
             MainPage = new AppShell();
         }
-        private async Task initializeDatabase()
+        private async Task InitializeDatabase()
         {
             await _dbService.InitializeDb();
             await _dbService.InsertDataIntoDb();

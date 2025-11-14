@@ -54,11 +54,11 @@ namespace DartsStatsApp.Services
                     Id = int.Parse(helper[0]),
                     Name = helper[1],
                     Country = helper[2],
-                    BirthDate = DateTime.TryParseExact(helper[3], "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var birth) ? birth : (DateTime?)null,
+                    BirthDate = DateTime.TryParseExact(helper[3], "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var birth) ? birth : null,
                     Total9Darters = int.Parse(helper[4]),
                     TotalEarnings = decimal.Parse(helper[5]),
-                    OOMPlacement = int.TryParse(helper[6], out int oomp) ? (int?)oomp : null,
-                    OOMEarnings = decimal.TryParse(helper[7], out decimal oome) ? (decimal?)oome : null
+                    OOMPlacement = int.TryParse(helper[6], out int oomp) ? oomp : null,
+                    OOMEarnings = decimal.TryParse(helper[7], out decimal oome) ? oome : null
                 };
                 await Create(player);
             }
@@ -136,7 +136,7 @@ namespace DartsStatsApp.Services
                         Total140s = int.Parse(helper[6]),
                         HighestCheckout = int.Parse(helper[7]),
                         LegsWon = int.Parse(helper[8]),
-                        SetsWon = int.TryParse(helper[9], out int stsw) ? (int?)stsw : null
+                        SetsWon = int.TryParse(helper[9], out int stsw) ? stsw : null
                         
                     };
                     await Create(matches);
@@ -144,7 +144,7 @@ namespace DartsStatsApp.Services
             }
         }
 
-        public async Task Create<T> (T entity) where T : new()
+        public async Task Create<T> (T entity) where T : class
         {
             await _connection.InsertAsync(entity);
         }

@@ -8,17 +8,22 @@
     Shell.FlyoutBehavior="Disabled"
     Title="DartsStatsApp">
 
-    <TabBar>
-        <Tab Title="Home">
+    <TabBar
+        Shell.TabBarBackgroundColor="#FFFFFF"
+        Shell.TabBarForegroundColor="#111827"
+        Shell.TabBarUnselectedColor="#9CA3AF"
+        Shell.TabBarTitleColor="#111827"
+        >
+        <Tab Title="Home" Icon="home.png">
             <ShellContent ContentTemplate="{DataTemplate views:HomePageView}"/>
         </Tab>
-        <Tab Title="World Ranking">
+        <Tab Title="World Ranking" Icon="ranking.png">
             <ShellContent ContentTemplate="{DataTemplate views:OOMListView}"/>
         </Tab>
-        <Tab Title="Tournaments">
+        <Tab Title="Tournaments" Icon="tournament.png">
             <ShellContent ContentTemplate="{DataTemplate views:TournamentsView}"/>
         </Tab>
-        <Tab Title="Comparison">
+        <Tab Title="Comparison" Icon="compare.png">
             <ShellContent ContentTemplate="{DataTemplate views:PlayerComparisonView}"/>
         </Tab>
     </TabBar>

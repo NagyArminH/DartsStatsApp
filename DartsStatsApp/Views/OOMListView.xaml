@@ -8,11 +8,14 @@
     <Grid RowDefinitions="Auto, Auto, *" Padding="10" RowSpacing="3">
 
         <SearchBar Placeholder="Search by name"
-               Grid.Row="0"
-               Text="{Binding SearchText, Mode=TwoWay}"
-               SearchCommand="{Binding SearchCommand}"/>
+                   Grid.Row="0"
+                   BackgroundColor="#F1F5F9"
+                   TextColor="#111827"
+                   PlaceholderColor="#9CA3AF"
+                   Text="{Binding SearchText, Mode=TwoWay}"
+                   SearchCommand="{Binding SearchCommand}"/>
         
-        <Grid Padding="5" BackgroundColor="#eee" Grid.Row="1">
+        <Grid Padding="5" BackgroundColor="#F8FAFC" Grid.Row="1">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50"/>
             <ColumnDefinition Width="*"/>
@@ -35,52 +38,48 @@
 
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                <Grid Padding="10">
-                        <Grid.GestureRecognizers>
-                            <TapGestureRecognizer
+                    <Border Stroke="#E2E8F0" StrokeThickness="1" StrokeShape="RoundRectangle 20" BackgroundColor="#F8FAFC" Padding="5">
+                        <Grid Padding="10">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer
                                 Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.NavigateToPlayerProfile}"
                                 CommandParameter="{Binding .}"/>
-                        </Grid.GestureRecognizers>
-                    
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="1"/>
-                        </Grid.RowDefinitions>
+                            </Grid.GestureRecognizers>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="50"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="120"/>
-                        </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="1"/>
+                            </Grid.RowDefinitions>
 
-                        <Label Text="{Binding OOMPlacement}"
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="120"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="{Binding OOMPlacement}"
                             FontAttributes="Bold"
                             FontSize="16"
                             Grid.Row="0"
                             Grid.Column="0"
                             VerticalOptions="Center"/>
 
-                        <Label Text="{Binding Name}"
+                            <Label Text="{Binding Name}"
                            FontAttributes="Bold"
                            FontSize="16"
                            Grid.Row="0"
                            Grid.Column="1"
                            VerticalOptions="Center"/>
 
-                        <Label Text="{Binding OOMEarnings, StringFormat='£{0:N0}'}"
+                            <Label Text="{Binding OOMEarnings, StringFormat='£{0:N0}'}"
                            Grid.Row="0"
                            Grid.Column="2"
                            FontSize="16"
                            VerticalOptions="Center"
                            HorizontalOptions="End"/>
-                    
-                        <BoxView Grid.Row="1"
-                           Grid.ColumnSpan="3"
-                           HeightRequest="1"
-                           BackgroundColor="#ccc"
-                           Margin="0,5,0,0"/>
-                    </Grid>
-            </DataTemplate>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
         </CollectionView.ItemTemplate>
     </CollectionView>
     </Grid>
